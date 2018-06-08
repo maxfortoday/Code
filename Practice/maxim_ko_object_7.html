@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+</head>
+
+	<style>
+		.class1{
+            color:red;
+
+		}
+		.class2{
+            color:blue;
+
+		}
+	</style>
+ <body>
+ 	
+	<script language="javascript" type="text/javascript">
+    
+        /*var array = [1, 2, 3, 4, 5, 6, 7,];
+        
+        console.log(array.filter(function (element) {
+            return((element % 2) == 0);
+        }));
+
+        console.log(array);*/
+
+        var array = [1, 2, 3, 4, 5, 6, 9, 100];
+
+        var arrp = array.filter(function (value) {
+            if (value <= 3) {
+                return true;
+            }
+            for (var i = 2 ; i <= (value / 2) ; i++) {
+                if ((value % i) == 0) {
+                    return false;
+                }
+            }
+            return true;
+
+        });
+
+        console.log(arrp);
+       
+
+	</script>
+
+	<!--input type="button" onclick = "sayHi()"  value = "say hi"/-->
+	
+</body>
+</html>

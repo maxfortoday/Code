@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+</head>
+
+	<style>
+		.class1{
+            color:red;
+
+		}
+		.class2{
+            color:blue;
+
+		}
+	</style>
+ <body>
+ 	
+	<script language="javascript" type="text/javascript">
+    
+        var test = "Globas scope";
+        var array = [1,2,3]
+        console.log(test);
+        console.log(array);
+
+        function testScope() {
+            var test = "kukuriku";
+            array.push(4);
+            console.log(test);
+        }
+
+        testScope();
+        console.log(test);
+        console.log(array);
+
+	</script>
+
+	<!--input type="button" onclick = "sayHi()"  value = "say hi"/-->
+	
+</body>
+</html>

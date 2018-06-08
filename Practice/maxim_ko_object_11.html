@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+</head>
+	<style>
+		.class1{
+			color:red;
+			font-size:300%;
+		}
+		.class2{color:blue;}
+	</style>
+
+ <body>
+	<script language="javascript" type="text/javascript">
+	
+		var i = 0;
+	
+		var interval = setInterval(function(){		
+				console.log("Hello " + i);	
+				i++;
+		}, 500);
+		
+		setTimeout(function(){
+			clearInterval(interval);
+			console.log("Finished");
+		}, 3200);
+
+
+		
+	</script>
+</body>
+</html>

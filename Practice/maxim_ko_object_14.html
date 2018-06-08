@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+</head>
+	<style>
+		.class1{
+			color:red;
+			font-size:300%;
+		}
+		.class2{color:blue;}
+	</style>
+
+ <body>
+	<script language="javascript" type="text/javascript">
+        function printTime() {
+            var d = new Date();
+            var hours = d.getHours();
+            var mins = d.getMinutes();
+            var secs = d.getSeconds();
+            document.body.innerHTML = hours + ":" + mins + ":" + secs;
+        }
+        setInterval(printTime, 1000);	
+	</script>
+</body>
+</html>

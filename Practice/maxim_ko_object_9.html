@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+</head>
+	<style>
+		.class1{
+			color:red;
+			font-size:300%;
+		}
+		.class2{color:blue;}
+	</style>
+
+ <body>
+	<script language="javascript" type="text/javascript">	
+
+		function Person(name, age){
+			//constructor function
+			this.name = name;
+			this.age = age;
+			this.greet = function(){
+				console.log("Hello " + this.name);
+			}
+		}
+		Person.prototype.greet = function(){
+			console.log("Hello");
+		}
+		var person = new Person("Yossi", 55);
+		var person2 = new Person("David", 25);	
+		var person3 = new Person();	
+		//...	
+		console.log(person);
+		console.log(person2);
+		console.log(person3);
+
+		
+
+
+
+		
+	</script>
+</body>
+</html>

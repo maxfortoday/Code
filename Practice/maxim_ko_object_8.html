@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+</head>
+
+	<style>
+		.class1{
+            color:red;
+
+		}
+		.class2{
+            color:blue;
+
+		}
+	</style>
+ <body>
+ 	
+	<script language="javascript" type="text/javascript">
+    
+        /*var array = [1, 2, 3, 4, 5, 6, 7, ];
+        var newArray = ["join", "me"];
+
+        var array2 = (array.concat(newArray));
+        console.log(array2);*/
+
+        var person = {
+            name: 'Max',
+            age: '25',
+            countries: ['Israel', 'Russia', 'Germany'],
+            girlfriend: {
+                name: 'Niv',
+                age: '27',
+            },
+            greet: function () {
+                console.log('Happy Day');
+            }
+        };
+
+        console.log(person.name);
+        person.name = 'max';
+        console.log(person['name']);
+
+        //var aaa = prompt("What property do you want?")
+        //console.log(person[aaa]);
+        var aaa = 'age';
+        console.log(person.countries[2]);
+        console.log(person.girlfriend[aaa])
+        person.greet();
+        
+
+	</script>
+
+	<!--input type="button" onclick = "sayHi()"  value = "say hi"/-->
+	
+</body>
+</html>

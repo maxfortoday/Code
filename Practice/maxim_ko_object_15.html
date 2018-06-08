@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+</head>
+	<style>
+		.class1{
+			color:red;
+			font-size:300%;
+		}
+		.class2{color:blue;}
+	</style>
+
+ <body>
+	<script language="javascript" type="text/javascript">
+		var today = new Date();
+		var todays = today.toString();
+		var todaya = todays.split(' ');
+		console.log(todaya);
+		
+		var day  = todaya[2];
+		var year = todaya[3];
+		
+		//console.log(todaya[1]);
+		
+		var month = "";
+		switch(todaya[1]){
+			case 'Jan':
+				month = "01";
+				break
+			case 'Feb':
+				month = "02";
+				break
+			case 'Mar':
+				month = "03";
+				break
+			case 'Jun':
+				month = "06";
+				break
+			default:
+				month = "99";
+				break;
+		}
+		
+		var sd = day + "/" + month + "/" + year;
+		
+		document.write("<h1 class = class1>" + sd + "</h1>");
+		
+
+		
+	</script>
+</body>
+</html>

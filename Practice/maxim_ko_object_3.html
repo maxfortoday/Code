@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+</head>
+
+	<style>
+		.class1{
+            color:red;
+
+		}
+		.class2{
+            color:blue;
+
+		}
+	</style>
+ <body>
+ 	
+	<script language="javascript" type="text/javascript">
+    
+        var array = [1, 2, 3];
+        console.log(array[0]);
+        console.log(array[2]);
+        console.log(array[3]);
+
+        array[3] = 1000;
+        console.log(array[3]);
+        array[10] = 33;
+        console.log(array);
+        console.log(array.length);
+
+        var array = [1, 2, 3, 4, 5, 6];
+        var sum = 0;
+        for (var i = 0 ; i < array.length ; i++) {
+            sum += array[i];
+        }
+        console.log(sum);
+
+        var array = [1, 2, 3, 4, 5, 6];
+        var product = 1;
+        array.forEach(function (element) {
+            product *= element;
+        });
+        console.log(product);
+
+        console.log("-----------");
+        array.push(7);
+        console.log(array);
+        array.pop();
+        array.pop();
+        console.log(array);
+        array.unshift(100);
+        console.log(array);
+        array.reverse();
+        console.log(array);
+
+
+	</script>
+
+	<!--input type="button" onclick = "sayHi()"  value = "say hi"/-->
+	
+</body>
+</html>
