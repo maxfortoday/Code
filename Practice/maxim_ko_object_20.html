@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="/Users/maxim/OdinProject/bootstrap-4.1.1/css/bootstrap.css">
+
+
+	<style type="text/css">
+
+.wrapper {
+    display:  none;
+}
+.inner label.labelname {
+    text-align:  left;
+    font-weight:  bold;
+    color: #ff0000;
+}
+
+.inner input.email {
+    margin:  0px 10px;
+    padding:  5px;
+    font-size:  12px;
+}
+.inner input.password {
+    margin: 20px;
+}
+.inner label.tablelable {
+	font-size:  4em;color:  silver;
+}
+
+.inner td.tableheader {
+    font-weight:  bold;
+    color:  gold;
+    text-align:  center;
+}
+
+.inner table.table {
+    width: 80%;
+}
+.inner input.pink {
+    color:  pink;
+}
+.inner input[type="text"] {
+	color: pink;
+}
+.inner tr.tabletr:nth-child(even) {
+    background: pink;
+}
+input[type="submit"] {
+    margin-bottom: 20px;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color:  pink;
+}
+
+
+
+
+
+
+
+	</style>
+
+
+
+
+
+
+</head>
+<body>
+	
+<div class="wrapper">
+	<div class="inner">
+		<h1>form type</h1>
+		<form action="/action_page.php">
+		  <label class="labelname"> Email:</label><br>
+		  <input class="email" type="text" name="firstname"><br/>
+		  <label class="labelname "> First name:</label><br>
+		  <input class="email pink" type="text" name="firstname">
+		  <br>
+		  <label class="labelname"> Last name:</label><br>
+		  <input class="password" type="password" name="password" value="Mouse">
+		  <br><br>
+		  <input type="submit" value="Submit">
+		</form> 
+
+
+		<label class="tablelable">label</label>
+		<table class="table">
+			<tr class="tabletr">
+				<td class="tableheader">header</td>
+				<td class="tableheader">header</td>
+				<td class="tableheader">header</td>
+			</tr>
+			<tr class="tabletr">
+				<td class="regulartable">center</td>
+				<td class="regulartable">center</td>
+				<td class="regulartable">center</td>
+			</tr>
+			<tr class="tabletr">
+				<td class="regulartable">footer</td>
+				<td class="regulartable">footer</td>
+				<td class="regulartable">footer</td>
+			</tr>
+			<tr class="tabletr">
+				<td class="regulartable">footer</td>
+				<td class="regulartable">footer</td>
+				<td class="regulartable">footer</td>
+			</tr>
+			<tr class="tabletr">
+				<td class="regulartable">footer</td>
+				<td class="regulartable">footer</td>
+				<td class="regulartable">footer</td>
+			</tr>
+			<tr class="tabletr">
+				<td class="regulartable">footer</td>
+				<td class="regulartable">footer</td>
+				<td class="regulartable">footer</td>
+			</tr>
+		</table>
+</div>
+</div>
+
+<div>
+	<form action="/action_page.php">
+		  <label> Email:</label><br>
+		  <input class="form-control form-control-sm" type="text" name="firstname"><br/>
+		  <label> First name:</label><br>
+		  <input class="form-control form-control-sm" type="text" name="firstname"><br>
+		  <label>Password:</label><br>
+		  <input type="password" name="password" value="Mouse">
+		  <br><br>
+		  <input type="submit" value="Submit">
+		</form> 
+
+
+		<div>
+ 			<table class="table table-bordered table-hover table-striped">
+	 			<tr class="tabletr">
+					<td class="tableheader">header</td>
+					<td class="tableheader">header</td>
+					<td class="tableheader">header</td>
+				</tr>
+				<tr class="tabletr">
+					<td class="regulartable">footer</td>
+					<td class="regulartable">footer</td>
+					<td class="regulartable">footer</td>
+				</tr>
+				<tr class="tabletr">
+					<td class="regulartable">footer</td>
+					<td class="regulartable">footer</td>
+					<td class="regulartable">footer</td>
+				</tr>
+				<tr class="tabletr">
+					<td class="regulartable">footer</td>
+					<td class="regulartable">footer</td>
+					<td class="regulartable">footer</td>
+				</tr>
+				<tr class="tabletr">
+					<td class="regulartable">footer</td>
+					<td class="regulartable">footer</td>
+					<td class="regulartable">footer</td>
+				</tr>
+				<tr class="tabletr">
+					<td class="regulartable">footer</td>
+					<td class="regulartable">footer</td>
+					<td class="regulartable">footer</td>
+				</tr>
+ 				</table>
+ 			</div>
+</div>
+
+<!--
+home work:
+make a card with a table using only bootstrap
+with 2 designed buttons with bootstrap style, only things with style is the buttons
+
+https://getbootstrap.com/docs/4.1/components/card/
+-->
+
+
+</body>
+</html>
