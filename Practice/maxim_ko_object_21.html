@@ -9,6 +9,30 @@
 button.btn.btn-warning {
     background-color:  green;
 }
+
+
+.media-min {
+	 display: block;
+}
+.mediajqery3 {
+	display: none;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+	.media-min {
+		display: flex;
+	}
+}
+@media only screen and (min-width: 801px) {
+	.media-min {
+		display: flex;
+	}
+	.mediajqery3 {
+		display: block;
+	}
+}
+
+
 	</style>
 </head>
 <link rel="stylesheet" type="text/css" href="/Users/maxim/OdinProject/bootstrap-4.1.1/css/bootstrap.css">
@@ -99,8 +123,17 @@ button.btn.btn-warning {
 </div>
 </div>
 </div>
-
-
+<div class="media-min">
+	<div class="mediajqery1">
+		<h1>ahahahhahahaha</h1>
+	</div>
+	<div class="mediajqery2">
+		<h2>jajajajajajjajaja</h2>
+	</div>
+	<div class="mediajqery3">
+		<h2>dadadadadadadadad</h2>
+	</div>
+</div>
  	
 
 </body>
