@@ -32,8 +32,6 @@ console.table(icecream);
 
 var sum = icecream.reduce((a,b) => {
 	return (a.flavor || a) + b.flavor	
-	console.log(sum.a);
-console.log(sum.b);
 });
 console.log(sum.length);
 

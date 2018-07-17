@@ -49,12 +49,37 @@ var results = [{
 	"answers": 8
 }];
 
-
-var task_names = new Set(results.map(item => item.flavor))
+var task_names = results.filter((task) => {
+	return task.flavor === "lemon"
+		
+});
 
 console.log("task_names", task_names);
 
-function getAnswers(flavor) {
-	var flavorArray = results.filter(item => item.flavor == flavor);
-	console.log("flavorArray", flavorArray);
-}
+var sumAnswers = task_names.reduce((a,b) => {
+	return (a.answers || a) + b.answers;
+});
+
+var sumRank = task_names.reduce((a,b) => {
+	if (a.rank) {
+		return (a.rank * a.answers) + (b.rank * b.answers); 
+	} else {
+		return a + (b.rank * b.answers); 
+	}
+});
+var avarage = sumRank/sumAnswers;
+
+
+console.log(sumAnswers);
+console.log(sumRank);
+console.log(avarage);
+
+
+var all = [{
+	flavor: "lemon",
+	answers: sumAnswers,
+	avarage: avarage
+}];
+
+console.table(all);
+
