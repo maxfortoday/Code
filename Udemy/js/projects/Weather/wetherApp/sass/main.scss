@@ -1,0 +1,230 @@
+@import 'variebles';
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: $background-color;
+  background-image: linear-gradient(to top right, #001e7b, #82beeb);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.wraper {
+  width: $main-width;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 235px;
+  padding-left: 55px;
+}
+
+.search-container {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 225px;
+  height: 36px;
+  background-color: #73abd7;
+  background-image: linear-gradient(135deg, #73abd7 0%, #80b3da 100%);
+  border: 2px solid #5399e6;
+  button {
+    background-color: transparent;
+    border: none;
+    padding-top: 6px;
+  }
+  img {
+    width: 25px;
+    vertical-align: middle;
+  }
+  input {
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #0d1e57;
+    font-family: $font_family_1;
+    font-weight: 400;
+  }
+}
+
+.wether-wrap {
+  padding-top: 50px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(280px, auto);
+}
+
+.wether-day {
+  display: block;
+  padding-left: 10px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: $text-color;
+  font-family: $font_family_1;
+  font-weight: 400;
+  margin: 1em 0;
+}
+
+.wether-box img {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.wether-celsius {
+  font-size: 20px;
+  letter-spacing: -2px;
+  line-height: 58px;
+  color: $text-color;
+  font-family: $font_family_1;
+  font-weight: 300;
+  padding-left: 10px;
+  display: block;
+}
+
+.wether-description {
+  padding-left: 10px;
+  display: block;
+}
+
+.wether-box.box-first h3 {
+  padding-left: 10px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: $text-color;
+  font-family: $font_family_2;
+}
+
+.box-first .wether-celsius-single {
+  padding-left: 10px;
+  font-size: 120px;
+  letter-spacing: 2px;
+  color: $text-color;
+  font-family: $font_family_1;
+  font-weight: 300;
+}
+
+.wether-description {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: $text-color;
+  font-family: $font_family_1;
+  font-weight: 600;
+}
+
+.wether-box {
+  margin: 0 auto;
+  background-color: $wether-box-background-color;
+  width: 200px;
+  opacity: 0.9;
+  &.box-first {
+    background-color: transparent;
+  }
+}
+
+.wether-box-img {
+  height: 140px;
+}
+
+.arrow-wrap {
+  i {
+    color: $text-color;
+    border: 1px solid $text-color;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 50%;
+  }
+  text-align: right;
+  padding-right: 20px;
+}
+
+@media (max-width: $main-width) {
+  .wraper {
+    width: auto;
+  }
+  .wether-box {
+    width: 180px;
+  }
+}
+
+@media (max-width: 740px) {
+  .wether-wrap {
+    padding-top: 15px;
+  }
+  .wether-box {
+    width: 220px;
+  }
+  .wether-wrap {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 1em;
+  }
+  .search-container {
+    right: calc(100% - 93%);
+    width: 190px;
+    input {
+      font-size: 13px;
+    }
+  }
+  .arrow-wrap {
+    padding-right: calc(100% - 93%);
+  }
+  .wether-box-img {
+    height: 110px;
+  }
+}
+
+@media (max-width: 550px) {
+  .wether-box {
+    width: 190px;
+  }
+  .logo {
+    width: 150px;
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 414px) {
+  body {
+    overflow: auto;
+  }
+  .wether-wrap {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+  }
+  .search-container {
+    width: 280px;
+    position: unset;
+    display: block;
+    margin: 0 auto;
+  }
+  .logo {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 200px;
+    padding-bottom: 20px;
+  }
+  .arrow-wrap {
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    right: calc(100% - (50% + 14px));
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+  .wether-box:last-child {
+    margin-bottom: 55px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
