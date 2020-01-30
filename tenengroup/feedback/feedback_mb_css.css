@@ -1,0 +1,173 @@
+.feedback-block-rows {
+    background-color: #f3a59f;
+    display: block;
+    text-align: center;
+    margin: 15px;
+}
+
+.feedback-block-rows a {
+    display:  block;
+}
+
+.feedback-first-row,.feedback-second-row,.feedback-third-row {
+    display:  block;
+    color:  white;
+}
+
+.feedback-first-row {
+    font-size:  35px;
+    font-weight: 600;
+}
+
+.feedback-second-row {
+    font-size:  20px;
+    padding:  5px;
+}
+
+span.feedback-third-row {
+    text-decoration: underline;
+    font-weight:  600;
+    padding-bottom:  10px;
+    font-size: 18px;
+}
+
+.NewArticleTitleh2 {
+    color:  black;
+    text-transform:  none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.orangehr {
+    display:  block;
+    width:  25px;
+    height:  2px;
+    border:  none;
+    background: #f3a59f;
+}
+
+.feedback-ul-block {
+    display: block;
+    padding: 10px 0;
+    padding-left: 30px !important;
+    padding-right: 10px;
+    background: #FDF7F4;
+    margin-top: 25px !important;
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+.feedback-false-top {
+    display:  block;
+    margin-bottom: 35px;
+}
+
+.feedback-true-wrap {
+    width: 100%;
+}
+
+.feedback-false-wrap {
+    width:  100%;
+}
+
+.general1, .general2, .general3 {
+    margin:  0 auto;
+    width:  100%;
+    color: white
+}
+.general1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+.general2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.whitehr {
+    width:  30px;
+    height:  2px;
+    border:  none;
+    background: white;
+}
+
+.feedback-false-title {
+    background: #f3a59f;
+    padding: 10px 0px;
+    margin: 15px;
+    text-align: center;
+}
+
+.general4 {
+    border-bottom: 1px solid #d3d3d370;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.general3 strong {
+    font-size: 20px;
+}
+
+.general3 {
+    font-size: 18px;
+}
+
+.feedback-new-arrivals-wrap {
+    background: none;
+    padding: 0;
+    margin: 0 auto;
+    width:  100%;
+    color: black !important;
+    text-align:  center;
+}
+
+.feedback-new-arrivals-top {
+    display:  block;
+    font-weight: 600;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.feedback-new-arrivals-bottom {
+    text-decoration:  underline;
+    font-weight: 400;
+}
+
+a.general-ptoduct-title.feedback-new-arrivals-wrap {}
+
+.share-the-love-ttl {
+    color: black !important;
+}
+
+a.thanksOfferBtn {
+    background: none !important;
+    margin: 0 !important;
+    text-decoration: underline !important;
+    padding-bottom: 15px !important;
+}
+.feedback-true-title {
+    display: block;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px 15px;
+}
+.feedback-ul-block li {
+    font-size: 16px !important;
+}
+
+.feedback-block-explanetion {
+    font-size: 16px;
+}
+
+.feedback-block-rows img {
+    padding-top: 7px;
+}
+.feedback-text-center {
+    text-align: center;
+    padding: 0 5px;
+    font-size: 16px;
+}

@@ -1,0 +1,210 @@
+/*order tracking*/
+
+.progress-bar li.complate:before {
+  background-image: none; 
+}
+
+.estimated-delivery {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 3px solid #D3878B;
+}
+
+.estimated-delivery span {
+  margin-right: 5px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.estimated-delivery p {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.ot-delivery {border-bottom: 1px solid #ECECEC;padding-bottom: 15px;margin-bottom: 40px;}
+
+.ot-delivery-details {
+  display: block;
+  padding: 3px 0;
+}
+
+.progress-bar li.current:before {
+    border-width: 0px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    top: -22px;
+    left: 40px;
+}
+
+.progress-bar li span {
+    color: white;
+    z-index: 9999999999;
+    position: absolute;
+    top: -6px;
+    left: 48px;
+}
+
+.progress-bar li {
+    position: relative;
+}
+
+.progress-bar .current span {
+    display: block;
+    left: 40px;
+    top: -8px;
+    font-size: 22px;
+}
+
+.progress-bar span {
+    display: none;
+}
+
+.progress-bar .complate span {
+    display: block;
+}
+
+ul.progress-bar li:nth-child(2) span {
+    left: 50px;
+}
+
+.progress-bar li.current:nth-child(2) span {
+    left: 43px;
+}
+.progress-bar li.current:nth-child(4) span {
+    left: 40px;
+    top: -9px;
+}
+
+ul.progress-bar li:nth-child(3) span {
+    left: 48px;
+}
+
+ul.progress-bar li.current:nth-child(3) span {
+    left: 40px;
+}
+
+ul.progress-bar li:nth-child(5) span {
+    left: 38px;
+    top: -5px;
+    font-size: 17px;
+}
+
+.ot-box .thanksOrderTextWrap {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+}
+
+.ot-box .prod_desc p {
+    padding: 0;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.ot-box .inscrip-val {
+    width: auto;
+    font-weight: 400;
+}
+
+.ot-box .inscrip-name {
+  font-weight: 600;
+}
+
+.ot-box .shippingCostLine2 {
+  float: right;
+}
+
+.ot-box .totalCostLine2 {
+  float: right;
+}
+
+.ot-box .itemLine2 {
+    float: right;
+}
+
+.ot-box .order-item {
+    display: block;
+    border-bottom: 1px solid #eee;
+    margin: -10px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.ot-box .thanksOrderBox {
+    border: 1px solid #eee;
+    padding: 15px;
+}
+
+.ot-box .ETALineWrap {
+    display: none;
+}
+
+.ot-box .thanksOrderCode {
+    width: auto;
+}
+
+.ot-box .prod_img {
+    text-align: center;
+}
+
+.ot-box .thanksOrderText {
+    width: auto !important;
+}
+
+.ot-box .order-item strong {
+    float: right;
+}
+
+.ot-content {
+  line-height: 0.8;
+  border-bottom: none;
+}
+
+.ot-box .prod_desc p:first-child {
+  padding-top: 10px;
+}
+
+.progress-bar li:before {
+  background-color: #E7E7E7;
+  top: -15px;
+  border: none;
+}
+
+ul.progress-bar {
+  background-color: #E7E7E7;
+  height: 4px;
+  margin-bottom: 30px;
+}
+
+li.text-complate {
+  color: #000;
+  font-weight: 600;
+}
+
+#m_tablePageLayoutOrderTracking td.OrderTrackingPostSaleMsg {
+  background-color: #25727C;
+  color: #fff;
+  border: none;
+  padding: 15px 0;
+}
+
+#progress-bg {
+    height: 4px;
+}
+
+.ot-tooltip-btn {
+    background-color: #000;
+}
+
+.order-tracking-cta-wrap {
+    padding: 15px;
+    text-align: center;
+}
+
+.order-tracking-cta-wrap a.order-tracking-cta {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+}

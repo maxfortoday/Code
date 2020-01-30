@@ -1,0 +1,10 @@
+<script>
+  var appended = $('.new-hp-blog-content-wrap p');
+  var stripHere = 120;
+
+  for(var i = 0 ; i < appended.length ; i++) {
+    var text= $(appended[i]).text();
+    var shortText = text.substring(0, stripHere) + "...";
+    $(appended[i]).text(shortText);
+  }
+</script>

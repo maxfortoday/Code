@@ -1,0 +1,56 @@
+lpTag.sdes = lpTag.sdes||[];
+lpTag.sdes.push(
+   {
+        "type": "cart",  //MANDATORY
+        "total": 11.7,  //TOTAL VALUE OF THE CART AFTER DISCOUNT
+        "currency": "USD",  //CURRENCY CODE
+        "numItems": 6,  //NUMBER OF ITEMS IN CART
+        "products": [{
+            "product": {
+            "name": "prod1",  //PRODUCT NAME
+            "category": "category",  //PRODUCT CATEGORY NAME
+            "sku": "sku",  //PRODUCT SKU OR UNIQUE IDENTIFIER
+            "price": 7.8  //SINGLE PRODUCT PRICE
+            }, "quantity": 1  //NUMBER OF PRODUCTS
+        }]
+   }
+);
+
+
+lpTag.sdes = lpTag.sdes||[];
+lpTag.sdes.push(
+   {
+        "type": "purchase",  //MANDATORY
+        "total": 11.7,  //TOTAL VALUE OF THE TRANSACTION AFTER DISCOUNT
+        "currency": "USD",  //CURRENCY CODE
+        "orderId": "DRV1534XC",  //UNIQUE ORDER ID OR RECEIPT ID
+        "cart":{
+            "products": [{
+                 "product": {
+                      "name": "antivirus pro plan",  //PRODUCT NAME
+                      "category": "software",  //PRODUCT CATEGORY NAME
+                      "sku": "xyz001",  //PRODUCT SKU OR UNIQUE IDENTIFIER
+                      "price": 7.8  //SINGLE PRODUCT PRICE
+                 },
+            "quantity": 3  //QUANTITY OF THIS PRODUCT
+            }]
+        }
+   }
+);
+
+
+lpTag.sdes = lpTag.sdes||[];
+lpTag.sdes.push(
+   {
+        "type": "prodView",  //MANDATORY
+        "currency": "USD",  //CURRENCY CODE
+        "products": [{  //ARRAY OF PRODUCTS
+            "product": {
+                   "name": "red high heel shoe",  //PRODUCT NAME
+                   "category": "women shoes",  //PRODUCT CATEGORY NAME
+                   "sku": "xyz567",  //PRODUCT SKU OR UNIQUE IDENTIFIER
+                   "price": 77.8  //SINGLE PRODUCT PRICE
+            }
+        }]
+   }
+);

@@ -1,0 +1,65 @@
+<style>
+  .product-buy-modal-outer {
+    width: 100%;
+}
+
+.product-buy-modal {
+    width: 100%;
+}
+
+.product-buy-modal p {
+    background-color: #fff;
+    font-weight: 400;
+}
+
+.product-modal-title {
+    width: 170px;
+    margin-left: 20px;
+}
+</style>
+<script>
+  $(document).ready(function () {
+
+      var url = window.location.href;
+      window.closeModal = function () {
+          $('.product-buy-modal-wrap').fadeOut(300, function(){
+              $(this).remove();
+              $('html, body').css('overflow', '');
+          });
+          var url = window.location.href;
+          var newUrl = url.substring(0, url.indexOf("&popup=1"));
+          window.history.pushState({
+              path: newUrl
+          }, '', newUrl);
+      }
+      if (url.indexOf("popup=1") > -1) {
+          $('html, body').css('overflow', 'hidden');
+          $('.product-buy-modal-wrap').show();
+          var prodImg = $('.swiper-slide-active').length > 0 ? $('.swiper-slide-active').find('img')[0].src : $('.ProductImageCellVisible').find('img')[0].getAttribute('data-src');
+          prodImg = prodImg.replace('_big', '_small');
+          var prodName = $('.ProductTopSecondCell').find('> h1').text();
+          var buttonsString = '';
+          for (var i = 0; i < popupButtons.length ; i++) {
+                var thisName = popupButtons[i].name;
+                var thisLink = popupButtons[i].link;
+                var thisParagraph = popupButtons[i].paragraph;
+                buttonsString+= '<span style="display: block; text-align: center; margin-top: -15px;">'+ thisParagraph +'</span><a class="product-modal-buttons" href="'+thisLink+'">'+thisName+'</a>';
+            }
+          var htmlString = '<div class="product-buy-modal-outer"><div class="product-buy-modal"><span class="close-modal" onclick="closeModal()">X</span><p>Zu ihrem Warenkorb<br/>Warenkorb hinzugefügt!</p><div class="product-modal-contect clearfix"><img class="product-modal-image" src="'+prodImg+'"><div class="product-modal-title">' + prodName +'</div></div>' + buttonsString +'<a class="go-to-bag" href="ShoppingCart.aspx">Zu ihrem Warenkorb</a></div></div>';
+
+          $('.product-buy-modal-wrap').html(htmlString);
+          
+
+          $('.product-buy-modal-wrap').on('click', function(){
+              closeModal();
+          });
+
+          $('.product-buy-modal').on('click', function(ev){
+              ev.stopPropagation();
+          });
+      }
+  });
+//galley layout
+var galleryFullWidth = true;
+</script>
+<div class="product-buy-modal-wrap"></div>

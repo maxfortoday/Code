@@ -1,0 +1,383 @@
+<style type="text/css">
+/*help center*/
+.ArticleData, .NewArticle .helpCenterwrap {
+    padding:  0px !important;
+}
+.helpCenterwrap {
+    width: 100% !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+div.helpCenterBox {
+ margin: 0px;
+ padding: 0px !important;
+ display: block;
+ min-height: 10px;
+}
+.helpCenterQuestion {
+  color: #353535;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  background: #d3d3d3b0;
+  padding: 20px;
+  display: flex;
+}
+ .helpCenterQuestion.open {
+    font-size: 16px;
+    font-weight: 500;
+}
+.helpCenterQuestion:before {
+  display: inline-block;
+  font-size: 30px;
+  width: 6px;
+  height: 6px;
+  background: #d3d3d366;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: -3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.helpCenterAnswer {
+  color: #807d7d;
+  opacity: 0;
+  height: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -ms-transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  transform: none;
+  -ms-transform-origin: top;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  display: block ;
+  color: black ;
+  padding: 1px;
+}
+.helpCenterQuestion.helpCenterOpen + .helpCenterAnswer {
+    opacity: 1;
+    height: auto;
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    padding: 5px 0px;
+}
+.helpCenterAnswer a + a {
+  margin-top: 10px;
+}
+.helpCenterBox {
+    display:  block;
+}
+.breadCrumbsUL {
+    display: flex;
+    margin: 5px 0px 0px !important;
+    padding-left: 0px !important;
+}
+.breadCrumbsLI {
+    list-style: none;
+    padding-left: 10px;
+}
+.breadCrumbsLI a {
+    color:  black;
+}
+.helpCenterAnswerblock a {
+    color:  black;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    display: inline-block;
+}
+
+.helpCenterAnswerblock {
+    border-bottom: 1px solid lightgray;
+    padding:  5px 0px;
+}
+.helpCenterAnswerblock:last-child {
+    border-bottom: none;
+}
+.helpCenterBanner {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+.helpCenterQuestion img {
+    margin-right: 10px;
+ }
+.helpCenterBannerText {
+    position: absolute;
+    top: 210px;
+    font-size: 35px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.popularQuestionsh2 {
+    text-align:  center;
+    text-transform:  uppercase;
+    font-size: 20px;
+}
+
+.popularQuestionsWrap {
+    background-color: #d3d3d336;
+}
+
+ul.popularQuestionsUL {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 5px 0px;
+    padding-left: 15px;
+}
+
+.popularQuestionsLI {
+    padding: 5px 0px;
+}
+
+.popularQuestionsLI a {
+    color: black;
+}
+
+.needHelpWrap {
+    text-align:  center;
+}
+
+.needHelpWrap img {
+    margin-bottom:  -3px;
+    margin-right: 5px;
+}
+
+.contactUsSpan {
+    font-weight:  600;
+    text-transform:  uppercase;
+    text-decoration: underline;
+}
+
+.needHelpSpan {
+    font-size: 16px;
+}
+input[type="text"] {
+    margin: 0px;
+    height: 46px;
+    font-size: 16px;
+    flex: 7;
+    border: 1px solid black;
+    border-right: none;
+    padding-left: 15px;
+}
+
+.search-container {
+    text-align:  center;
+    padding: 10px 30px;
+    display: flex;
+}
+
+button {
+    flex:  1;
+    background: white;
+    border: 1px solid;
+}
+.search-container .ico-tg-search {
+    font-size: 20px;
+}
+</style>
+<div class="breadCrumbsHC">
+    <ul class="breadCrumbsUL">
+        <li class="breadCrumbsLI">
+            <a href="/">Home ></a>
+        </li>
+        <li class="breadCrumbsLI">
+            <a href="">Help Center</a>
+        </li>
+    </ul>
+</div>
+<div class="helpCenterBannerWrap">
+<img class="helpCenterBanner" src="https://cdn.m.mynamenecklace.co.uk/images/general/Banner.jpg">
+<div class="helpCenterBannerText">we are here to help</div>
+</div>
+<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><span class="ico-tg-search"></span></button>
+    </form>
+  </div>
+<div class="NewArticle-wrap"> <!-- .return-policy-wrap -->
+    <div class="NewArticle helpCenterwrap"> <!-- .NewArticle -->
+        <div class="helpCenterBox">
+            <div class="helpCenterQuestion">
+                <img src="https://cdn.m.mynamenecklace.co.uk/images/general/info_icon.png">
+            <span>Product & General info</span></div> 
+            <div class="helpCenterAnswer">
+            <div class="helpCenterAnswerblock">
+             <a href="">How To Take Care Of My Jewellery?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">What Are My Delivery Options?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">How Can I Pay For My Order?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">How To Place An Order?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">See More...</a>
+            </div>
+        </div>
+        </div>
+        <div class="helpCenterBox">
+            <div class="helpCenterQuestion">
+                <img src="https://cdn.m.mynamenecklace.co.uk/images/general/Item_Received_icon.png">
+            <span>Payment & Promo information</span></div> 
+            <div class="helpCenterAnswer">
+            <div class="helpCenterAnswerblock">
+             <a href="">My Promotional Code Doesn't Work</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">Can I Use More Than One Coupon Code?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">What Should I Do If I Receive a "Payment Didn't Go Through" Message?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">I Have A PayPal Account But I Cannot Complete The Payment</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">See More...</a>
+            </div>
+        </div>
+        </div>
+        <div class="helpCenterBox">
+            <div class="helpCenterQuestion">
+                <img src="https://cdn.m.mynamenecklace.co.uk/images/general/order_details_icon.png">
+            <span>Change Order Details</span></div> 
+             <div class="helpCenterAnswer">
+             <div class="helpCenterAnswerblock">
+             <a href="">How Can I Change My Shipping Address?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">How Can I Change An Order After Placing It?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">How Do I Change My Inscription?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">How Do I Change The Size/ Length Of My Jewellery?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">See More...</a>
+            </div>
+        </div>
+        </div>
+        <div class="helpCenterBox">
+            <div class="helpCenterQuestion">
+                <img src="https://cdn.m.mynamenecklace.co.uk/images/general/Payment_icon.png">
+            <span>Item Received</span></div> 
+             <div class="helpCenterAnswer">
+            <div class="helpCenterAnswerblock">
+             <a href="">My Jewellery Is Damaged, What Should I Do?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">My Chain Broke, What Should I Do?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">Returns & Cancellations</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">My Chain Size That I Received Is Incorrect, What Should I Do?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">See More...</a>
+            </div>
+        </div>
+        </div>
+        <div class="helpCenterBox">
+            <div class="helpCenterQuestion">
+                <img src="https://cdn.m.mynamenecklace.co.uk/images/general/Track_order_icon.png">
+            <span>Track My Order</span></div> 
+            <div class="helpCenterAnswer">
+           <div class="helpCenterAnswerblock">
+             <a href="">Why Didn't I Get An Order Confirmation?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">Where Is My Order?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">I Can't Find My Order ID Number</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">How Do I Track My Order?</a>
+            </div>
+            <div class="helpCenterAnswerblock">
+             <a href="">See More...</a>
+            </div>
+            </div>
+        </div>
+        <h2 class="popularQuestionsh2">Popular Questions</h2>
+        <div class="popularQuestionsWrap">
+            <ul class="popularQuestionsUL">
+                <li class="popularQuestionsLI">
+                    <a href="">
+                    Why Didn't I Get An Order Confirmation?
+                    </a>
+                </li>
+                <li class="popularQuestionsLI">
+                    <a href="">
+                    Where Is My Order?
+                    </a>
+                </li>
+                <li class="popularQuestionsLI">
+                    <a href="">
+                    Returns & Cancellations
+                    </a>
+                </li>
+                <li class="popularQuestionsLI">
+                    <a href="">
+                    My Chain Broke, What Should I Do?
+                    </a>
+                </li>
+                <li class="popularQuestionsLI">
+                    <a href="">
+                    How Can I Change My Shipping Address?
+                    </a>
+                </li>
+                <li class="popularQuestionsLI">
+                    <a href="">
+                    What Are My Delivery Options?
+                    </a>
+                </li>
+                <li class="popularQuestionsLI">
+                    <a href="">
+                    I Have A Special Request For My Necklace
+                    </a>
+                </li>
+                <li class="popularQuestionsLI">
+                    <a href="">
+                    I Can't Find My Order ID Number
+                    </a>
+                </li>
+                <li class="popularQuestionsLI">
+                    <a href="">
+                    Can I have 4 rings on the Russian Ring Necklace?
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="needHelpWrap">
+            <img src="https://cdn.m.mynamenecklace.co.uk/images/general/email_icon.png">
+            <span class="needHelpSpan">Still need help?</span> <span class="contactUsSpan">contact us</span>
+        </div>
+    </div> <!-- /.NewArticle -->
+</div> <!-- /.return-policy-wrap -->
+<script>
+   
+$(document).ready(function(){
+    $('.helpCenterQuestion').click(function() {
+    //$('.question').not(this).removeClass('open');
+        $(this).toggleClass('helpCenterOpen'); 
+    });
+});
+</script>

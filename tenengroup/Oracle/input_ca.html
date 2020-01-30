@@ -1,0 +1,187 @@
+RightNow.namespace('Custom.Widgets.input_ca.CustomProductCategoryInput');
+Custom.Widgets.input_ca.CustomProductCategoryInput = RightNow.Widgets.ProductCategoryInput.extend({ 
+    /**
+     * Place all properties that intend to
+     * override those of the same name in
+     * the parent inside `overrides`.
+     */
+    overrides: {
+        /**
+         * Overrides RightNow.Widgets.ProductCategoryInput#constructor.
+         */
+        constructor: function() {
+            // Call into parent's constructor
+			
+			//Subscribe to the Product/Category Change Event
+			RightNow.Event.subscribe("evt_productCategorySelected", this._onproductCategorySelected, this);			
+			this.parent();			
+        },
+		_onproductCategorySelected: function(evt, args){
+			var parentcatid = args[0].data.value;
+			var CategoryID = -1;
+			
+			setTimeout(function(){
+				var catarr = $("div.rn_CustomProductCategoryInput > a > span").html().split('<br>');
+				var catname = catarr[catarr.length-1];				
+				
+				$.getJSON( "https://mnn.custhelp.com/ci/ajaxRequestMin/getHierValues/linking/0/filter/Category/id/"+parentcatid, function( data ) {
+
+				console.log(data.result[0]);
+				_push2list(data.result[0]);
+				for(var i=0;i<_globData.length;i++){
+				  if(_globData[i].label == catname){
+						CategoryID = _globData[i].id;
+
+
+						// Change order details
+						if(CategoryID === 105) {
+							$("#txtCustomMessageToChangeMyItem").html(RightNow.Interface.getMessage("CUSTOM_MSG_PREORDER_PAYMENT_CHANGE_ITEM_MATERIAL_EN")).show();
+						}
+
+						if(CategoryID === 110) {
+							$("#txtCustomMessageToChangeMyItem").html(RightNow.Interface.getMessage("CUSTOM_MSG_PREORDER_PAYMENT_CHANGE_ITEM_MATERIAL_EN")).show();
+						}
+
+// Change address - mandatory fields
+							if (CategoryID === 106)
+							{
+								$(".csp-shipping-name, .csp-street, .csp-city, .csp-zip, .csp-country").show().css('display', 'inline-block');
+
+								$("input[name='Incident.c$ship_to']").attr('required');
+								$("input[name='Incident.c$street']").attr('required');
+								$("input[name='Incident.c$city']").attr('required');
+								$("input[name='Incident.c$zip_code']").attr('required');
+
+								$(".csp-shipping-name > div > input").attr('required', true);
+								$(".csp-street > div > input").attr('required', true);
+								$(".csp-city > div > input").attr('required', true);
+								$(".csp-zip > div > input").attr('required', true);
+
+								var eoAddress = new RightNow.Event.EventObject();
+								RightNow.Event.fire("evt_setrequiredChangeAddress", eoAddress);
+							}
+							else
+							{
+								$(".csp-shipping-name, .csp-street, .csp-city, .csp-zip, .csp-country").hide();
+
+								$("input[name='Incident.c$ship_to']").removeAttr('required');
+								$("input[name='Incident.c$street']").removeAttr('required');
+								$("input[name='Incident.c$city']").removeAttr('required');
+								$("input[name='Incident.c$zip_code']").removeAttr('required');
+
+								$(".csp-shipping-name > div > input").removeAttr('required', true);
+								$(".csp-street > div > input").removeAttr('required');
+								$(".csp-city > div > input").removeAttr('required');
+								$(".csp-zip > div > input").removeAttr('required');
+
+								var eoAddress = new RightNow.Event.EventObject();
+								RightNow.Event.fire("evt_setnotrequiredChangeAddress", eoAddress);
+							}
+
+						// Order ID field to mandatory 
+						if (CategoryID === 137 || CategoryID >= 139 && CategoryID <= 141 ) 
+						{
+							$("input[name='Incident.CustomFields.c.order_id_text_field']").attr('required');
+							$(".csp-order-id > div > input").attr('required', true);
+							var eoOrder = new RightNow.Event.EventObject();
+							RightNow.Event.fire("evt_setrequiredOrderID", eoOrder);
+						}
+						else
+						{
+							$("input[name='Incident.CustomFields.c.order_id_text_field']").removeAttr('required');
+							$(".csp-order-id > div > input").removeAttr('required');
+							var eoOrder = new RightNow.Event.EventObject();
+							RightNow.Event.fire("evt_setnotrequiredOrderID", eoOrder);
+						}
+
+						if(CategoryID === 92) {
+							$("#txtCustomMessageToChangeMyItem").html(RightNow.Interface.getMessage("CUSTOM_MSG_PREORDER_PAYMENT_DELIVERY_OPTIONS_CA")).show();
+						} else {
+							$("#txtCustomMessageToChangeMyItem").hide();
+						}
+
+						}
+					}			
+				});				
+				
+			}, 300);
+			
+			//console.log("globalScrollPosition - " + globalScrollPosition);
+			//$(document).scrollTop(globalScrollPosition);
+
+		},
+		getSubLevelResponse: function(type, args){
+			var filteredCatObjList = [];
+			var displayCategoryList = this.data.js.allAvailableCategory;
+			//console.log("category id list is: ");
+			//console.log(displayCategoryList);
+			var subCatResponseObjList = args[0].data.hier_data;
+			for(var i = 0; i < subCatResponseObjList.length; i++)
+			{
+				var catObj = subCatResponseObjList[i];
+				var catFound = this.isSubCatFoundInDisplayCatList(catObj.id,displayCategoryList);
+				if(catFound)
+				{
+					filteredCatObjList.push(catObj);
+				}
+			}
+			args[0].data.hier_data = filteredCatObjList;
+			this.parent(type,args);
+		}
+
+        /**
+         * Overridable methods from ProductCategoryInput:
+         *
+         * Call `this.parent()` inside of function bodies
+         * (with expected parameters) to call the parent
+         * method being overridden.
+         */
+        // _initializeHint: function()
+        // buildPanel: function ()
+        // _resetProductCategoryMenu: function()
+        // _updatePermissionedHierData: function (dataType)
+        // displaySelectedNodesAndClose: function(focus, fireSelectionEvent)
+        // selectNode: function(node)
+        // getSubLevelRequest: function (expandingNode)
+        // getSubLevelRequestEventObject: function(expandingNode)
+        // getSubLevelResponse: function(type, args)
+        // _setButtonClick: function()
+        // _onValidate: function(type, args)
+        // _createHintElement: function(visibility)
+        // _toggleHint: function(hideOrShow)
+        // _realignHint: function(delay)
+        // swapLabel: function(container, requiredLevel, label, template)
+        // updateRequiredLevel: function(evt, constraint)
+        // _checkSelectionErrors: function()
+        // _removeErrorMessages: function()
+        // _displayErrorMessage: function(message, currentNode)
+    },
+	
+   /**
+     * Sample widget method.
+     */
+    isSubCatFoundInDisplayCatList: function(catId,displayCategoryList) {
+		var catFound = false;
+		for(var i = 0; i < displayCategoryList.length; i++)
+		{
+			if(catId == displayCategoryList[i])
+			{
+				catFound = true;
+				break;
+			}
+		}
+		return catFound;
+    },
+	
+
+    /**
+     * Renders the `label.ejs` JavaScript template.
+     */
+    renderLabel: function() {
+        // JS view:
+        var content = new EJS({text: this.getStatic().templates.label}).render({
+            // Variables to pass to the view
+            // display: this.data.attrs.display
+        });
+    }
+});

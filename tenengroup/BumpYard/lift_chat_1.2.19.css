@@ -1,0 +1,104 @@
+#topPanel {
+  background-color: #d18281 !important;
+  background-image: url(https://cdn.mynamenecklace.co.uk/images/site/logo_header.png);
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  min-height: 60px !important;
+  background-position-y: 10px !important;
+}
+
+#divUserConnected {
+  position: absolute;
+  border: 0;
+  top: 38px;
+  padding-left: 58px;
+  padding-right: 0em;
+  padding-left: 0.5em;
+  float: left;
+}
+
+.divNodeHeader.selected {
+  border-radius: 0;
+  border: 1px solid #00000033;
+  width: 87% !important;
+  padding: 0;
+  margin: 25px auto 15px;
+}
+
+.divNodeHeader .nodeText {
+  padding: 5px 0;
+}
+
+.divNodeHeader .nodeButton:hover {
+  background-color: rgb(58, 66, 73) !important;
+}
+
+.divNodeHeader {
+  width: 90% !important;
+  margin: 0;
+  padding: 0;
+}
+
+.mainThemeColorBorder {
+  border: 1px solid #00000033 !important;
+  border-radius: 0 !important;
+  padding: 5px 0 !important;
+  height: 40px !important;
+}
+
+.mainThemeColor {
+  color: black;
+}
+
+input.BY_input:focus, textarea.BY_input:focus .BY_input_style:focus {
+  border-bottom: none !important;
+}
+
+#loginBTN {
+  text-align: center;
+}
+
+.mainThemeColorBG {
+  background-color: #000 !important;
+}
+
+.by_button, .divLoginBtn input[type=submit], .divLoginBtn button {
+  padding: 10px 80px;
+  text-transform: uppercase;
+}
+
+#loginBTN .by_button:focus, .by_button:hover {
+  color: #fff !important;
+}
+
+#divSelectedNodeTitle {
+  display: none !important;
+}
+
+.divDataEntryWrapper {
+  background-color: #fff;
+}
+
+.divNodeHeader.selected {
+  border: none;
+}
+
+.divNodeHeader .nodeButton {
+  text-align: left;
+}
+
+.divNodeHeader .nodeButton span {
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+#divHeaderImg {
+  display: none !important;
+}
+.divNodeHeader.fallThrough:not(:last-child) {
+  display: none !important;
+}
+
+.divNodeHeader.selected > .nodeButton, .divNodeHeader.selected > .nodeText {
+  border: none !important;
+}

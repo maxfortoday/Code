@@ -1,0 +1,32 @@
+<script>
+  //skeleton screen
+  var links = document.getElementsByTagName("link");
+  for (var i = 0; i < links.length; i++) {
+    if (links[i].getAttribute("rel") === "canonical") {
+    var linkUrl = links[i].getAttribute("href").toLowerCase();
+    break;
+    }
+  }
+  var checkLoader = setInterval(function(){
+    var loaderImg = document.getElementById('loader');
+    if (loaderImg) {
+      clearInterval(checkLoader);
+      if(linkUrl.indexOf("article") > -1) {
+        loaderImg.src = 'https://m.mynamenecklace.com/images/general/article_page.jpg';
+      }else if(linkUrl.indexOf("products") > -1) {
+        loaderImg.src = 'https://m.mynamenecklace.com/images/general/category_page.jpg';
+      }else if(linkUrl.indexOf("shoppingcart") > -1) {
+        loaderImg.src = 'https://m.mynamenecklace.com/images/general/shopping_cart.jpg';
+      }else if(linkUrl.indexOf("ordertracking") > -1) {
+        loaderImg.src = 'https://m.mynamenecklace.com/images/general/track_my_order.jpg';
+      }else if(linkUrl.indexOf("product") > -1) {
+        loaderImg.src = 'https://m.mynamenecklace.com/images/general/product_page.jpg';
+      }else if(linkUrl.indexOf("account") > -1) {
+        loaderImg.src = 'https://m.mynamenecklace.com/images/general/account_page.jpg';
+      }else {
+        loaderImg.src = 'https://m.mynamenecklace.com/images/general/hp.jpg';
+    }loaderImg.style.display = 'block';
+    }
+  },
+  10)
+</script> 

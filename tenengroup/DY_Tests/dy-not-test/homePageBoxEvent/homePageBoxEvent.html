@@ -1,0 +1,38 @@
+<script>
+     // MB home page box event
+     $(document).ready(function () {
+          $('.hp-photo').each(function (index) {
+               var homePageBox = $($('.hp-photo')[index]);
+               var homePageBoxNum = index + 1;
+               var homePageBoxUrl = homePageBox.closest('a').attr('href');
+               $(homePageBox).on('click', function () {
+                    ga('send', {
+                         hitType: 'event',
+                         eventCategory: 'homepage',
+                         eventAction: 'click',
+                         eventLabel: 'box' + homePageBoxNum + homePageBoxUrl
+                    });
+               })
+          });
+     })
+</script>
+
+
+<script>
+     // DT home page event
+     $(document).ready(function () {
+          $('.hp-img').each(function (index) {
+               var homePageBox = $($('.hp-img')[index]);
+               var homePageBoxNum = index + 1;
+               var homePageBoxUrl = homePageBox.closest('a').attr('href');
+               $(homePageBox).on('click', function () {
+                    ga('send', {
+                         hitType: 'event',
+                         eventCategory: 'homepage',
+                         eventAction: 'click',
+                         eventLabel: 'box' + homePageBoxNum + homePageBoxUrl
+                    });
+               })
+          });
+     })
+</script>

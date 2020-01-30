@@ -1,0 +1,65 @@
+/*special font*/
+@font-face {
+  font-family: 'AlwaysInMyHeart_fix';
+  src: url('/webfonts/AlwaysInMyHeart_fix.eot');
+  src: url('/webfonts/AlwaysInMyHeart_fix.svg') format('svg'),
+       url('/webfonts/AlwaysInMyHeart_fix.woff') format('woff'),
+       url('/webfonts/AlwaysInMyHeart_fix.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'AutumnChant_fix';
+  src: url('/webfonts/AutumnChant_fix.eot');
+  src: url('/webfonts/AutumnChant_fix.svg') format('svg'),
+       url('/webfonts/AutumnChant_fix.woff') format('woff'),
+       url('/webfonts/AutumnChant_fix.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'ScriptBoldMT_fix';
+  src: url('/webfonts/ScriptBoldMT_fix.eot');
+  src: url('/webfonts/ScriptBoldMT_fix.svg') format('svg'),
+       url('/webfonts/ScriptBoldMT_fix.woff') format('woff'),
+       url('/webfonts/ScriptBoldMT_fix.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'TGCarrieFix3';
+  src: url('/webfonts/TGCarrieFix3.eot');
+  src: url('/webfonts/TGCarrieFix3.svg') format('svg'),
+       url('/webfonts/TGCarrieFix3.woff') format('woff'),
+       url('/webfonts/TGCarrieFix3.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'OldEnglishTextMT';
+  src: url('/webfonts/OldEnglishTextMT.eot');
+  src: url('/webfonts/OldEnglishTextMT.svg') format('svg'),
+       url('/webfonts/OldEnglishTextMT.woff') format('woff'),
+       url('/webfonts/OldEnglishTextMT.ttf')  format('truetype');
+}
+
+/* sigmiture */
+.DataEntryBox input[id^="4634"], .DataEntryBox input[id^="5378"], .DataEntryBox input[id^="5379"], .DataEntryBox input[id^="5598"], .DataEntryBox input[id^="5956"] {
+  font-family: 'AutumnChant_fix';
+}
+
+/* Infinity */
+.DataEntryBox input[id^="3598"], .DataEntryBox input[id^="3650"], .DataEntryBox input[id^="4298"], .DataEntryBox input[id^="5598"], .DataEntryBox input[id^="5588"], .DataEntryBox input[id^="4494"] {
+  font-family: 'ScriptBoldMT_fix';
+}
+
+/* Chloe */
+.DataEntryBox input[id^="3352"], .DataEntryBox input[id^="3562"], .DataEntryBox input[id^="3647"], .DataEntryBox input[id^="5616"], .DataEntryBox input[id^="5594"] {
+  font-family: 'AlwaysInMyHeart_fix';
+}
+
+/* Carrie */
+.DataEntryBox input[id^="1318"], .DataEntryBox input[id^="2074"], .DataEntryBox input[id^="3634"], .DataEntryBox input[id^="5600"], .DataEntryBox input[id^="1427"], .DataEntryBox input[id^="2070"] {
+  font-family: 'TGCarrieFix3';
+}
+
+/* Megan */
+.DataEntryBox input[id^="1192"], .DataEntryBox input[id^="2008"], .DataEntryBox input[id^="1194"], .DataEntryBox input[id^="1195"] {
+  font-family: 'OldEnglishTextMT';
+}

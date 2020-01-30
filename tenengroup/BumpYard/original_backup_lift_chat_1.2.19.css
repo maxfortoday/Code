@@ -1,0 +1,645 @@
+div {
+  word-break: break-word !important;
+}
+
+a, a:hover {
+  text-decoration:none;
+  color:unset !important;
+}
+#divMessages > div.divResponse.divManagerResponseWrapper.pull-left.text-left.startConversationMessage > section > div.row > div > div > h4 {
+  display: none;
+}
+
+
+.divDataEntryWrapper {
+
+  padding-top: 10px;
+}
+
+
+.brandHeaderImage img, .divManagerResponse img, .divSubStreamsStateMessage img, .startMessage .brandHeaderImage img {
+  
+  border-radius: 50%;
+}
+
+
+
+#divMessages {
+  overflow-x: hidden !important;
+  
+}
+
+
+.singleInputButton {
+
+  top: 0.9em !important;
+  right: 1em !important;
+}
+
+
+
+.divUserResponse {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px !important;
+  margin-top: 7px !important;
+  border-radius: 0 !important;
+
+ 
+}
+
+
+br {display:none !important;}
+
+.brandHeaderImage br {display:block !important;}
+
+.divInputClose.mainThemeColorBG {
+  background-color: red;
+}
+
+#divArrowScrollBottom .icon-circle-down {
+ 
+  display: none;
+}
+
+#divPoweredBy {
+  height: 1.2em !important;
+  z-index: 5000000;
+  left:0;
+}
+
+.divSendMessage .BY_validation_text {
+  background-color: #ee1336 ;
+  font-size: 14px;
+  width: auto;
+  margin: 0;
+  border-radius: 0px;
+  color: white;
+  width:100%;
+  padding: 2px 0;
+}
+
+.divSendMessageButton.singleInputButton span.mainThemeColor.icon-circle-left {
+  color: #3a4249;
+}
+
+#text--__--case4--__--streamId--__--0_wrapper > label.formLabel.BY_label.divAppFormInputField {display:none;}
+
+
+.icon-wheel {display:none;}
+
+
+
+#divApp {
+  background-color: #e9eef4;
+/*  height: calc((100% - 73px) - 1em) !important; gabi */
+    height: calc((100% - 105px) - 1em) !important;
+
+  margin-bottom: 0px;
+}
+
+
+
+.createdTimeDays h3 {
+  background-color: #b25b5e!important;
+  color: #fff !important;
+  padding: 5px 15px;
+  font-size: 12px;
+}
+
+
+
+
+#loginWrapper {
+  padding-top: 65px;
+  background-color: #ffffff;
+  
+}
+
+
+#divHeader > div > section > div.row {
+  padding-top: 0 !important;
+}
+
+
+
+#divHeader > div > section {
+  box-shadow:none !important;
+  padding:0;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+
+#divHeader > div {
+  
+  padding-top: 0 !important;
+  padding-bottom:0px;
+  
+}
+
+.BY_input.BY_input_block {
+  border-bottom: 1px solid #00000033 !important;
+   color: #333333;
+  text-align: center;
+
+}
+
+
+.BY_input, .BY_input_style {
+ 
+}
+
+
+input.BY_input:focus, textarea.BY_input:focus .BY_input_style:focus {
+ 
+  border-bottom: 1px solid #3a74f6 !important;
+}
+
+
+.BY_label_focus {
+color:#3792f7 ;
+font-size:13px;
+}
+
+.BY_login_formInput {
+  
+  padding: 0;
+}
+
+
+.BY_label {
+  font-weight: normal;
+  color: #393939  ;
+  
+}
+
+.BY_validation_text {
+  color: #ffffff;
+  font-weight: normal;
+  text-align: center;
+  background-color: #fd3b50;
+  border-radius: 5px;
+  font-size: 0.9em; ;
+  
+}
+
+#divHeader {
+    background-color: #d18281 ;
+}
+
+
+#divHeader > div {
+ 
+  height: auto !important;
+  padding-top: 10px;
+}
+
+.he_fix {
+
+}
+
+
+}
+
+#divHeader > div > section {
+   background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+
+  
+}
+
+
+  section.mainThemeColorBG.divUserResponse.pull-right small {
+  color: black;
+  padding-top: 10px;
+}
+
+.h4CreatedTime {color:#89919a  }
+
+
+.childOption {
+  
+  color: rgb(83, 90, 96) !important;
+
+  }
+
+.childOption:hover {
+  color: #ffffff !important;
+  background: linear-gradient(90deg, rgb(58, 66, 73) 98%, rgb(58, 66, 73) 98%, rgb(58, 66, 73) 100%) !important;    
+}
+
+section.mainThemeColorBG.divUserResponse.pull-right .createdTime>h4 {
+  color: black;
+}
+
+
+@media (max-width: 600px) {
+  
+  .childOption {
+  
+  margin-top: 4px !important;
+  color: rgb(83, 90, 96) !important;
+  border-radius: 5px !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px !important;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 98%, #3a4249 95%, #3a4249 100%);   
+  padding: 0.7em 1em;
+  }
+
+.childOption:hover {
+  color: #ffffff !important;
+background: linear-gradient(90deg, rgb(30, 63, 158) 98%, rgb(30, 63, 158) 98%, rgb(30, 63, 158) 100%);
+
+}
+
+  
+  
+  
+.childOption.mainThemeColor.mainThemeColorBorder {
+ 
+  border-bottom-width: 1px !important;
+}
+
+.childOption.mainThemeColor.mainThemeColorBorder:first-child {
+  margin: -7px 15px 0 15px !important;
+}
+
+
+
+.childOption.mainThemeColor.mainThemeColorBorder {
+  text-align: left;
+  float: left;
+   max-width:100% !important;
+   border: 1px solid white !important;
+}
+  
+  
+
+
+}
+
+
+
+small {
+  font-size: 14px !important;
+  color:rgb(83, 90, 96);
+}
+
+._2lqh {
+  width: 100%;
+  display: none;
+}
+
+iframe {border:none;}
+
+.divManagerResponse h4.h4UserName {
+  color: #f7931e  !important;
+  
+}
+
+#loginDiv{
+padding: 0px 25px 0 25px;
+  background-color: #ffffff66;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  
+}
+
+input.BY_input, textarea.BY_input, .BY_input_style {
+  border-bottom: 1px solid #5c5c5c6b !important;
+}
+
+#divHeader > div > section > div.row > div > small > div > p > img {
+  position: fixed;
+  top: 21px;
+  width: 100%;
+  right: 0;
+}
+
+
+#divHeader > div {
+  margin: 0;
+  height: 137px;
+  padding-bottom: 10px;
+}
+
+.divResponse a {
+  color: initial;
+}
+
+
+#content:last-child .divOptionsWrapper {
+  padding: 0;
+}
+
+.mainThemeColorBorder {
+
+  border: 1px solid #ffffff !important;
+}
+
+
+
+#divFooter {
+
+  box-shadow: 0 0 10px 1px rgba(0,0,0,.2)!important;
+}
+
+#captcha > img {
+  display: block;
+  margin: auto;
+}
+
+#captcha {
+  text-align: center;
+}
+
+
+.refresh-captcha {
+ 
+  color: #3a4249;
+
+  padding-top: 10px;
+}
+
+
+.overlayConfirmClose {
+  background-color: #1184ea !important;
+  border-radius: 20px !important;
+}
+
+
+.BY_label_focus {
+  transform:  none !important;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+}
+
+.BY_label {
+  display: block;
+  position: unset;
+  padding: 0;
+  transition: unset;
+  margin: 0;
+  height: 30px;
+  transform: none !important;
+  font-size: 16px;
+}
+
+input.BY_input:focus, textarea.BY_input:focus .BY_input_style:focus {
+  border: 1px solid black !important;
+}
+
+.BY_input.BY_input_block {
+  width:  240px;
+  height: 40px;
+}
+
+.BY_validation_text {
+  background-color: transparent;
+  color: #fd3b50;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+#btnRegister {
+  border-radius: 0;
+  background-color: #000!important;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff !important;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.BY_input.BY_input_block {
+  border:  1px solid #00000033 !important;
+}
+
+.mainThemeColorBG {
+  background-color: #C0C0C0 !important;
+  padding: 0;
+  box-shadow: none !important;
+}
+
+#topPanel {
+  background-color: #d18281 !important;
+  background-image: url(https://cdn.mynamenecklace.co.uk/images/site/logo_header.png);
+  background-repeat: no-repeat;
+  background-position-x: 20px;  
+/*   background-position-y: 10px; gabi*/
+/*  height: 80px;  gabi */ 
+ /* position: relative; gabi */
+  
+  min-height: 60px !important;
+  background-position-y: 10px !important;
+
+}
+
+
+#divUserConnected {
+  position: absolute; 
+  border: 0;
+  top:38px;
+  padding-left: 58px; /*gabi*/
+
+}
+
+
+
+.divManagerResponse h4.h4UserName {
+  color: black !important;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.divManagerResponse {
+  border: 1px solid #00000033;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-weight: 500;
+  padding-bottom: 0;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  
+  .childOption {
+      margin-top: 0px !important;
+      color: rgb(83, 90, 96) !important;
+      border-radius: 0 !important;
+      box-shadow:none !important;
+      background: white;
+  }
+
+  .childOption.mainThemeColor.mainThemeColorBorder {
+      border: 1px solid #00000033 !important;
+      text-decoration: none;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      font-weight: bold;
+      font-size: 13px;
+  }
+
+  .childOption.mainThemeColor.mainThemeColorBorder:first-child {
+   /*   border-top: 1px solid #00000033 !important;
+      border-top-right-radius: 5px !important;
+      border-top-left-radius: 5px !important; */
+      
+      position:relative;
+      border-top-width: 2px !important;
+  }
+
+  .pointer.childOption.mainThemeColor.mainThemeColorBorder:last-child {
+      border-bottom:  2px solid #00000033 !important;
+      border-bottom-right-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      padding-bottom: 12px;
+  }
+
+}
+
+.divInputClose {
+  display: block !important;
+}
+
+span.spnName {
+  color: black !important;
+}
+
+button#btnConfirmClose {
+  background-color: #DCDFEB !important;
+  width: 150px;
+  height: 40px !important;
+  border-radius: 50px !important;
+}
+
+button#btnUnConfirmClose {
+  background-color: #DCDFEB !important;
+  width: 150px;
+  height: 40px !important;
+  border-radius: 50px !important;
+}
+
+.pointer.childOption {
+  padding-left: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.wrapperSurveyAnswers:last-child .surveyAnswers {
+  border: 0px !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 20% !important;
+  height: 35px;
+  float: right !important;
+}
+.surveyAnswers.pull-left.surveyAnswers_left:nth-child(1) {
+  background-image: url(https://cdn.mynamenecklace.co.uk/images/site/feedback_1.png) !important;
+}
+.surveyAnswers.pull-left.surveyAnswers_right:nth-child(2) {
+  background-image: url(https://cdn.mynamenecklace.co.uk/images/site/feedback_2.png) !important;
+}
+.surveyAnswers.pull-left.surveyAnswers_left:nth-child(3)  {
+  background-image: url(https://cdn.mynamenecklace.co.uk/images/site/feedback_3.png) !important;
+}
+.surveyAnswers.pull-left.surveyAnswers_right:nth-child(4)  {
+  background-image: url(https://cdn.mynamenecklace.co.uk/images/site/feedback_4.png) !important;
+}
+.surveyAnswers.pull-left.surveyAnswers_left:nth-child(5)  {
+  background-image: url(https://cdn.mynamenecklace.co.uk/images/site/feedback_5.png) !important;
+}
+.wrapperSurveyAnswers a {
+  font-size: 0;
+}
+.surveyAnswers a {
+  color: black !important;
+}
+
+div#first_name_wrapper {
+  max-width: 240px !important;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+div#email_wrapper {
+  max-width: 240px !important;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.divTyping {
+  bottom: 59px;
+}
+
+
+
+.singleDataEntryInput {
+  min-height: auto;
+  padding: 9px 2.8em 0px 2.8em;
+  max-height: 17em;
+  margin-top: 0;
+}
+
+.divSendMessage .BY_validation_text {
+  background-color: transparent;
+  color: #f00;
+  width: 100%;
+  padding: 0px 0;
+  text-align: center;
+}
+
+span.mainThemeColor.icon-circle-right {
+  color: transparent;
+  background-image: url(https://manage.bumpyardpro.com/media/Brands/Tenencorp/module_settings/8-18/send_btn_DT_9225dafa3c.png);
+  background-size: cover;
+}
+
+.singleInputButton {
+  top: 1em !important;
+  right: 0.8em !important;
+ left: initial !important;
+}
+
+div#loginBTN {
+  padding-top: 17px;
+}
+
+.divResponse.pull-left.text-left.textContainer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.createdTime {
+  float: right;
+  padding-left: 0.7em;
+  text-align: right;
+  position: absolute;
+  top: -6px;
+  left: -11px;
+}
+
+div#divPreChatButton {
+  padding: 10px !important;
+}
+.arrow-left {
+  border-right: 11px solid #C0C0C0;
+  right: 0;
+  top: 34px;
+  display: block;
+  left: auto;
+}
+.pointer.childOption:before {
+  display: none;
+}
+
+.surveyAnswers {
+  padding: 0 !important;
+}

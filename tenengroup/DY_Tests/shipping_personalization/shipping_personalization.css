@@ -1,0 +1,186 @@
+/*shopping cart*/
+.shippingTimeFrameShoppingCart1, .shippingTimeFrameShoppingCart2, .shippingTimeFrameShoppingCart3 {
+    color: #4B8072;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+    margin-left: 20px !important;
+}
+
+@media only screen and (max-width: 812px) {
+  .shippingTimeFrameShoppingCart1, .shippingTimeFrameShoppingCart2, .shippingTimeFrameShoppingCart3 {
+      font-size: 12px;
+      margin-left: 0px !important;
+  }
+}
+
+/*article 3*/
+.shipping-table-wrap {
+    position: relative;
+}
+
+.shippingTimeFrameArticle1 {
+    position: absolute;
+    top: 105px;
+    color: #4B8072;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.shippingTimeFrameArticle2 {
+    position: absolute;
+    top: 167px;
+    color: #4B8072;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.shippingTimeFrameArticle3 {
+    position: absolute;
+    top: 229px;
+    color: #4B8072;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 812px) {
+    .shippingTimeFrameArticle1 {
+        top: 120px;
+        font-size: 12px;
+    }
+
+    .shippingTimeFrameArticle2 {
+        top: 190px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .shippingTimeFrameArticle1 {
+        top: 155px;
+        font-size: 12px;
+    }
+
+    .shippingTimeFrameArticle2 {
+        top: 225px;
+        font-size: 12px;
+    }
+}
+
+/*product page*/
+.tab-table td, .tab-table th {
+    padding: 12px 0 !important;
+}
+
+.css-panes {
+    position: relative;
+}
+
+.shippingTimeFrameProduct1 {
+    position: absolute;
+    top: 190px;
+    color: #4B8072;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.shippingTimeFrameProduct2 {
+    position: absolute;
+    top: 244px;
+    color: #4B8072;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.shippingTimeFrameProduct3 {
+    position: absolute;
+    top: 300px;
+    color: #4B8072;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 812px) {
+    .ProductShippingContainer {
+        position: relative;
+    }
+
+    .tab-table td, .tab-table th {
+        padding-bottom: 25px !important;
+    }
+    
+    .ArticleData {
+        position: relative;
+    }
+
+    .shippingTimeFrameProduct4, .shippingTimeFrameProduct5,.shippingTimeFrameProduct6 {
+        position: absolute;
+        color: #4B8072;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 12px;
+    }
+    
+    .shippingTimeFrameProduct1 {
+        top: 168px;
+        font-size: 12px;
+    }
+
+    .shippingTimeFrameProduct2 {
+        top: 265px;
+        font-size: 12px;
+    }
+
+    .shippingTimeFrameProduct3 {
+        top: 362px;
+        font-size: 12px;
+    }
+    
+    .shippingTimeFrameProduct4 {
+        top: 188px;
+    }
+
+    .shippingTimeFrameProduct5 {
+        top: 286px;
+    }
+
+    .shippingTimeFrameProduct6 {
+        top: 348px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .shippingTimeFrameProduct1 {
+        top: 190px;
+        font-size: 12px;
+    }
+
+    .shippingTimeFrameProduct2 {
+        top: 286px;
+        font-size: 12px;
+    }
+    
+    .shippingTimeFrameProduct3 {
+        top: 382px;
+        font-size: 12px;
+    }
+    
+    .shippingTimeFrameProduct4 {
+        top: 247px;
+    }
+
+    .shippingTimeFrameProduct5 {
+        top: 345px;
+    }
+
+    .shippingTimeFrameProduct6 {
+        top: 443px;
+    }
+}

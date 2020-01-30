@@ -1,0 +1,81 @@
+
+<script>
+            if (window.location.href.indexOf("popup=2") > -1) {
+               document.querySelector('html').style.display = 'none';
+            } 
+            
+            </script>
+            
+                    <div class="product-buy-modal-wrap" style="display: none;">
+                        <div class="product-card-modal">
+                            <div class="product-card-modal-carousel-wrap"></div>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                    
+                            $('.ProductDataEntryCombo').on('change', function(){
+                                var ourPrice = $('#ProductPriceRegular').text();
+                                window.localStorage.setItem('ourPrice', ourPrice);
+                            });
+                            var url = window.location.href;
+                            window.closeModal = function () {
+                                $('html').css('display', '');
+                                $('.product-buy-modal-wrap').fadeOut(300, function(){
+                                    $(this).remove();
+                                    $('html, body').css('overflow', '');
+                                    
+                                });
+                                var url = window.location.href;
+                                var newUrl = url.substring(0, url.indexOf("&popup=2"));
+                                window.history.pushState({
+                                    path: newUrl
+                                }, '', newUrl);
+                               
+                               
+                            }
+                            if (url.indexOf("popup=2") > -1) {
+                                             
+                                $('html, body').css('overflow', 'hidden');
+                                // $('.product-buy-modal-wrap').show();
+                                var prodImg = $('.swiper-slide-active').length > 0 ? $('.swiper-slide-active').find('img')[0].src : $('.ProductImageCellVisible').find('img')[0].getAttribute('data-src');
+                                var prodName = $('.ProductTopSecondCell').find('> h1').text();
+                                var prodPrice = $('.ProductPrice').text();
+                                if (localStorage.getItem('ourPrice') != null) {
+                                    prodPrice = localStorage.getItem('ourPrice');
+                                }
+                                var htmlString = `
+                                    <span class="close-modal-card" onclick="closeModal()">X</span>
+                                    <p class="product-card-modal-ttl">This product was just<br/>added to your bag</p>
+                                    <div class="product-card-modal-contect clearfix">
+                                    
+                                        <img class="product-card-modal-img" src="${prodImg}">
+                                        <div class="product-card-modal-title">${prodName}</div>
+                                        <div class="product-card-modal-price"><span></span>${prodPrice}</div></div>
+                    
+                                        <a id="view-cart" onclick="closeModal()">continue shopping </a>
+                                        <a id="goto-btn" href="/ShoppingCart.aspx?p=-1">go to bag</a>
+                                        
+                                        </div>`;
+                    
+                                       
+                    
+                                $('.product-card-modal').prepend(htmlString);
+                                
+                    
+                                $('.product-buy-modal-wrap').on('click', function(){
+                                    closeModal();
+                                });
+                    
+                                $('.product-buy-modal').on('click', function(ev){
+                                    ev.stopPropagation();
+                                });
+                            }
+                     
+                        });
+                    //galley layout
+                    var galleryFullWidth = true;
+                      
+                    </script>
+                    
+                    

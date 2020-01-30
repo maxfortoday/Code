@@ -1,0 +1,122 @@
+.prod-add-ttl {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #D18281 !important;
+  position: relative;
+  margin-top: 15px;
+  text-align: center;
+  color: #eee;
+}
+
+#productAdd1, #productAdd2 {
+  display: table-row !important;
+}
+
+.ProductAddContent #productDataEntries {
+  display: none;
+}
+.productAddLinkOpen .ProductAddCenter a {
+  width: 16px !important;
+  height: 16px !important;
+  border: 1px solid black;
+  background: url(/images/general/v_icon_mb.png) 2px 3px no-repeat !important;
+  background-size: 10px !important;
+}
+
+.ProductAddCenter a {
+  background: none !important;
+  border: 1px solid black;
+  width: 16px !important;
+  height: 16px !important;
+  margin-left: 0 !important;
+  padding: 0 !important;
+  padding-left: 13px !important;
+}
+
+.ProductAddCenter b, span.addProductLinkRibbon, span.addProductLinkLine1 b, td.productAddFooter {
+  display: none;
+}
+
+.ProductAddCenter a {
+  position: absolute;
+  z-index: 9999;
+  top: 45px;
+  left: 20px;
+}
+
+.ProductAddCenter {
+  position: relative;
+  padding: 0;
+  border: none;
+}
+
+.ProductAddContent {
+  margin: 0;
+}
+
+.prod-add-gift .ProductAddContent {
+  border-bottom: none;
+  border-top: none;
+}
+
+.addProductLink img {
+  float: left;
+  margin: 10px 5px 5px 35px;
+  width: 140px;
+}
+
+.pip-add-product-name {
+  padding-top: 35px;
+}
+
+
+.total-price-wrap {
+  padding: 20px;
+}
+
+span.sumPrice {
+  float: right;
+  font-weight: 500;
+}
+
+.addProductLinkLine2 span {
+    display: none;
+}
+
+.ControlsTable {
+  margin-bottom: 10px;
+}
+
+.addProductLink .pip-add-product-name {
+  font-size: 16px;
+}
+
+span.addProductLinkLine1 {
+  font-size: 16px;
+}
+
+.AddToCartButtonCell input[type=submit] {
+  background-image: none;
+}
+
+.ProductAddContent {
+border: 1px solid #D18281;
+}
+
+table.ProductAddContent {
+height: 140px;
+}
+
+td.ProductAddHeader {
+padding-top: 0;
+}
+
+.ControlsTable select, .ControlsTable textarea, .ControlsTable input {
+margin-bottom: 0;
+}
+
+.AddToCartButtonCell input[type=submit] {
+  padding-right: 0;
+}

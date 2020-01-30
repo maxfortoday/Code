@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	//local storage DT
+	var href = document.location.href;
+	if (href.indexOf('&ai=') > 0){
+		window.sessionStorage.setItem('is_ai', true);
+	}
+	$(document).ready(function () {
+		if(window.sessionStorage.getItem('is_ai') != 'null'){
+		$('.MainTopBanner').hide();		
+	}
+	}
+	
+
+</script>
+
+<script type="text/javascript">
+	//local storage MB
+	var href = document.location.href;
+	if (href.indexOf('&ai=') > 0){
+		window.sessionStorage.setItem('is_ai', true);
+	}
+
+	if(window.sessionStorage.getItem('is_ai') != 'null'){
+		$('.ProductTopCell').hide();		
+	}
+</script>

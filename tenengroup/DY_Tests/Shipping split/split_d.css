@@ -1,0 +1,46 @@
+.productShippingTtl {
+  text-align: center;
+  color: #9BAE98;
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.shippingInfoWrap {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #F2F2F2;
+}
+
+.shippingInfoTtl {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#ShippingType tr:nth-child(3), #ShippingType tr:nth-child(4) {
+  display: inline !important;
+}
+
+#ShippingType tr:nth-child(1), #ShippingType tr:nth-child(2) {
+  display: none !important;
+}
+
+.shippingSplit3, .shippingSplit4 {
+  display: inline !important;
+}
+
+table.ShopShip tr td {
+    width: 883px;
+}
+
+.free-shipping-wrap {
+  background: #fff !important;
+}
+
+.free-shipping-inner span span {
+  vertical-align: super;
+}
+
+.free-shipping-wrap .free-shipping-inner span {
+  font-weight: 400 !important;
+}

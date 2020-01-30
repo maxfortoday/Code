@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<link rel="canonical" href="https://www.mynamenecklace.com/category.aspx">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+<img src="https://m.mynamenecklace.com/images/General/loading.gif" id="loader">
+
+<style type="text/css">
+    label#loaderLabel {
+    display: none;
+}
+
+img#loader {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    left: auto;
+    top: auto;
+    margin-top: 67px;
+}
+</style>
+
+<script>
+//skeleton screen
+var links = document.getElementsByTagName("link");
+for (var i = 0; i < links.length; i++) {
+    if (links[i].getAttribute("rel") === "canonical") {
+        var linkUrl = links[i].getAttribute("href").toLowerCase();
+        break;
+    }
+}
+var checkLoader = setInterval(function(){
+    var loaderImg = document.getElementById('loader');
+    if (loaderImg) {
+        clearInterval(checkLoader);
+        if(linkUrl.indexOf("article") > -1) {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/article_page.jpg';
+        }else  if(linkUrl.indexOf("products") > -1) {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/category_page.jpg';
+        }else  if(linkUrl.indexOf("shoppingcart") > -1) {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/shopping_cart.jpg';
+        }else  if(linkUrl.indexOf("ordertracking") > -1) {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/track_my_order.jpg';
+        }else  if(linkUrl.indexOf("product") > -1) {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/product_page.jpg';
+        }else  if(linkUrl.indexOf("account") > -1) {
+         loaderImg.src = 'https://m.mynamenecklace.com/images/general/account_page.jpg';
+        }else {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/hp.jpg';
+        }loaderImg.style.display = 'block';
+    }
+},
+10)
+</script>
+
+<!--script>
+
+var linkUrl = $("link[rel='canonical']").attr("href").toLowerCase();
+var loaderImg = document.getElementById('loader');
+var width = $(window).width();
+    if(linkUrl.indexOf("article") > -1) {
+        if (width < 420) {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_article.jpg';
+        } else {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_article.jpg';
+        }
+        
+    }
+    else  if(linkUrl.indexOf("category") > -1) {
+        if (width < 420) {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_category.jpg';
+        } else {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_category.jpg';
+        }
+    }
+    else  if(linkUrl.indexOf("shoppingcart") > -1) {
+        if (width < 420) {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_shopping_cart.jpg';
+        } else {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_shopping_cart.jpg';
+        }
+    }
+    else  if(linkUrl.indexOf("ordertracking") > -1) {
+        if (width < 420) {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_article.jpg';
+        } else {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_article.jpg';
+        }
+    }
+    else  if(linkUrl.indexOf("product") > -1) {
+        if (width < 420) {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_product_page.jpg';
+        } else {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_product_page.jpg';
+        }
+    }
+    else {
+        if (width < 420) {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_HP.jpg';
+        } else {
+            loaderImg.src = 'https://m.mynamenecklace.com/images/general/SK_HP.jpg';
+        }
+    }
+
+
+</script-->
+
+</body>
+</html>
+

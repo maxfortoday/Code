@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?i2kvb2');
+  src:  url('fonts/icomoon.eot?i2kvb2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?i2kvb2') format('truetype'),
+    url('fonts/icomoon.woff?i2kvb2') format('woff'),
+    url('fonts/icomoon.svg?i2kvb2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-pin-alt:before {
+  content: "\e94a";
+}
+.ico-setting-1:before {
+  content: "\e921";
+}
+.ico-cart:before {
+  content: "\e93a";
+}
+.ico-location:before {
+  content: "\e948";
+}
+.ico-setting:before {
+  content: "\e992";
+}
+.ico-gift:before {
+  content: "\e99f";
+}
+.ico-star-full:before {
+  content: "\e9d9";
+}
+.ico-plus1:before {
+  content: "\ea0a";
+}
+.ico-minus1:before {
+  content: "\ea0b";
+}
+.ico-cancel-circle:before {
+  content: "\ea0d";
+}
+.ico-cross:before {
+  content: "\ea0f";
+}
+.ico-check-3:before {
+  content: "\ea10";
+}
+.ico-facebook:before {
+  content: "\ea90";
+}
+.ico-instagram:before {
+  content: "\ea92";
+}
+.ico-twitter:before {
+  content: "\ea96";
+}
+.ico-youtube:before {
+  content: "\ea9d";
+}
+.ico-pinterest:before {
+  content: "\ead1";
+}
+.ico-location1:before {
+  content: "\e949";
+}
+.ico-envelope:before {
+  content: "\e947";
+}
+.ico-location2:before {
+  content: "\e94b";
+}
+.ico-heart-light:before {
+  content: "\e920";
+}
+.ico-google-plus:before {
+  content: "\e906";
+}
+.ico-check-1:before {
+  content: "\e943";
+}
+.ico-minus:before {
+  content: "\e945";
+}
+.ico-plus:before {
+  content: "\e946";
+}
+.ico-check-2:before {
+  content: "\e944";
+}
+.ico-google-plus:before {
+  content: "\e906";
+}
+.ico-heart-o:before {
+  content: "\e90b";
+}
+.ico-heart:before {
+  content: "\e90d";
+}
+.ico-close:before {
+  content: "\e901";
+}
+.ico-tg-arrow-r:before {
+  content: "\e93c";
+}
+.ico-tg-back-to-top .path1:before {
+  content: "\e93d";
+  color: rgb(0, 0, 0);
+}
+.ico-tg-back-to-top .path2:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ico-tg-help-info:before {
+  content: "\e93f";
+}
+.ico-tg-order-2:before {
+  content: "\e940";
+}
+.ico-tg-star-lift:before {
+  content: "\e941";
+}
+.ico-tg-chevron-up:before {
+  content: "\e942";
+}
+.ico-tg-bag:before {
+  content: "\e923";
+}
+.ico-tg-burger-menu:before {
+  content: "\e926";
+}
+.ico-tg-chat:before {
+  content: "\e927";
+}
+.ico-tg-cross:before {
+  content: "\e928";
+}
+.ico-tg-fb:before {
+  content: "\e929";
+}
+.ico-tg-gift-lift:before {
+  content: "\e92a";
+}
+.ico-tg-google:before {
+  content: "\e92b";
+}
+.ico-tg-heart:before {
+  content: "\e92c";
+}
+.ico-tg-instagram:before {
+  content: "\e92d";
+}
+.ico-tg-jewelery:before {
+  content: "\e92e";
+}
+.ico-tg-lock-square:before {
+  content: "\e92f";
+}
+.ico-tg-order:before {
+  content: "\e930";
+}
+.ico-tg-pen-lift:before {
+  content: "\e931";
+}
+.ico-tg-pinterest:before {
+  content: "\e932";
+}
+.ico-tg-returns:before {
+  content: "\e933";
+}
+.ico-tg-search-lift:before {
+  content: "\e934";
+}
+.ico-tg-share:before {
+  content: "\e935";
+}
+.ico-tg-shield:before {
+  content: "\e936";
+}
+.ico-tg-tag:before {
+  content: "\e937";
+}
+.ico-tg-truck-lift:before {
+  content: "\e938";
+}
+.ico-tg-twitter:before {
+  content: "\e939";
+}
+.ico-tg-youtube:before {
+  content: "\e93b";
+}
+.ico-tg-filters:before {
+  content: "\e922";
+}
+.ico-tg-pen:before {
+  content: "\e91c";
+}
+.ico-tg-track:before {
+  content: "\e924";
+}
+.ico-tg-round_arrow:before {
+  content: "\e925";
+}
+.ico-tg-secure_payment:before {
+  content: "\e900";
+}
+.ico-tg-up_arrow:before {
+  content: "\e91b";
+}
+.ico-tg-info_green .path1:before {
+  content: "\e902";
+  color: rgb(0, 0, 0);
+}
+.ico-tg-info_green .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(210, 234, 219);
+}
+.ico-tg-info_green .path3:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-info_green .path4:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-loaction_green .path1:before {
+  content: "\e907";
+  color: rgb(0, 0, 0);
+}
+.ico-tg-loaction_green .path2:before {
+  content: "\e908";
+  margin-left: -0.7333984375em;
+  color: rgb(210, 234, 219);
+}
+.ico-tg-loaction_green .path3:before {
+  content: "\e909";
+  margin-left: -0.7333984375em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-logo:before {
+  content: "\e90a";
+}
+.ico-tg-search:before {
+  content: "\e90c";
+}
+.ico-tg-cart:before {
+  content: "\e90e";
+}
+.ico-tg-star:before {
+  content: "\e90f";
+}
+.ico-tg-track_green .path1:before {
+  content: "\e910";
+  color: rgb(209, 233, 218);
+}
+.ico-tg-track_green .path2:before {
+  content: "\e911";
+  margin-left: -2.025390625em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-track_green .path3:before {
+  content: "\e912";
+  margin-left: -2.025390625em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-track_green .path4:before {
+  content: "\e913";
+  margin-left: -2.025390625em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-track_green .path5:before {
+  content: "\e914";
+  margin-left: -2.025390625em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-track_green .path6:before {
+  content: "\e915";
+  margin-left: -2.025390625em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-track_green .path7:before {
+  content: "\e916";
+  margin-left: -2.025390625em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-track_green .path8:before {
+  content: "\e917";
+  margin-left: -2.025390625em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-track_green .path9:before {
+  content: "\e918";
+  margin-left: -2.025390625em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-track_green .path10:before {
+  content: "\e919";
+  margin-left: -2.025390625em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-track_green .path11:before {
+  content: "\e91a";
+  margin-left: -2.025390625em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-close_white .path1:before {
+  content: "\e91d";
+  color: rgb(255, 255, 255);
+}
+.ico-tg-close_white .path2:before {
+  content: "\e91e";
+  margin-left: -1.01171875em;
+  color: rgb(0, 0, 0);
+}
+.ico-tg-close_white .path3:before {
+  content: "\e91f";
+  margin-left: -1.01171875em;
+  color: rgb(0, 0, 0);
+}

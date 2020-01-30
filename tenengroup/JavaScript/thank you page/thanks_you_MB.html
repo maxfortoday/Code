@@ -1,0 +1,437 @@
+<style>
+.thank-you-wrap {
+    padding: 1em 3%;
+}
+.thanksTopLine1{
+color: #F0C8C9;
+font-size:34px;
+text-align: center;
+font-weight: 500; 
+text-transform: initial;
+}
+
+
+.thanksTopLine2{
+font-size: 17px;
+text-align: center;
+font-weight: 400; 
+text-transform: initial;
+color: #3c3b3b;
+}
+
+
+.thanksOrderTitle {
+    background-color: #f7f7f7;
+    color: #3c3b3b;
+    border-bottom: 1px solid #5d5d5d;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.thanksOrderBox {
+    border: none;
+    margin: 40px 0 40px 0;
+    padding: 1px 1px 20px;
+}
+
+.thanksContentTitle {
+    color: #3A4249;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.thanksContentText {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 15px 0;
+}
+
+.thanksContentText p{
+font-weight: 400;
+display: inline;
+}
+
+.thanksOfferBoxTitle {
+    background: #FEC9BB;
+   background: -webkit-linear-gradient(left, AntiqueWhite   , #FEC9BB   ); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(right, AntiqueWhite   , #FEC9BB   ); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(right, AntiqueWhite   , #FEC9BB   ); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(to right, AntiqueWhite   , #FEC9BB   ); /* Standard syntax (must be last) */
+  position: relative;
+  padding: 15px 0 10px 0;
+}
+
+.thanksOfferBox {
+    margin: 40px auto 20px auto;
+    padding: 0;
+    border: none;
+    text-align: center;
+}
+
+.thanksOfferTitle1 {
+    color: #3A4249;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.thanksOfferTitle2, .thanksOfferTitle2 span {
+    color: #3A4249;
+    text-transform: initial;
+    font-size: 14px;
+
+}
+
+.orderDetailsLineWrap {
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+.orderDetailsLine1 {
+    display:  inline-block;
+    width: 130px;
+}
+.shippingAddressLineWrap {
+    padding: 20px 0px;
+    font-size: 13px;
+}
+
+.hippingAddressLine1 {
+    display: inline-block;
+    width: 130px;
+}
+
+.prod_img img {
+    width: 130px;
+    height: 130px;
+}
+
+.productInfoLineWrap {
+    padding: 10px 0px;
+    border-bottom: 1px solid lightgray;
+}
+.thanksOrderCode {
+    display: inline-block;
+    width: calc(100% - 140px);
+    padding: 10px 0px;
+    vertical-align: middle;
+}
+
+.thanksOrderText {
+    display:  inline-block;
+    width:  130px !important;
+    vertical-align: middle;
+    padding: 10px 0px;
+}
+
+.prod_desc {
+    font-size:  13px;
+}
+
+.inscrip-name {
+    font-weight:  400;
+    font-size: 13px;
+}
+
+.inscrip-val {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.prod_desc p {
+    margin: 0;
+    padding-top: 3px;
+}
+
+.priceLinewrap {
+    font-size: 13px;
+}
+
+.orderCommentLineWrap {
+    padding:  20px 0px;
+    border-bottom: 1px solid lightgray;
+    font-size: 13px;
+}
+
+.orderCommentLine1 {
+    display:  inline-block;
+    width: 130px;
+}
+
+.couponLine1 {
+    display: inline-block;
+    width: 130px;
+}
+
+.discountLine1 {
+    display: inline-block;
+    width: 130px;
+}
+
+.shippingCostLine1 {
+    display: inline-block;
+    width: 130px;
+}
+
+.itemLine1 {
+    display: inline-block;
+    width: 130px;
+}
+
+.totalCostLine1 {
+    display: inline-block;
+    width: 130px;
+}
+
+.ETALine1 {
+    display: inline-block;
+    width: 130px;
+}
+
+.ETALineWrap {
+    padding-top: 5px;
+    margin-top: 15px;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid lightgray;
+    font-size: 13px;
+}
+
+.couponLineWrap {
+    padding: 5px 0px;
+    font-size: 13px;
+}
+
+.discountLineWrap {
+    padding: 5px 0px;
+    font-size: 13px;
+}
+
+.shippingCostLineWrap {
+    padding: 5px 0px;
+    font-size: 13px;
+}
+
+.itemLineWrap {
+    padding: 5px 0px;
+    font-size: 13px;
+}
+
+.totalCostLineWrap {
+    padding: 5px 0px;
+    font-size: 13px;
+}
+
+.thanksSocial {
+    display: inline-block;
+    text-align: center;
+    margin:  0 auto;
+    width: 100%;
+}
+
+.thanksSocialFB {
+    display:  inline-block;
+}
+.productLine2 {
+    font-size:  14px;
+    font-weight:  600;
+    padding-bottom: 5px;
+}
+
+.priceLine1 {
+    display:  inline-block;
+}
+
+.priceLine2 {
+    display:  inline-block;
+    font-weight: 600;
+}
+
+.costumerEmailLineWrap {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.costumerEmailLine1 {
+    display: inline-block;
+    width: 130px;
+}
+
+.shippingDescriptionLineWrap {
+    padding: 5px 0px;
+    font-size: 13px;
+}
+
+.shippingDescriptionLine1 {
+    display: inline-block;
+    width: 130px;
+}
+
+</style>
+
+
+<div class="thank-you-wrap"> <!-- .thank-you-wrap -->
+
+<div class="thanksTopImg">
+    <img src="https://cdn.m.mynamenecklace.com/images/general/check_white.png">
+</div>
+<div class="thanksTopLine1">Congratulations! </div>
+<div class="thanksTopLine2">You’ve Just Completed Your Order!</div>
+<div class="thanksOrderBox">
+        <div class="thanksOrderTitle">
+            ORDER DETAILS
+        </div>
+        <div class="orderDetailsLineWrap">
+            <span class="orderDetailsLine1">Order number:</span>
+            <span class="orderDetailsLine2"><*>ORDER_ID<*></span>
+        </div>
+        <div class="shippingAddressLineWrap">
+            <span class="hippingAddressLine1">Your Address:</span>
+            <span class="hippingAddressLine2"><*>SHIPPING_ADDRESS<*></span>
+        </div>
+        <div class="costumerEmailLineWrap">
+            <span class="costumerEmailLine1">Customer Email:</span>
+            <span class="costumerEmailLine2"><*>CUSTOMER_EMAIL<*></span>
+        </div>
+        <div class="productInfoLineWrap">
+            <*>PRODUCT_INFORMATION<*>
+        </div>
+        <div class="thanksOrderLineWrap">
+            <span class="thanksOrderMailtoText"><a href="mailto:?subject=Here's your order details from mynamenecklace!&body=Check out the order details from your recent purchase from mynamenecklace!%0d%0awe suggest saving this email or printing it out.%0d%0aorder number: <*>ORDER_ID<*>%0D%0ATotal cost: $<*>ORDER_AMOUNT<*>%0D%0AItems: <*>NUM_OF_ITEMS<*>"></a></span>
+        </div>
+               <div class="orderCommentLineWrap">
+            <span class="orderCommentLine1">Order Comments:</span>
+            <span class="orderCommentLine2"><*>ORDER_COMMENTS<*></span>
+        </div>
+        <div class="couponLineWrap">
+            <span class="couponLine1">Promotion code:</span>
+            <span class="couponLine2"><*>COUPON_NAME<*></span>
+        </div>
+        <div class="discountLineWrap">
+            <span class="discountLine1">Discount amount:</span>
+            <span class="discountLine2"><*>COUPON_DISCOUNT<*></span>
+        </div>
+        <div class="shippingCostLineWrap">
+            <span class="shippingCostLine1">Shipping Cost:</span>
+            <span class="shippingCostLine2"><*>SHIPPING_COST<*></span>
+        </div>
+        <div class="shippingDescriptionLineWrap">
+            <span class="shippingDescriptionLine1">Shipping Description:</span>
+            <span class="shippingDescriptionLine2"><*>SHIPPING_DESCRIPTION<*></span>
+        </div>
+        <div class="itemLineWrap">
+            <span class="itemLine1">Items:</span>
+            <span class="itemLine2"><*>NUM_OF_ITEMS<*></span>
+        </div>
+        <div class="totalCostLineWrap">
+            <span class="totalCostLine1">Total cost:</span>
+            <span class="totalCostLine2">$<*>ORDER_AMOUNT<*></span>
+        </div>
+        <div class="ETALineWrap">
+            <span class="ETALine1">Estimated Delivery:</span>
+            <span class="ETALine2"><*>ESTIMATED_DELIVERY<*></span>
+        </div>
+</div>
+
+<div class="thanksContentTitle">What happens next?</div>
+<div class="thanksContentText">You will receive an order confirmation to your email within one hour of placing your order.
+    <br /><p>If you do not receive this please check your spam/junk mail.</p>
+</div>
+<div class="thanksOfferBox">
+    <div class="thanksOfferBoxTitle">
+        <div class="thanksOfferTitle1">THANKS FOR SHOPPING WITH US!</div>
+        <div class="thanksOfferTitle2"> 
+        Get an Extra 15% off When You Add
+        <br />Any One Of These Styles to Your Collection! 
+        <br /><strong>Use Coupon: THANKYOU15</strong></div>
+        
+    </div>
+    <div class="thanksOfferItemsBox">
+        <*>PRODUCTS_NUM=2<*> 
+            <*>PRODUCT_ID!=4652<*>
+                <div class="thanksOfferItem">
+                    <a href="./Product.aspx?p=4652&source=ThankYouPage&c=THANKYOU15">
+                        <img alt="Products on Sale" src="https://cdn.m.mynamenecklace.com/images/Products/m_med_110-01-1424-04.jpg">
+                        <span class="thanksOfferItemDesc"><*>PRODUCT_NAME_4652<*></span>
+                    </a>
+                    <a class="thanksOfferBtn" href="./Product.aspx?p=4652&source=ThankYouPage&c=THANKYOU15">GET IT NOW</a>
+                </div>
+            <*>END_PRODUCT<*> 
+
+            <*>PRODUCT_ID=4652<*>
+                <div class="thanksOfferItem">
+                    <a href="./Product.aspx?p=4097&source=ThankYouPage&c=THANKYOU15">
+                        <img alt="Products on Sale" src="https://cdn.m.mynamenecklace.com/images/Products/m_med_101-01-733-08.jpg">
+                        <span class="thanksOfferItemDesc">Engraved Bar Necklace in 18k Gold Plating</span>
+                    </a>
+                    <a class="thanksOfferBtn" href="./Product.aspx?p=4097&source=ThankYouPage&c=THANKYOU15">GET IT NOW</a>
+                </div>
+            <*>END_PRODUCT<*> 
+
+            <*>PRODUCT_ID=4097<*>
+                <div class="thanksOfferItem">
+                    <a href="./Product.aspx?p=3231&source=ThankYouPage&c=THANKYOU15">
+                        <img alt="Products on Sale" src="https://cdn.m.mynamenecklace.com/images/Products/m_med_110-01-530-02.jpg">
+                        <span class="thanksOfferItemDesc">Personalized Dog Tag Necklace in Silver – Script</span>
+                    </a>
+                    <a class="thanksOfferBtn" href="./Product.aspx?p=3231&source=ThankYouPage&c=THANKYOU15">GET IT NOW</a>
+                </div>
+            <*>END_PRODUCT<*> 
+
+            <*>PRODUCT_ID!=4097<*>
+                <div class="thanksOfferItem">
+                    <a href="./Product.aspx?p=4097&source=ThankYouPage&c=THANKYOU15">
+                        <img alt="Products on Sale" src="https://cdn.m.mynamenecklace.com/images/Products/m_med_110-03-098-09.jpg">
+                        <span class="thanksOfferItemDesc">ID Bracelet for Men With Gold Plating</span>
+                    </a>
+                    <a class="thanksOfferBtn" href="./Product.aspx?p=4097&source=ThankYouPage&c=THANKYOU15">GET IT NOW</a>
+                </div>
+            <*>END_PRODUCT<*> 
+        <*>END_PRODUCTS<*>
+    </div>
+</div>
+<div style="padding-top:6px" class="thanksSocial">
+    <div class="thanksSocialFB">
+        
+        <a href="http://m.facebook.com/mynamenecklace" target="_blank"><img src="https://cdn.m.mynamenecklace.com/images/general/social_media_3b.png" /></a>
+    </div>
+    <div class="thanksSocialFB">
+        
+        <a href="https://www.snapchat.com/add/mynamenecklace" target="_blank"><img src="https://cdn.m.mynamenecklace.com/images/general/social_media_8b.png" /></a>
+    </div>
+    <div class="thanksSocialFB">
+        
+        <a href="http://twitter.com/mynamenecklace" target="_blank"><img src="https://cdn.m.mynamenecklace.com/images/general/social_media_5b.png" /></a>
+    </div>
+    <div class="thanksSocialFB">
+        
+        <a href="http://www.instagram.com/mynamenecklace/" target="_blank"><img src="https://cdn.m.mynamenecklace.com/images/general/social_media_6b.png" /></a>
+    </div>
+    <div class="thanksSocialFB">
+        
+        <a href="http://pinterest.com/mynamenecklace/" target="_blank"><img src="https://cdn.m.mynamenecklace.com/images/general/social_media_1b.png" /></a>
+    </div>
+</div>
+<a class="thanksShoppingBtn mnnBtn mnnBtnGray" href=".">CONTINUE SHOPPING</a>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        if($('.couponLine2').html().trim() == '') {
+            $( '.couponLineWrap' ).hide();
+            $( '.discountLineWrap' ).hide();
+        }
+        if($('.ETALine2').html().trim() == '') {
+            $( '.ETALineWrap' ).hide();
+        }
+        if($('.orderCommentLine2').html().trim() == '') {
+            $( '.orderCommentLineWrap' ).hide();
+        }
+        var x = $('.shippingCostLine2').text();
+        x = parseInt(x);
+        if( x === 0 ) {
+            $( '.shippingCostLine2' ).text("FREE");
+        }
+    });
+
+</script>

@@ -1,0 +1,46 @@
+.shippingInfoWrap {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #F2F2F2;
+}
+
+.shippingInfoTtl {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.productShippingTtl {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: -10px;
+  color: #9BAE98;
+  font-weight: 500;
+}
+
+.shippingSplit3, .shippingSplit4 {
+  display: inline !important;
+}
+
+.shippingSplit3, .shippingSplit4 {
+  display: inline !important;
+}
+
+.ShoppingCartShippingRadioButtonList li:nth-child(1), .ShoppingCartShippingRadioButtonList li:nth-child(2) {
+  display: none;
+}
+
+div#floatingArticle {
+  display: none !important;
+}
+
+.boxOverlay {
+  background: unset !important;
+}
+
+.free-shipping-inner span span {
+vertical-align: super;
+}
+
+.free-shipping-wrap {
+background: #fff !important;
+}

@@ -1,0 +1,74 @@
+<style>
+  .subscribe-ttl {
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+  
+  
+  .subscribe-text {
+      width: 75%;
+      padding: 0;
+      margin-top: 0;
+  }
+  
+  .subscribe-select {
+      display: block;
+      position: relative;
+      width: 75%;
+      margin-top: 15px;
+  }
+  
+  .subscribe-email {
+      padding-left: 10px;
+      padding: 3px;
+  }
+  
+  .subscribe-btn {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 5px;
+  }
+  
+  .subscribe-check {
+    position: absolute;
+    top: -2px;
+    border: 2px solid #000;
+    width: 22px;
+    height: 22px;
+  }
+  
+  .subscribe-check span {
+    display: none;
+    font-size: 21px;
+    color: #000;
+    margin: -2px 0 0 -1px;
+  }
+  
+  .subscribe-wrap input:checked + label .subscribe-check span {
+    display: block;
+  }
+  
+  .subscribe-teaser {
+      padding-left: 30px;
+  }
+  input#subscribe-input {
+    display: none;
+  }
+</style>
+
+<div class="subscribe-wrap">
+  <div class="subscribe-ttl">don't miss out!</div>
+  <p class="subscribe-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, quod!</p>
+  <form class="subscribe-form">
+    <input type="email" class="subscribe-email" placeholder="Email Address" />
+    <button type="button" class="subscribe-btn">Notify Me></button>
+  </form>
+  <input id="subscribe-input" type="checkbox" name="NewsletterSales" checked="checked">
+  <label for="subscribe-input" class="subscribe-select">
+      <span class="subscribe-check"><span class="ico-check-2"></span></span>
+      <span class="subscribe-teaser">
+        <strong>YES, </strong>I want to receive excusive offers, early access, and more perks!</a>
+      </span>
+  </label>
+</div>

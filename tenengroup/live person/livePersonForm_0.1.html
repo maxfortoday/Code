@@ -1,0 +1,305 @@
+<style>
+  .form1 {
+    width: 380px;
+    margin: 4em auto;
+    padding: 3em 2em 2em 2em;
+    background: #fafafa;
+    border: 1px solid #ebebeb;
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 1px 0px, rgba(0, 0, 0, 0.09804) 0px 1px 2px 0px;
+  }
+
+  .group {
+    position: relative;
+    margin-bottom: 45px;
+  }
+
+  .group input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    -webkit-appearance: none;
+    display: block;
+    background: #fafafa;
+    color: #636363;
+    width: 300px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #757575;
+  }
+
+  .group input:focus {
+    outline: none;
+  }
+
+
+  /* Label */
+
+  .group label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: all 0.2s ease;
+  }
+
+
+  /* active */
+
+  .group input:focus~label,
+  .group input.used~label {
+    top: -20px;
+    transform: scale(.75);
+    left: -2px;
+    /* font-size: 14px; */
+    color: #4a89dc;
+  }
+
+
+  /* Underline */
+
+  .bar {
+    position: relative;
+    display: block;
+    width: 300px;
+  }
+
+  .bar:before,
+  .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #4a89dc;
+    transition: all 0.2s ease;
+  }
+
+  .bar:before {
+    left: 50%;
+  }
+
+  .bar:after {
+    right: 50%;
+  }
+
+
+  /* active */
+
+  input:focus~.bar:before,
+  input:focus~.bar:after {
+    width: 50%;
+  }
+
+
+  /* Highlight */
+
+  .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+
+  /* active */
+
+  input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+  }
+
+
+  /* Animations */
+
+  @keyframes inputHighlighter {
+    from {
+      background: #000;
+    }
+
+    to {
+      width: 0;
+      background: transparent;
+    }
+  }
+
+
+  /* Button */
+
+  .form1 .button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    margin: .3em 0 1em 0;
+    width: 300px;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    letter-spacing: 1px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #3160B6;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .button:focus {
+    outline: 0;
+  }
+
+
+  /* Button modifiers */
+
+  .buttonBlue {
+    background: #000;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+  }
+
+  /* Ripples container */
+
+  .ripples {
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+  }
+
+
+  /* Ripples circle */
+
+  .ripplesCircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .ripples.is-active .ripplesCircle {
+    animation: ripples .4s ease-in;
+  }
+
+
+  /* Ripples animation */
+
+  @keyframes ripples {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    100% {
+      width: 200%;
+      padding-bottom: 200%;
+      opacity: 0;
+    }
+  }
+
+td.LeftMenu {
+    display: none;
+}
+
+.MainTopBanner {
+    display: none;
+}
+
+    td.LeftMenu,
+    .footer-collections .CopyRights,
+    .topBannerBox,
+    #template_home_banner h1:after,
+    td.ArticleSection h1:after
+    {
+        display: none;
+    }
+</style>
+
+<div class="LP-form">
+  <hgroup>
+    <h1></h1>
+  </hgroup>
+  <form class="form1">
+    <div class="group">
+      <input type="text"><span class="highlight"></span><span class="bar"></span>
+      <label>Name</label>
+    </div>
+    <div class="group">
+      <input type="email"><span class="highlight"></span><span class="bar"></span>
+      <label>Email</label>
+    </div>
+    <div class="group">
+      <input type="text"><span class="highlight"></span><span class="bar"></span>
+      <label>Order Id</label>
+    </div>
+    <button type="button" class="button buttonBlue">Submit
+      <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+    </button>
+  </form>
+</div>
+<script>
+  var onSuccess = function () {
+    // Do something with the success
+  };
+
+  var onError = function (err) {
+    // Do something with the error
+  };
+
+  var consumerData = {
+    email: "",
+    name: "",
+    orderId: ""
+  };
+
+  lpTag.agentSDK.setConsumerProfile(consumerData, onSuccess, onError);
+
+
+  $(window, document, undefined).ready(function () {
+
+    $('input').blur(function () {
+      var $this = $(this);
+      if ($this.val())
+        $this.addClass('used');
+      else
+        $this.removeClass('used');
+    });
+
+    var $ripples = $('.ripples');
+
+    $ripples.on('click.Ripples', function (e) {
+
+      var $this = $(this);
+      var $offset = $this.parent().offset();
+      var $circle = $this.find('.ripplesCircle');
+
+      var x = e.pageX - $offset.left;
+      var y = e.pageY - $offset.top;
+
+      $circle.css({
+        top: y + 'px',
+        left: x + 'px'
+      });
+
+      $this.addClass('is-active');
+
+    });
+
+    $ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function (e) {
+      $(this).removeClass('is-active');
+    });
+
+  });
+</script>

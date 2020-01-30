@@ -1,0 +1,43 @@
+<script>
+  $(document).ready(function(){ 
+      var site = 'nl';
+      var device = 'desktop';
+      var couponVal = device == 'desktop' ? $('#DiscountCodeIBREPT').val().toLowerCase() : $('#MainContent_ShoppingCartCouponTextBox').val().toLowerCase();
+  
+      $.getJSON('https://d2t3o0osqtjkex.cloudfront.net/freeGiftConfig/freeGiftCoupons.json', function (data) {
+          site = site.toLowerCase();
+          device = device.toLowerCase();
+          var couponsArr = data.gift_coupons;
+          for (var i=0; i < couponsArr.length; i++) {
+              var couponCode = data.gift_coupons[i].coupon_code.toLowerCase();
+              var couponActive = data.gift_coupons[i].coupon_active;
+              var couponStartDateStr = data.gift_coupons[i].coupon_start_date;
+              var startDateParts = couponStartDateStr.split("/");
+              var startCoupon = new Date(startDateParts[2], startDateParts[1] - 1, startDateParts[0]);
+              var startCouponNum = Date.parse(startCoupon);
+              var couponEndDateStr = data.gift_coupons[i].coupon_end_date;
+              var endDateParts = couponEndDateStr.split("/");
+              var endCoupon = new Date(endDateParts[2], endDateParts[1] - 1, endDateParts[0]);
+              var endCouponNum = Date.parse(endCoupon);
+              var today = Date.now();
+              if (couponCode  == couponVal && couponActive && startCouponNum <= today && endCouponNum > today) {
+                  var siteInfo = data.gift_coupons[i].sites;
+                  for(var j=0; j < siteInfo.length; j++) {
+                      if(siteInfo[j].site == site) {
+                          var giftImg = (device == 'desktop') ? siteInfo[j].desktop_image : siteInfo[j].mobile_image ;
+                          var giftTitle = siteInfo[j].title;
+                          var giftMsg = siteInfo[j].message;
+                          var freeGiftHtml = '<div class="shoppingFreeWrapper"><div class="shoppingFreeCell1"><img src="' + giftImg +'"></div><div class="shoppingFreeCell2"><span>' + giftTitle +'</span></div><div id="shoppingFreeActive" class="shoppingFreeCell3" style="display: inline-block;"><span class="shoppingFreePrice2">' + giftMsg + '</span></div></div>';
+                          if (device == 'desktop') {
+                              $('.MiddleMessage').prepend(freeGiftHtml);
+                          } else {
+                              $('.ShoppingCartBottomCell').prepend(freeGiftHtml);
+                          }
+                          break;
+                      }
+                  }  
+              }
+          }
+      });
+  })
+  </script>

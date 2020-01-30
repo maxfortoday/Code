@@ -1,0 +1,373 @@
+<style>
+    .new-blog-container {
+        display: grid;
+        grid-row-gap: 50px;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #EFEFEF;
+    }
+
+    .new-blog-head {
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+        margin-top: -30px;
+    }
+
+    .new-blog-img-wrap a {
+        font-size: 10px;
+        letter-spacing: 1.8px;
+        text-decoration: underline;
+        text-underline-position: under;
+        font-weight: 100;
+    }
+
+    .new-blog-content-wrap h2 {
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        font-size: 16px;
+        letter-spacing: 1.2px;
+    }
+
+    .new-blog-content-wrap p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .new-blog-CTA {
+        display: block;
+        text-align: center;
+    }
+
+    .new-blog-CTA a {
+        background: #000;
+        color: #fff;
+        padding: 15px;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .new-blog-footer .swiper-slide img {
+        width: 100px;
+    }
+
+    .new-blog-footer-slide-wrapper .swiper-slide a {
+        color: #000;
+        display: block;
+    }
+
+    .new-blog-footer-slide-wrapper .slick-prev, .new-blog-footer-slide-wrapper .slick-next {
+        color: black;
+        background: white;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 15px;
+        top: -95px;
+        position: absolute;
+        width: auto;
+        border: none;
+    }
+
+    .social-wrap-seo.new-blog-social {
+        width: 35%;
+        float: right;
+        text-align: right;
+        background: white;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    .breadCrumbsHC.new-blog-breadCrumbs {
+        width: 65%;
+        float: left;
+        padding: 10px 0;
+        border-bottom: none;
+        margin-top: 9px;
+    }
+
+    .social-wrap-seo.new-blog-social span {
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0;
+    }
+
+    .social-wrap-seo.new-blog-social .social span {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+
+    .new-blog-date {
+        text-align: center;
+        margin: -10px;
+        font-family: unna;
+        font-style: italic;
+        letter-spacing: 1.2px;
+        color: #4b4b4b;
+        font-size: 16px;
+    }
+
+    .new-blog-footer-slide-wrapper {
+        width: auto;
+        margin: 0 10px;
+    }
+
+    .new-blog-img-wrap img {
+        max-height: initial;
+    }
+
+    .new-blog-container {
+        margin: 0 10px;
+    }
+
+    .new-blog-img-wrap a {
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    .new-blog-header {
+        display: flex;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    .breadCrumbsHC.new-blog-breadCrumbs {
+        flex: 1.5;
+        border-top: none;
+        font-size: 12px;
+        margin-left: -10px;
+        line-height: 1.2;
+        letter-spacing: 0;
+        overflow: hidden;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .social-wrap-seo.new-blog-social {
+        flex: 1;
+        margin-right: 15px;
+    }
+
+    .new-blog-footer-slide-wrapper .swiper-slide a {
+        font-family: unna;
+        font-size: 17px;
+        text-align: left;
+        padding-right: 10px;
+    }
+
+    .new-blog-footer .swiper-slide span {
+        display: block;
+        text-align: left;
+        font-size: 11px;
+        letter-spacing: 1.2px;
+    }
+
+    .new-blog-footer-slide-wrapper .slick-prev {
+        left: 0;
+    }
+
+    .new-blog-footer-slide-wrapper .slick-next {
+        right: 0;
+    }
+
+    .new-blog-CTA {
+        padding-bottom: 40px;
+    }
+
+    .new-blog-header {
+        font-size: 12px;
+        font-style: inherit;
+    }
+
+    .new-blog-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .new-blog-wrap:nth-child(odd) {
+        grid-template-columns: 1fr;
+    }
+
+    .new-blog-wrap:nth-child(odd) .new-blog-img-wrap {
+        order: 1;
+        justify-content: flex-start;
+    }
+
+    .new-blog-wrap:nth-child(odd) .new-blog-content-wrap {
+        order: 2;
+    }
+
+    .related-ttl {
+        font-weight: 400;
+        display: block;
+        text-align: center;
+        padding: 20px;
+        font-family: unna;
+        font-size: 22px;
+    }
+
+@media only screen and (max-width: 320px) {
+    .social-wrap-seo.new-blog-social .social span {
+        font-size: 14px;
+        margin: 0 3px;
+    }
+}
+
+</style>
+<div class="new-blog-header">
+	<div class="breadCrumbsHC new-blog-breadCrumbs">
+		<ul class="breadCrumbsUL">
+			<li class="breadCrumbsLI">
+			<a href="/">Home &gt;</a>
+			</li>
+			<li class="breadCrumbsLI">
+			<a href="/">new-blog &gt;</a>
+			</li>
+			<li class="breadCrumbsLI">
+			<a href="/">Lorem ipsum dolor sit amet consectetur adipisicing.</a>
+			</li>
+		</ul>
+	</div>
+	<div class="social-wrap-seo new-blog-social">
+		<span>Share on:</span>
+		<a class="social" href="https://www.facebook.com/sharer/sharer.php?u=https://www.mynamenecklace.com/Article.aspx?p=8059" target="_blank">
+		<span class="ico-tg-fb"></span>
+		</a>
+		<a class="social" href="http://www.pinterest.com/pin/create/button/?guid=pY4328pWSJuJ-1&amp;url=http%3A%2F%2Fwww.mynamenecklace.com%2FArticle.aspx%3Fp%3D8059&amp;media=http%3A%2F%2Fcdn.mynamenecklace.com%2Fimages%2Fsite%2FMNN_Christmas_gifts_for_new_mom_245x450.jpg&amp;description=Christmas%20Gift%20Ideas%20for%20New%20Moms!">
+		<span class="ico-tg-pinterest"></span>
+		</a>
+		<a class="social" href="https://platform.twitter.com/widgets/tweet_button.html?count=none&amp;size=m&amp;url=http%3A%2F%2Fwww.mynamenecklace.com%2FArticle.aspx%3Fp%3D8048&amp;text=Christmas%20Gift%20Ideas%20for%20New%20Moms!&amp;hashtags=christmasgifts,giftsfornewmoms,mynamenecklace">
+		<span class="ico-tg-twitter"></span>
+		</a>
+	</div>
+</div>
+<h1 class="NewArticleTitleh1">Blog</h1>
+<div class="new-blog-container">
+	<time class="new-blog-date" datetime="2008-02-14 20:00">2019.04.15</time>
+	<span class="new-blog-head">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod exercitationem optio explicabo libero earum repellendus voluptates, reiciendis numquam a sapiente.</span>
+	<div class="new-blog-wrap">
+		<div class="new-blog-img-wrap">
+			<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+			<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+		</div>
+		<div class="new-blog-content-wrap">
+			<h2>Lorem ipsum dolor sit amet.</h2>
+			<p>
+				 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis molestias ducimus adipisci praesentium dolorum quos sit! Eius adipisci maiores explicabo? Ut recusandae neque suscipit fugit consequatur impedit excepturi praesentium, omnis officiis eos illo quas, incidunt molestias ducimus, nemo veritatis.
+			</p>
+		</div>
+	</div>
+	<div class="new-blog-wrap">
+		<div class="new-blog-img-wrap">
+			<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+			<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+		</div>
+		<div class="new-blog-content-wrap">
+			<h2>Lorem ipsum dolor sit amet.</h2>
+			<p>
+				 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis molestias ducimus adipisci praesentium dolorum quos sit! Eius adipisci maiores explicabo? Ut recusandae neque suscipit fugit consequatur impedit excepturi praesentium, omnis officiis eos illo quas, incidunt molestias ducimus, nemo veritatis.
+			</p>
+		</div>
+	</div>
+	<div class="new-blog-wrap">
+		<div class="new-blog-img-wrap">
+			<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+			<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+		</div>
+		<div class="new-blog-content-wrap">
+			<h2>Lorem ipsum dolor sit amet.</h2>
+			<p>
+				 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis molestias ducimus adipisci praesentium dolorum quos sit! Eius adipisci maiores explicabo? Ut recusandae neque suscipit fugit consequatur impedit excepturi praesentium, omnis officiis eos illo quas, incidunt molestias ducimus, nemo veritatis.
+			</p>
+		</div>
+	</div>
+	<div class="new-blog-wrap">
+		<div class="new-blog-img-wrap">
+			<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+			<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+		</div>
+		<div class="new-blog-content-wrap">
+			<h2>Lorem ipsum dolor sit amet.</h2>
+			<p>
+				 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis molestias ducimus adipisci praesentium dolorum quos sit! Eius adipisci maiores explicabo? Ut recusandae neque suscipit fugit consequatur impedit excepturi praesentium, omnis officiis eos illo quas, incidunt molestias ducimus, nemo veritatis.
+			</p>
+		</div>
+	</div>
+	<div class="new-blog-wrap">
+		<div class="new-blog-img-wrap">
+			<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+			<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+		</div>
+		<div class="new-blog-content-wrap">
+			<h2>Lorem ipsum dolor sit amet.</h2>
+			<p>
+				 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis molestias ducimus adipisci praesentium dolorum quos sit! Eius adipisci maiores explicabo? Ut recusandae neque suscipit fugit consequatur impedit excepturi praesentium, omnis officiis eos illo quas, incidunt molestias ducimus, nemo veritatis.
+			</p>
+		</div>
+	</div>
+	<div class="new-blog-wrap">
+		<div class="new-blog-img-wrap">
+			<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+			<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+		</div>
+		<div class="new-blog-content-wrap">
+			<h2>Lorem ipsum dolor sit amet.</h2>
+			<p>
+				 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis molestias ducimus adipisci praesentium dolorum quos sit! Eius adipisci maiores explicabo? Ut recusandae neque suscipit fugit consequatur impedit excepturi praesentium, omnis officiis eos illo quas, incidunt molestias ducimus, nemo veritatis.
+			</p>
+		</div>
+	</div>
+	<div class="new-blog-CTA">
+		<a href="/">
+		SHOP FOR MOM </a>
+	</div>
+</div>
+<div class="new-blog-footer">
+		<h3 class="related-ttl">Related Articles</h3>
+<div class="new-blog-footer-slide-wrapper">
+	<div class="swiper-slide">
+		<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+		<span>20.02.19</span>
+		<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+	</div>
+	<div class="swiper-slide">
+		<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+		<span>20.02.19</span>
+		<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+	</div>
+	<div class="swiper-slide">
+		<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+		<span>20.02.19</span>
+		<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+	</div>
+	<div class="swiper-slide">
+		<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+		<span>20.02.19</span>
+		<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+	</div>
+	<div class="swiper-slide">
+		<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+		<span>20.02.19</span>
+		<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+	</div>
+	<div class="swiper-slide">
+		<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+		<span>20.02.19</span>
+		<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+	</div>
+	<div class="swiper-slide">
+		<img class="lazyload" data-src="http://lift.mynamenecklace.co.uk/images/site/UK_lift_footer1.jpg" alt="blabla">
+		<span>20.02.19</span>
+		<span><a href="/">Lorem ipsum dolor sit amet adipisicing elit.</a></span>
+	</div>
+</div>
+</div>
+<!-- <script>
+    // blog
+  $('.new-blog-footer-slide-wrapper').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 4000
+  });
+</script> -->

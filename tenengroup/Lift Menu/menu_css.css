@@ -1,0 +1,156 @@
+#m_tablePageLayoutArticle .TopMenuDynamic {
+  border-bottom: 1px solid #C0C0C0;
+}
+
+#m_tablePageLayoutShoppingCart .EmptyCart {
+  border-top: 1px solid #C0C0C0;
+}
+
+#m_tablePageLayoutProduct .CategoryTitle {
+  border-top: 1px solid #C0C0C0;
+}
+
+#m_tablePageLayoutCheckOut .thankyou-wrapper {
+  border-top: 1px solid #C0C0C0;
+}
+
+.TopMenuDynamic {
+  width: 960px;
+}
+
+#menu {
+  list-style: none;
+  padding: 0;
+  width: 960px;
+  position: relative;
+  display: flex;
+  margin: 16px 0 0;
+  border-top: 1px solid #C0C0C0;
+}
+#menu > li {
+  padding: 18px 5px;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+}
+#menu > li:after {
+  content: "";
+  width: 1px;
+  height: 15px;
+  background: #C0C0C0;
+  float: right;
+  margin-top: 4px;
+}
+#menu > li:last-child:after {
+  display: none;
+}
+#menu > li .topSubMenu a {
+  font-size: 14px;
+  display: block;
+}
+#menu > li a {
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: black;
+  position: relative;
+  text-decoration: none;
+}
+
+.col-25:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 270px;
+  background-color: #F2F2F2;
+  left: -22px;
+}
+.col-25:first-child:after {
+  display: none;
+}
+.col-25 a {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.topSubMenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 10;
+  width: 960px;
+  left: 0;
+  box-sizing: border-box;
+  /* border: 1px solid #C0C0C0; */
+  box-shadow: 1px 1px 1px 1px lightgray;
+  overflow: hidden;
+  text-align: left;
+  padding: 30px;
+  margin-top: 15px;
+  cursor: default;
+}
+
+.submenu:hover > .topSubMenu {
+  display: block;
+}
+
+a.read-more .hp-text-2line {
+  padding-top: 10px;
+}
+a.sub-title {
+  font-weight: 600 !important;
+}
+a.drop_empty img {
+  width: 250px;
+}
+
+#menu   .col-25 {
+  width: 23%;
+  margin-right: 2%;
+  float: left;
+  position: relative;
+}
+
+ a {
+  color: black;
+  font-weight: 400;
+}
+
+ -img img {
+  padding-bottom: 10px;
+}
+
+ a.read-more {
+  text-align: center;
+  clear: both;
+  font-family: Una;
+  font-weight: 600 !important;
+  padding-left: 10px !important;
+}
+#menu  .col-25-img {
+    display: block;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+.col-25-img a {
+    padding: 0;
+}
+
+.col-25 a {
+    padding: 0 0 10px;
+    font-size: 14px;
+    display: block;
+}
+
+.submenu:hover label.arrow:after {
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 20px;
+    border-radius: 44%;
+    height: 30px;
+    background-color: #d5d5d5;
+}

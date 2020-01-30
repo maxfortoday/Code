@@ -1,0 +1,22 @@
+<script>
+
+
+if($('#2000IBREPT0').length > -1) {
+  var giftBoxPlaceHolder = document.getElementById('giftBoxPlaceHolder').innerText;
+  $('#2000IBREPT0').attr('placeholder', giftBoxPlaceHolder);
+}
+</script>
+
+<span style="display: none;" id="giftBoxPlaceHolder">Some New Text</span>
+
+
+
+<script>
+
+  if($("textarea[id*='Gift_message']").length > 0) {
+    var giftBoxPlaceHolder = document.getElementById('giftBoxPlaceHolder').innerText;
+    $("textarea[id*='Gift_message']").attr('placeholder', giftBoxPlaceHolder);
+  }
+
+
+  </script>

@@ -1,0 +1,618 @@
+<style>
+  .new-blog-wrap {
+        display: block !important;
+    }
+
+    .new-blog-img-wrap img {
+        width: 100%;
+        height: auto;
+    }
+    .ArticleTitle h1 {
+        margin-left: 0;
+    }
+
+    .ArticleTitle h1:after {
+        width: 960px;
+        left: 0;
+    }
+    .steve-icons-wrap [class*="steve-icon"] {
+        display: none;
+    }
+    
+    .steve-img-wrap:hover [class*="steve-icon"] {
+        display: block;
+    }
+    
+    .steve-icons-wrap [class*="steve-icon"] {
+        position: absolute;
+        font-size: 18px;
+        color: #000;
+        background: #fff;
+        padding: 5px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    [class*="steve-carousel-icon"] {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      font-size: 20px;
+      color: #000;
+      background: #fff;
+      padding: 5px;
+      cursor: pointer;
+  }
+    
+    .new-blog-img-wrap.steve-img-wrap {
+        position: relative;
+    }
+
+    .steve-icon1 {
+        bottom: 275px;
+        right: 275px;
+    }
+    
+    .steve-icon2 {
+        bottom: 172px;
+        left: 276px;
+    }
+    
+    .steve-icon3 {
+        bottom: 240px;
+        left: 442px;
+    }
+    
+    .steve-icon4 {
+        top: 127px;
+        left: 491px;
+    }
+    
+    .steve-icon5 {
+      bottom: 68px;
+      left: 600px;
+    }
+    
+    .steve-icon6 {
+        bottom: 194px;
+        left: 651px;
+    }
+    
+    .steve-icon7 {
+        bottom: 200px;
+        left: 815px;
+    }
+
+    .steve-icon8 {
+        top: 108px;
+        left: 357px;
+    }
+
+    .steve-icon9 {
+        top: 50px;
+        left: 529px;
+    }
+
+    .steve-icon10 {
+        top: 100px;
+        left: 637px;
+    }
+
+    .steve-icon11 {
+        top: 100px;
+        left: 739px;
+    }
+
+    .steve-icon12 {
+        bottom: 200px;
+        left: 95px;
+    }
+
+    .steve-icon13 {
+        bottom: 168px;
+        left: 215px;
+    }
+
+    .steve-icon14 {
+        bottom: 82px;
+        left: 315px;
+    }
+
+    .steve-icon15 {
+        bottom: 200px;
+        left: 515px;
+    }
+
+    .steve-icon16 {
+        bottom: 130px;
+        left: 315px;
+    }
+    
+    .steve-container {
+        position: absolute;
+        z-index: 99999;
+        top: calc(100% - (50% + 175px));
+        left: calc(100% - (50% + 142.5px));
+        background: #fff;
+    }
+    
+    .steve-container a {
+        color: #fff;
+        background: #000;
+        text-align: center;
+        font-size: 16px;
+        padding: 15px;
+        margin: 15px 90px;
+        text-decoration: none;
+    }
+    
+    .steve-container img {
+        width: 145px;
+        height: 145px;
+        display: block;
+        margin: 20px auto;
+        margin-bottom: 0;
+    }
+    
+    .steveName {
+        width: 350px;
+        padding: 0 20px;
+        text-align: center;
+        cursor: default;
+    }
+    
+    .steveClose {
+        position: absolute;
+        right: 0;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .steveClose.steveCloseCarousel {
+        top: 172px;
+        right: 55px;
+        z-index: 999;
+    }
+
+    ul.steve-carousel-wrap img {
+        width: 145px;
+        height: 145px;
+        margin: 10px auto;
+    }
+
+    ul.steve-carousel-wrap a {
+        text-decoration: none;
+    }
+
+    .steve-carousel-wrap {
+    width: 850px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    position: absolute;
+    top: calc(100% - (50% + 120px));
+    left: calc(100% - (50% + 425px));
+    background-color: #fff;
+    }
+
+    .steve-carousel-wrap ul.slick-dots li, .hp-top-banner-carausel ul.slick-dots li {
+        display: none;
+    }
+    .steve-carousel-link {
+        background-color: #000;
+        color: #fff !important;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        margin: 10px 50px;
+        height: 40px;
+        padding-top: 9px;
+    }
+
+    .steve-carousel-wrap .slick-next {
+        right: 10px;
+    }
+
+    .steve-carousel-wrap .slick-prev {
+        left: 10px;
+    }
+
+    .steve-handler-icon {
+      opacity: 0.5;
+      pointer-events: none;
+      cursor: default;
+    }
+
+    /*video style*/
+    .play-video {
+        display: flex;
+        padding-top: 5px;
+        color: #6B97D5;
+        text-decoration: underline;
+    }
+    
+    .play-video img {
+        padding-right: 5px;
+    }
+    </style>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+    <div class="new-blog-container">
+      <time class="new-blog-date" datetime="2019-05-13 20:00">2019.05.13</time>
+    
+    <span class="new-blog-head" style="width:960px;">
+    <img class="lazyload" data-src="https://cdn.mynamenecklace.com/images/site/my-name-necklace-steve-harvey.jpg" alt="MyNameNecklace on Steve Harvey's Show" title="MyNameNecklace on Steve Harvey's Show">
+      </br>
+    Mothers should be celebrated more than just once a year, therefore a gift that she can wear all year round is just the right, meaningful way to spoil and indulge the mother figure in your life to assure her how unique and special she is. At <a href="https://www.mynamenecklace.com/">MyNameNecklace</a>, personalized necklaces and other jewelry pieces are made, and is just the right way to capture a mother’s personality effortlessly.
+    </span>
+      <div class="new-blog-wrap steve-wrap">
+        <div class="new-blog-img-wrap steve-img-wrap">
+          <img class="steve-img lazyload" data-src="https://cdn.mynamenecklace.com/images/site/3d-bar-necklace-gold-plating_8133.jpg" alt="Engraved 3D Bar Necklace">
+          <div class="steve-icons-wrap">
+              <span class="ico-tg-tag steve-carousel-icon1"> 1</span>
+              <span class="ico-tg-tag steve-icon1"></span>
+            </div>
+        </div>
+        <div class="new-blog-content-wrap">
+          <h2>A SURPRISE THAT WILL NEVER BE FORGOTTEN</h2>
+          <p>
+             With Mother’s Day just around the corner, The Hill family deiced to reach out to Steve Harvey for help in planning the perfect Mother’s Day for their beloved mother. Harvey is the host of the American television show, ‘Steve’, which first aired in 2017 and is picked up in ninety percent of the United States. In different segments, Steve enjoys assisting people in helping put a smile on their loved one’s face. When the Hills approached Steve, he knew the perfect way to help: one-of-a-kind personalized jewelry from MyNameNecklace.
+          </p>
+        </div>
+      </div>
+      <div class="new-blog-wrap steve-wrap">
+        <div class="new-blog-img-wrap steve-img-wrap">
+          <img class="steve-img lazyload" data-src="https://cdn.mynamenecklace.com/images/site/custom-necklaces-steve-harvey.jpg" alt="MyNameNecklace on Steve Harvey's Show">
+          <div class="steve-icons-wrap">
+            <span class="ico-tg-tag steve-carousel-icon2"> 6</span>
+            <span class="ico-tg-tag steve-icon2"></span>
+            <span class="ico-tg-tag steve-icon3"></span>
+            <span class="ico-tg-tag steve-icon4"></span>
+            <span class="ico-tg-tag steve-icon5"></span>
+            <span class="ico-tg-tag steve-icon6"></span>
+            <span class="ico-tg-tag steve-icon7"></span>
+          </div>
+        </div>
+        <div class="new-blog-content-wrap">
+          <h2>UNIQUE GIFTS</h2>
+          <p>
+             At MyNameNecklace, one may choose from exquisite <a href="/Product.aspx?p=5241">necklaces</a></span>, bracelets, rings, and even <a href="/Product.aspx?p=3650">infinity jewelry items</a>. One may personalize their desired piece with names of his or her loved ones, a significant date, or any other meaningful message. One even has the option to add their birthstones. 
+          </p>
+        </div>
+      </div>
+      <div class="new-blog-wrap steve-wrap">
+        <div class="new-blog-img-wrap steve-img-wrap">
+          <img class="steve-img lazyload" data-src="https://cdn.mynamenecklace.com/images/site/personalized-jewelry-steve-harvey.jpg" alt="MyNameNecklace on Steve Harvey's Show">
+          <div class="steve-icons-wrap">
+              <span class="ico-tg-tag steve-carousel-icon3"> 7</span>
+              <span class="ico-tg-tag steve-icon8"></span>
+              <span class="ico-tg-tag steve-icon9"></span>
+              <span class="ico-tg-tag steve-icon10"></span>
+              <span class="ico-tg-tag steve-icon11"></span>
+              <span class="ico-tg-tag steve-icon12"></span>
+              <span class="ico-tg-tag steve-icon13"></span>
+              <span class="ico-tg-tag steve-icon14"></span>
+            </div>
+        </div>
+        <div class="new-blog-content-wrap">
+          <h2>A TOUCHING GIFT FOR MOM</h2>
+          <p>
+             Mrs. Hill received the most expressive gift of an entire jewelry box filled with the most precious personalized jewelry. When asked by Harvey how she is enjoying her presents she claimed with joy, “I was completely caught off guard they got me good. I have on my bracelet with all their names on it, my mother ring with all their names on it, and my necklace with all the kid’s names on it, in order.” She definitely was overwhelmed by the spectacular and thoughtful surprise by her family to obtain gifts that were styled and inspired by her and compliments her just right.
+          </p>
+        </div>
+      </div>
+      <div class="new-blog-wrap steve-wrap">
+        <div class="new-blog-img-wrap steve-img-wrap">
+          <img class="steve-img lazyload" data-src="https://cdn.mynamenecklace.com/images/site/family-tree-birthstone-necklace_8133.jpg" alt="Family Tree Birthstone Necklace">
+          <div class="steve-icons-wrap">
+              <span class="ico-tg-tag steve-carousel-icon4"> 1</span>
+              <span class="ico-tg-tag steve-icon15"></span>
+            </div>
+        </div>
+        <div class="new-blog-content-wrap">
+          <h2>DAZZLING BRACELETS AND NECKLACES </h2>
+          <p>
+             One of the many gifts given was the <a href="/Product.aspx?p=5375">mom bracelet of oval design</a> with her children’s names on it made up of a rolling chain and of six different pendants which can be customized with a personal word on each one. Another piece of jewelry that was received was the <span><a href="/Product.aspx?p=3774">mother necklace with names</a>. This alluring piece is comprised of a disc which can be engraved of names of a mother’s children or even grandchildren, as well as an engravement can be made on the inside heart. This captivating pendant hangs on a beaded chain.
+          </p>
+        </div>
+      </div>
+      <div class="new-blog-wrap steve-wrap">
+        <div class="new-blog-img-wrap steve-img-wrap">
+          <img class="steve-img lazyload" data-src="https://cdn.mynamenecklace.com/images/site/infinity-name-necklace-gold-plating-8133.jpg" alt="Infinity Name Necklace">
+          <div class="steve-icons-wrap">
+              <span class="ico-tg-tag steve-carousel-icon5"> 1</span>
+              <span class="ico-tg-tag steve-icon16"></span>
+            </div>
+        </div>
+        <div class="new-blog-content-wrap">
+          <h2>MAKE IT PERSONAL</h2>
+          <p>
+             MyNameNecklace is made up of high-end collections which can make mothers feel their best no matter the lifestyle, age, or budget. Each piece is expertly designed to become a treasured and sentimental gift for your loved ones. Mother’s Day is approaching, and now is the time to give your mother a smile with a gift that she will keep close to her heart forever. Enjoy a secure and effortless shopping experience which will result in a very personal present that one will always remember.
+         </p>
+        </div>
+      </div>
+      <div class="new-blog-wrap steve-wrap">
+        <div class="new-blog-img-wrap steve-img-wrap">
+          <img class="steve-img lazyload" data-src="https://cdn.mynamenecklace.com/images/site/my-name-necklace-steve-harvey_2.jpg" alt="MyNameNecklace on Steve Harvey's Show">
+        </div>
+        <div class="new-blog-content-wrap">
+          <h2>THANK YOU, STEVE</h2>
+          </p>
+      MyNameNecklace would like to thank Steve and his entire team for pulling off such a magnificent surprise for the Hill family and for featuring our collections on the show. We are very delighted to be able to share our special gifts with others. Not only was the Hill family surprised, every audience member of the show received fifteen percent off their next purchase on the site with a special code offered until Mother’s Day. We know that this Mother’s Day will be one that they will never forget!
+      </p>
+      </div>
+      </div>
+      <div class="new-blog-CTA">
+        <a href="./Products.aspx?p=218">
+        SHOP MOTHER JEWELRY</a>
+      </div>
+    </div>
+    
+    <script>
+      // video script
+      var wistiaEmbeded = 'wr73af6a10';    
+      var script = document.createElement("script");    
+      script.type = "text/javascript";    
+      script.async = true;    
+      script.src = 'https://fast.wistia.com/embed/medias/' + wistiaEmbeded + '.jsonp';    
+      document.body.appendChild(script);    
+      var wistiaBtnTxt = '<span class="play-video"><img class=" lazyloaded" data-src="https://cdn.mynamenecklace.com/images/site/play_video.png" alt="" title="" src="https://cdn.mynamenecklace.com/images/site/play_video.png"> Click here to watch video</span>';    
+      var wistiaBtn = '<span class="wistia_embed wistia_async_' + wistiaEmbeded + ' popover=true popoverAnimateThumbnail=true popoverContent=link" style="position:relative;text-align:center;"><a href="#" class="wistia-style">' + wistiaBtnTxt + '</a></span>';    
+      $(document).ready(function () {
+      $('.new-blog-head').append(wistiaBtn);
+        });
+
+      var steveUrl = 'https://cdn.mynamenecklace.com/images/products';
+
+      // Creation of the Modal
+      function steve(steveUrlFull,steveLink) {
+        return '<div class="steve-container"><div class="steveClose">X</div><img src="'+ steveUrlFull +'" /><div class="steveName">'+ steveName +'</div><a href="'+ steveLink +'">SHOP</a></div>';
+      }
+    
+      // The Function
+      function steveModal() {
+        // Icon remove when click + Background img opacity
+        $( '[class*="steve-icon"]' ).click(function() {
+          $(this).closest(".new-blog-img-wrap").find('.steve-img').css('opacity', '0.5');
+          $(this).closest('.steve-icons-wrap').find('[class*="steve-icon"]').css("display", "none");
+          $(this).closest('.steve-icons-wrap').find('[class*="steve-carousel-icon"]').addClass('steve-handler-icon');
+        });
+        
+        // Close Modal Function
+        $('.steveClose').click(function() {
+          $(this).closest(".new-blog-img-wrap").find('.steve-img').css('opacity', '1');
+          $('[class*="steve-icon"]').removeAttr("style");
+          $(this).closest('.flexslider').remove();
+          $(this).closest('.steve-container').remove();
+          $('[class*="steve-carousel-icon"]').removeClass('steve-handler-icon');
+        });
+
+        $('.steve-img').click(function() {
+          $(this).closest(".new-blog-img-wrap").find('.steve-img').css('opacity', '1');
+          $('[class*="steve-icon"]').removeAttr("style");
+          $(this).siblings('.flexslider').remove();
+          $(this).siblings('.steve-container').remove();
+          $(this).closest('.steve-img-wrap').find('.steve-icons-wrap [class*="steve-carousel-icon"]').removeClass('steve-handler-icon');
+        });
+      }
+  
+
+      // Carousel call
+      function steveCarouselCall(x) {
+        $(x).slick({
+          dots: true,
+          arrows: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3
+        });
+      }
+
+      // Carousel Modal
+      $('.steve-carousel-icon1').click(function(){
+        steveUrlFull = steveUrl+'/Engraved-3D-Bar-Necklace-in-Gold-Plating-Silver_jumbo.jpg';
+        steveLink = '/Product.aspx?p=5241';
+        steveName = "Engraved 3D Bar Necklace in Gold Plating";
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      })
+
+      $('.steve-carousel-icon2').click(function(){
+        var steveCarouselImg = ['/Russian-Ring-Necklace-with-Engraving---Gold-Plated_jumbo.jpg', '/Silver-Mothers-Necklace-with-Children-Charms_jumbo.jpg', '/Mom-Birthstone-necklace--in-Gold-Plating_jumbo.jpg', '/Five-Stone-Mothers-Ring-in-Silver-Large-Size_jumbo.jpg', '/18k-Gold-Plated-Silver-Name-Necklace_jumbo.jpg', '/Engraved-3D-Bar-Necklace-in-Gold-Plating-Silver_jumbo.jpg'];
+
+        var steveCarouselName = ["Russian Ring Necklace with Engraving - Gold Plated", "Sterling Silver Mother's Necklace with Children Charms", "Mom Birthstone necklace in Gold Plating", "Five Stone Mothers Ring in Silver", "Personalized Classic Name Necklace in 18k Gold Plating", 'Engraved 3D Bar Necklace in Gold Plating'];
+
+        var steveCarouselLink = ['/Product.aspx?p=4789', '/Product.aspx?p=2423', '/Product.aspx?p=5449', '/Product.aspx?p=4346', '/Product.aspx?p=2088', '/Product.aspx?p=5241'];
+
+        var steveCarouselWrap = '';
+        for(var i = 0 ; i < steveCarouselImg.length ; i++) {
+          steveCarouselWrap += '<li class="try"><img class="carousel-images lazyload" title="'+ steveCarouselName[i] +'" alt="'+ steveCarouselName[i] +'" data-src="'+ steveUrl+steveCarouselImg[i] +'"> <div class="title-gallery hp-title-gallery"><div class="best-seller-name">'+ steveCarouselName[i] +'</div><a class="steve-carousel-link" href="'+ steveCarouselLink[i] +'">SHOP</a></div></li>';
+        }
+        $(this).closest(".new-blog-img-wrap").append('<div class="flexslider carousel-height"><div class="steve-carousel-container"><div class="steveClose steveCloseCarousel">X</div><ul class="steve-carousel-wrap steveCarousel1"> '+ steveCarouselWrap +' </ul></div></div>')
+
+        steveCarouselCall('.steveCarousel1')
+        steveModal()
+      })
+
+      $('.steve-carousel-icon3').click(function(){
+        var steveCarouselImg = ['/Mom-Bracelet-with-Kids-Names---Oval-Design_jumbo.jpg', '/Family-Tree-Birthstone-Necklace_jumbo.jpg', '/Russian-Ring-Necklace-with-Engraving---Gold-Plated_jumbo.jpg', '/Grandmother-Necklace-with-Names---Gold-Plated_jumbo.jpg', '/Mothers-Necklace-with-Children-Charms-in-10K-Yellow-Gold_jumbo.jpg', '/Five-Stone-Mothers-Ring-in-Silver-Large-Size_jumbo.jpg', '/Mom-Birthstone-necklace--in-Gold-Plating_jumbo.jpg'];
+
+        var steveCarouselName = ['Mom Bracelet with Kids Names - Oval Design in Sterling Silver', 'Family Tree Birthstone Necklace in Sterling Silver', 'Russian Ring Necklace with Engraving - Gold Plated', 'Grandmother / Mother Necklace with Names - Gold Plated', "Mother's Necklace with Children Charms in 10K Yellow Gold", 'Five Stone Mothers Ring in Silver', 'Mom Birthstone necklace in Gold Plating'];
+
+        var steveCarouselLink = ['/Product.aspx?p=5036', '/Product.aspx?p=3569', '/Product.aspx?p=4789', '/Product.aspx?p=4858', '/Product.aspx?p=5480', '/Product.aspx?p=4346', '/Product.aspx?p=5449'];
+
+        var steveCarouselWrap = '';
+        for(var i = 0 ; i < steveCarouselImg.length ; i++) {
+          steveCarouselWrap += '<li class="try"><img class="carousel-images lazyload" title="'+ steveCarouselName[i] +'" alt="'+ steveCarouselName[i] +'" data-src="'+ steveUrl+steveCarouselImg[i] +'"> <div class="title-gallery hp-title-gallery"><div class="best-seller-name">'+ steveCarouselName[i] +'</div><a class="steve-carousel-link" href="'+ steveCarouselLink[i] +'">SHOP</a></div></li>';
+        }
+        $(this).closest(".new-blog-img-wrap").append('<div class="flexslider carousel-height"><div class="steve-carousel-container"><div class="steveClose steveCloseCarousel">X</div><ul class="steve-carousel-wrap steveCarousel2"> '+ steveCarouselWrap +' </ul></div></div>')
+
+        steveCarouselCall('.steveCarousel2')
+        steveModal()
+      })
+
+      $('.steve-carousel-icon4').click(function() {
+        steveUrlFull = steveUrl+'/Family-Tree-Birthstone-Necklace-18k-Gold-Plated_jumbo.jpg';
+        steveLink = '/Product.aspx?p=3774';
+        steveName = 'Family Tree Birthstone Necklace - 18k Gold Plated';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      })
+
+      $('.steve-carousel-icon5').click(function() {
+        steveUrlFull = steveUrl+'/Infinity-Name-Necklace-in-Gold-Plating_jumbo.jpg';
+        steveLink = '/Product.aspx?p=3650';
+        steveName = 'Infinity Name Necklace with Gold Plating';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      })
+
+      // Modals
+      $( ".steve-icon1" ).click(function() {
+        steveUrlFull = steveUrl+'/Engraved-3D-Bar-Necklace-in-Gold-Plating-Silver_jumbo.jpg';
+        steveLink = '/Product.aspx?p=5241';
+        steveName = "Engraved 3D Bar Necklace in Gold Plating";
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+    
+      $( ".steve-icon2" ).click(function() {
+        steveUrlFull = steveUrl+'/Russian-Ring-Necklace-with-Engraving---Gold-Plated_jumbo.jpg';
+        steveLink = '/Product.aspx?p=4789';
+        steveName = "Russian Ring Necklace with Engraving - Gold Plated";
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon3" ).click(function() {
+        steveUrlFull = steveUrl+'/Silver-Mothers-Necklace-with-Children-Charms_jumbo.jpg';
+        steveLink = '/Product.aspx?p=2423';
+        steveName = "Sterling Silver Mother's Necklace with Children Charms";
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+      
+      $( ".steve-icon4" ).click(function() {
+        steveUrlFull = steveUrl+'/Mom-Birthstone-necklace--in-Gold-Plating_jumbo.jpg';
+        steveLink = '/Product.aspx?p=5449';
+        steveName = 'Mom Birthstone necklace in Gold Plating';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon5" ).click(function() {
+        steveUrlFull = steveUrl+'/Five-Stone-Mothers-Ring-in-Silver-Large-Size_jumbo.jpg';
+        steveLink = '/Product.aspx?p=4346';
+        steveName = 'Five Stone Mothers Ring in Silver';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon6" ).click(function() {
+        steveUrlFull = steveUrl+'/18k-Gold-Plated-Silver-Name-Necklace_jumbo.jpg';
+        steveLink = '/Product.aspx?p=2088';
+        steveName = 'Personalized Classic Name Necklace in 18k Gold Plating';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon7" ).click(function() {
+        steveUrlFull = steveUrl+'/Engraved-3D-Bar-Necklace-in-Gold-Plating-Silver_jumbo.jpg';
+        steveLink = '/Product.aspx?p=5241';
+        steveName = 'Engraved 3D Bar Necklace in Gold Plating';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon8" ).click(function() {
+        steveUrlFull = steveUrl+'/Mom-Bracelet-with-Kids-Names---Oval-Design_jumbo.jpg';
+        steveLink = '/Product.aspx?p=5036';
+        steveName = 'Mom Bracelet with Kids Names - Oval Design in Sterling Silver';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon9" ).click(function() {
+        steveUrlFull = steveUrl+'/Family-Tree-Birthstone-Necklace_jumbo.jpg';
+        steveLink = '/Product.aspx?p=3569';
+        steveName = 'Family Tree Birthstone Necklace in Sterling Silver';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon10" ).click(function() {
+        steveUrlFull = steveUrl+'/Russian-Ring-Necklace-with-Engraving---Gold-Plated_jumbo.jpg';
+        steveLink = '/Product.aspx?p=4789';
+        steveName = 'Russian Ring Necklace with Engraving - Gold Plated';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon11" ).click(function() {
+        steveUrlFull = steveUrl+'/Grandmother-Necklace-with-Names---Gold-Plated_jumbo.jpg';
+        steveLink = '/Product.aspx?p=4858';
+        steveName = 'Grandmother / Mother Necklace with Names - Gold Plated';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon12" ).click(function() {
+        steveUrlFull = steveUrl+'/Mothers-Necklace-with-Children-Charms-in-10K-Yellow-Gold_jumbo.jpg';
+        steveLink = '/Product.aspx?p=5480';
+        steveName = "Mother's Necklace with Children Charms in 10K Yellow Gold";
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon13" ).click(function() {
+        steveUrlFull = steveUrl+'/Five-Stone-Mothers-Ring-in-Silver-Large-Size_jumbo.jpg';
+        steveLink = '/Product.aspx?p=4346';
+        steveName = 'Five Stone Mothers Ring in Silver';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon14" ).click(function() {
+        steveUrlFull = steveUrl+'/Mom-Birthstone-necklace--in-Gold-Plating_jumbo.jpg';
+        steveLink = '/Product.aspx?p=5449';
+        steveName = 'Mom Birthstone necklace in Gold Plating';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon15" ).click(function() {
+        steveUrlFull = steveUrl+'/Family-Tree-Birthstone-Necklace-18k-Gold-Plated_jumbo.jpg';
+        steveLink = '/Product.aspx?p=3774';
+        steveName = 'Family Tree Birthstone Necklace - 18k Gold Plated';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+      $( ".steve-icon16" ).click(function() {
+        steveUrlFull = steveUrl+'/Infinity-Name-Necklace-in-Gold-Plating_jumbo.jpg';
+        steveLink = '/Product.aspx?p=3650';
+        steveName = 'Infinity Name Necklace with Gold Plating';
+        $(this).closest(".new-blog-img-wrap").append(steve(steveUrlFull,steveLink));
+
+        steveModal()
+      });
+
+
+    </script>

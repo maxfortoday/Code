@@ -1,0 +1,1274 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700';
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.clr {
+    clear: both;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Ubuntu', Arial, Verdana;
+    font-size: 14px;
+    padding: 0px;
+    height: 100%;
+    color: #000;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a img {
+    border: 0;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.section {
+    border: 1px solid #C3C3C3;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+
+#m_sectionPersonal {
+    position: relative;
+    background: #f3f3f4;
+}
+
+#header {
+    padding-top: 35px;
+}
+
+.toparea-grey-stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 29px;
+    background-color: #EAEBEB;
+}
+
+#m_panelSiteImage {
+    text-align: left;
+}
+
+#m_panelSiteImage a {
+    display: inline-block;
+}
+
+#m_lblCheckout {
+    display: block;
+}
+
+#m_lblCheckout:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#m_lblCheckout>* {
+    float: left;
+    width: 33.3333%;
+}
+
+/* Payment steps */
+
+#m_lblCheckout img {
+    width: auto;
+    display: block;
+}
+
+.parent {
+    margin: 20px 0 0;
+    padding: 15px 10px;
+    position: relative;
+}
+
+.headline {
+    margin: 2px 2px 15px;
+    padding: 8px;
+    background-color: #e1e1e3;
+    font-size: 15px;
+    font-weight: normal;
+    color: #020202;
+}
+
+.field {
+    display: block;
+    margin: 10px auto;
+    padding-left: 240px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sublabel {
+    width: 128px;
+    color: grey;
+    font-size: 12px !important;
+    margin-left: 5px;
+}
+
+select {
+    padding: 5px;
+    -webkit-appearance: menulist;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="password"],
+input[type="email"],
+select {
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 5px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #e3e4e5;
+    font-size: 13px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-family: 'Ubuntu', Arial, Verdana;
+}
+
+input.input_text,
+select.input_text {
+    width: 280px;
+}
+
+#m_lblCreditCardType {
+    margin: 15px 0 10px;
+}
+
+/* payment information area */
+
+#m_radioListCardType1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+#m_radioListCardType1 tr td input {
+    display: inline-block;
+    padding: 10px 0;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    margin: 0 8px 0 0;
+}
+
+#m_radioListCardType1 tr td label {
+    display: block;
+    padding: 14px 2px 15px 12px;
+    cursor: pointer;
+    background: #fafafa;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    width: 65%;
+}
+
+#m_radioListCardType1 img {
+    margin-left: 10px;
+}
+
+#m_radioListCardType1 tr td label:before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #d2d4d5;
+    box-shadow: inset 0 0 0 3px #fff;
+    vertical-align: middle;
+    margin-right: 8px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+#m_radioListCardType1 tr td span.unified-credit-cart.checked input+label:before,
+#m_radioListCardType1 tr td input:checked+label:before {
+    background: #649cb5;
+}
+
+oListCardType1 tr:last-child {
+    border-bottom: 1px solid #A9ADAE;
+}
+
+#m_radioListCardType1 tr td {
+    display: block;
+    padding: 0;
+}
+
+
+#m_radioListCardType1 tr td input {
+    display: none;
+}
+
+/* /payment information area */
+
+.CenterItems {
+    position: relative;
+    left: 50%;
+}
+
+div#paymentTypeBox {
+    clear: both;
+}
+
+#m_lblCvv {
+    margin-bottom: 10px;
+}
+
+#m_lblCvvMsg {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1px 0 0 5px;
+}
+
+#m_lblCvvMsg span {
+    font-size: 11px;
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    padding-top: 4px;
+}
+
+#contactMessage {
+    border: 0;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+div#returnToShoppingCart {
+    text-align: center;
+}
+
+div#paymentSummary {
+    clear: none;
+    float: left;
+}
+
+/* ssl logo */
+
+div#veriSign {
+    position: absolute;
+    top: 59px;
+    right: 2px;
+    bottom: auto;
+}
+
+.sslLogoBox {
+    background: url("../images/payment-secured-ssl-icon.png") 0 0 no-repeat;
+    width: 110px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 5px 0 0;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: 'Ubuntu', arial;
+}
+
+.sslLogoBox .sslLogoLine1,
+.sslLogoBox .sslLogoLine2 {
+    color: #3A4349;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sslLogoBox .sslLogoLine1 {
+    font-size: 9px;
+    line-height: 12px;
+    margin-left: 32px;
+    padding-top: 2px;
+}
+
+.sslLogoBox .sslLogoLine2 {
+    font-size: 13px;
+    line-height: 18px;
+    margin: -1px 0 0 35px;
+    font-weight: bold;
+    color: #22375c;
+}
+
+#m_lblPaymentMsg {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    display: none;
+}
+
+#m_totalPayment {
+    font-size: 16px;
+}
+
+#m_lblTotalPayment {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+#m_lblTotalPaymentDisplay {
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    width: auto;
+    height: auto;
+    margin: 0 0 0 15px;
+}
+
+/* Payment btn */
+
+#m_btnPayment {
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    color: #3A4249;
+    font-size: 18px;
+    font-family: 'arial';
+    font-weight: bold;
+    border: none;
+    background: #FDC48F;
+    background: -moz-linear-gradient(bottom, #FDC48F 0%, #F89A42 100%);
+    background: -webkit-gradient(left bottom, left bottom, color-bottom(0%, #FDC48F));
+    background: -webkit-linear-gradient(bottom, #FDC48F 0%, #F89A42 100%);
+    background: -o-linear-gradient(bottom, #FDC48F 0%, #F89A42 100%);
+    background: -ms-linear-gradient(bottom, #FDC48F 0%, #F89A42 100%);
+    background: linear-gradient(to bottom, #FDC48F 0%, #F89A42 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#ffffff', GradientType=0);
+    width: 300px;
+    height: 40px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.m_btnPayment-wrap {
+    position: relative;
+}
+
+#m_lblCurrency {
+    font-weight: bold;
+}
+
+#m_txtBoxTotalPayment {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#m_radioListCardType1 * {
+    vertical-align: middle;
+}
+
+#m_imgLoading {
+    width: auto;
+    height: auto;
+    position: fixed;
+    left: 50%;
+    margin-left: -35px;
+    top: 50%;
+    margin-top: -32px;
+    display: none;
+}
+
+label.valid {
+    font-size: 80%;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    text-indent: -9999px;
+    display: none;
+}
+
+select.error,
+.input_text.error {
+    border: 2px red solid;
+}
+
+select.error {
+    border-width: 1px;
+}
+
+label.error {
+    font-size: 11px;
+    margin-left: 5px;
+    color: red;
+    padding-top: 4px;
+}
+
+#m_lblValidationError {
+    font-weight: bold;
+    color: red;
+}
+
+#payWaitMsgRow {
+    padding: 0;
+    text-align: center;
+}
+
+.secureBanner {
+    background: #efeff0;
+    padding: 5px;
+    text-align: center;
+    margin: 20px 0;
+    display: none;
+}
+
+.secureBannerBox {
+    display: inline-block;
+}
+
+.secureBanner img {
+    vertical-align: middle;
+    height: 24px;
+}
+
+.secureBanner span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #878586;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.secureHeadline {
+    float: right;
+    font-size: 11px;
+    margin-top: 3px;
+    color: #666;
+}
+
+#m_lblContactUs a {
+    /* contact us links color */
+    color: black;
+}
+
+#m_hyperLinkReturnToShoppingCart {
+    color: #878586;
+}
+
+.phoneTooltip {
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    color: #3A4249;
+    background-color: #F5C8CC;
+    font-size: 11px;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    margin: auto;
+    line-height: 16px;
+}
+
+.phoneTooltipBox {
+    display: none;
+    position: absolute;
+    max-width: 200px;
+    padding: 8px 15px 8px 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-weight: normal;
+    left: 120px;
+    top: 0px;
+    font-size: 12px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
+}
+
+span#m_lblPhoneNumber {
+    position: relative;
+}
+
+.phoneTooltipBox span {
+    position: absolute;
+    top: 1px;
+    right: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#m_radioButtonAddress td {
+    padding-bottom: 10px;
+}
+
+#m_radioButtonAddress input {
+    vertical-align: -2px;
+}
+
+#payMsgRow {
+    text-align: center;
+}
+
+#m_lblPayMsg {
+    display: block;
+    text-align: left;
+    color: #160217 !important;
+}
+
+.xmasPaymentLink {
+    color: #fd2f82;
+    padding: 10px 40px 0;
+}
+
+.xmasPaymentLink a {
+    color: #fd2f82;
+    font-weight: bold;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+span.nordeaMsg {
+    display: block;
+    max-width: 400px;
+    text-align: left;
+    font-size: 12px;
+}
+
+#m_lblTotalPaymentDisplay[dir=rtl] #m_lblCurrency {
+    float: right;
+    direction: ltr;
+    margin: 1px 0 0 3px;
+}
+
+/* Number inputs arrows fix */
+
+input.payment-number[type=number]::-webkit-inner-spin-button,
+input.payment-number[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input.input_text.payment-month,
+input.input_text.payment-year {
+    width: 40px;
+}
+
+input.input_text.payment-cvv {
+    width: 60px;
+}
+
+/* Payment teasers (new elements) */
+
+.payment-teaser {
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+/* Footer payment options */
+
+.payment-shipping-ttl {
+    display: block;
+    margin-top: 30px;
+}
+
+.bit-encryption-msg {
+    margin: 50px auto 20px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-payment-wrap {
+    border-top: 3px solid #F3C6CB;
+    width: 100%;
+    padding-top: 15px;
+    margin-top: 30px;
+}
+
+.footer-payment-wrap .footer-payment {
+    display: inline-block;
+    width: 32%;
+    color: #919191;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+.footer-payment-wrap .footer-payment .footer-payment-inner {
+    display: inline;
+}
+
+.footer-payment-wrap .footer-payment span {
+    display: inline-block;
+    height: 30px;
+    line-height: 28px;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+.footer-payment-wrap .footer-payment.footer-payment-review {
+    display: none;
+}
+
+/* /footer-payment-wrap */
+
+#m_sectionPersonal,
+#m_sectionBilling,
+#m_sectionShipping {
+    /* bg colors for information tables */
+    background-color: #F3F3F4;
+}
+
+/* Error MSG */
+
+/* Missing inputs */
+
+label.error {
+    margin-left: 0;
+    display: block;
+}
+
+/* Payments Errors */
+
+/* NEED TO UPDATE HTML -  erors will be deployed later */
+
+/* Wrapper */
+
+span#m_lblErrorMsg-outer {
+    display: none;
+    width: calc(100% - 4px);
+    margin: 7px auto 0 auto;
+    background-color: #f7d2d1;
+    color: #3A4249;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'ubuntu', arial;
+    border: 2px solid #C00000;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    padding: 10px 0;
+}
+
+span#m_lblErrorMsg-outer .m_lblErrorMsg-inner {
+    display: table-row;
+    padding: 5px 0;
+}
+
+span#m_lblErrorMsg-outer .exclamation-wrap,
+span#m_lblErrorMsg-outer .m_lblErrorMsg-inner-msg {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+span#m_lblErrorMsg-outer .exclamation-wrap {
+    width: 100px;
+    text-align: center;
+}
+
+span#m_lblErrorMsg-outer .m_lblErrorMsg-inner-msg {
+    margin: 10px 10px 0 10px;
+    text-align: left;
+}
+
+span#m_lblErrorMsg-outer .m_lblErrorMsg-inner-msg a {
+    color: black;
+}
+
+span#m_lblErrorMsg-outer .m_lblErrorMsg-inner-msg a:hover {
+    color: #2e2b2c;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#m_lblTotalNumOfPayments {
+    color: gray;
+    font-size: 12px;
+}
+
+.address-loader {
+    width: 25px;
+    vertical-align: middle;
+}
+
+.hidden {
+    display: none;
+}
+
+/* new style for order summary */
+
+.order-summary #header {
+    margin-bottom: 40px;
+}
+
+.order-summary .section {
+    border: none;
+}
+
+.order-summary #m_sectionPersonal,
+.order-summary #m_sectionBilling,
+.order-summary #m_sectionShipping {
+    width: 54%;
+}
+
+.order-summary .headline {
+    margin: 0px 20px;
+    padding: 15px 0 8px;
+    border-bottom: 1px solid #bbbec0;
+    background: none;
+}
+
+.order-summary .field {
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.order-summary div#veriSign {
+    top: 12px;
+    right: 20px;
+}
+
+.order-summary .sslLogoBox {
+    background: url("../images/payment-secured-ssl-icon-summary.png") 0 0 no-repeat;
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+
+.order-summary .sslLogoBox .sslLogoLine1 {
+    padding: 0;
+    line-height: 9px;
+    margin-left: 19px;
+}
+
+.order-summary .sslLogoBox .sslLogoLine2 {
+    font-size: 12px;
+    line-height: 14px;
+    margin: -1px 0 0 23px;
+}
+
+.order-summary #m_radioListCardType1 tr td label {
+    width: 90%;
+}
+
+.order-summary-box {
+    padding: 14px 0 20px;
+    font-size: 15px;
+    width: 400px;
+    float: right;
+}
+
+.order-summary-title {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c4c6c8;
+}
+
+#m_orderSummaryHeader {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#m_orderSummaryReviewButton {
+    float: right;
+    font-size: 14px;
+    color: #ee858d;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.order-summary-line {
+    margin-bottom: 10px;
+}
+
+.order-summary-line-l {
+    float: left;
+    margin-top: 2px;
+}
+
+.order-summary-line-l img {
+    width: 70px;
+}
+
+.order-summary-line-r {
+    float: right;
+}
+
+.summary-line-prod {
+    border-bottom: 1px solid #c4c6c8;
+}
+
+.order-summary-subtitle {
+    border-top: 1px solid #c4c6c8;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.order-summary-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 9;
+    text-align: center;
+}
+
+.order-summary-modal:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+}
+
+.order-modal-inner {
+    background: #fff;
+    width: 450px;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    position: relative;
+}
+
+.order-modal-title {
+    background: #eec6cc;
+    text-align: center;
+    padding: 9px 33px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#m_orderSummaryModalTitleLabel {
+    text-transform: uppercase;
+}
+
+#order-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    font-weight: bold;
+    background: #fff;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: 14px;
+    /*font-family: "Arial Black";*/
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.order-modal-items {
+    padding-top: 20px;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+.modal-item-line {
+    padding: 0 10px 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d8d9db;
+}
+
+.modal-item-line:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 60px;
+}
+
+img.modal-item-img {
+    float: left;
+    width: 30%;
+}
+
+.modal-item-details {
+    float: right;
+    width: 70%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.modal-item-name {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.modal-item-desc {
+    font-size: 13px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.modal-item-desc span {
+    display: block;
+}
+
+.modal-item-price {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#m_totalPriceValue {
+    float: right;
+}
+
+#creditCardImagesContainer > div {
+    margin-right: 3px;
+}
+
+#m_creditcart {
+    display: none;
+}
+
+.unmatched-payment {
+    opacity: 0.2;
+}
+
+/*--Unify-credit-card-styles----*/
+
+#billingAddressPoBox,
+#shippingAddressPoBox {
+    font-size: 13px;
+    color: #454a4c;
+}
+
+.card-number-wrapper {
+    position: relative;
+}
+
+#cardNumberIcon {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    left: 9px;
+    top: 5px;
+    width: 36px;
+    height: 20px
+}
+
+input.unified-credit-card-input {
+    padding: 7px 0 7px 50px;
+}
+/*--Unify-credit-card-styles----*/
+
+#ccrow1 #creditCardImagesContainer {
+    margin-left: 2px;
+}
+
+/*------------------- Tablet / Mob --------------- */
+
+@media (max-width: 780px) {
+    #m_radioListCardType1 tr td label {
+        width: 100%;
+        position: relative;
+        padding: 14px 2px 14px 32px;
+    }
+    .order-summary #m_radioListCardType1 tr td label {
+        width: 100%;
+    }
+    #container {
+        width: 100%;
+        max-width: 960px;
+        padding: 0 12px;
+    }
+    #m_lblCheckout img {
+        width: 100%;
+    }
+    img {
+        max-width: 100%;
+    }
+    .secureBanner span {
+        width: calc(100% - 50px);
+    }
+    input.input_text,
+    select.input_text {
+        width: 75%;
+    }
+    .field {
+        padding: 0 10px;
+    }
+    .order-summary .field {
+        padding: 0 10px;
+    }
+    div#veriSign {
+        bottom: -105px;
+    }
+    #m_lblTotalPayment {
+        width: auto;
+    }
+    .secureHeadline {
+        display: none;
+    }
+    .parent {
+        margin-top: 15px;
+        padding: 10px;
+    }
+    .section {
+        margin: 15px 0;
+    }
+    .phoneTooltip {
+        font-size: 12px;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+    }
+    .phoneTooltipBox {
+        padding: 10px 18px 10px 10px;
+        left: auto;
+        top: 0;
+        font-size: 13px;
+    }
+    .phoneTooltipBox span {
+        top: 0;
+        font-size: 19px;
+    }
+    #payMsgRow #m_lblPayMsg {
+        display: block;
+        margin: 0 10px;
+        padding: 10px 5px 0;
+        text-align: left;
+    }
+    .xmasPaymentLink {
+        text-align: left;
+        padding: 10px 15px 0;
+    }
+    .xmasPaymentLink br {
+        display: none;
+    }
+    .order-summary #header {
+        margin-bottom: 20px;
+    }
+    .order-summary #m_sectionPersonal,
+    .order-summary #m_sectionBilling,
+    .order-summary #m_sectionShipping {
+        width: auto;
+    }
+    .summary-big {
+        display: none;
+    }
+    .order-summary-box {
+        position: static;
+        width: 100%;
+        float: none;
+        padding: 14px 10px 20px;
+    }
+    .order-modal-inner {
+        display: block;
+        width: 90%;
+        max-height: 90%;
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        overflow: hidden;
+    }
+    .order-modal-title {
+        padding: 7px 33px;
+    }
+    #order-modal-close {
+        top: 5px;
+        right: 8px;
+        width: 22px;
+        height: 22px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .modal-item-details {
+        padding-left: 12px
+    }
+    .modal-item-desc {
+        line-height: 1.3;
+    }
+    .order-summary .headline {
+        margin: 0;
+        padding: 15px 10px 8px;
+    }
+    .order-summary div#veriSign {
+        right: 10px;
+    }
+}
+
+/* Mob */
+
+@media (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+    #header {
+        padding-top: 0;
+    }
+    #m_panelSiteImage a {
+        margin: 10px 0;
+        width: 60%;
+    }
+    input.input_text,
+    select.input_text {
+        width: 100%;
+        height: 35px;
+    }
+    #m_lblBillingCountry {
+        margin-top: 40px;
+    }
+    #m_btnPayment {
+        font-size: 20px;
+        width: 100%;
+        min-width: 0;
+    }
+    div#veriSign {
+        position: absolute;
+        top: 40px;
+        right: 1px;
+        bottom: auto;
+    }
+    .sslLogoBox .sslLogoLine2 {
+        margin: -1px 0 0 34px;
+    }
+    .input_text {
+        clear: left;
+    }
+    #m_lblTotalPayment {
+        padding-right: 5px;
+    }
+    #m_lblVeriSign {
+        padding-right: 2%;
+    }
+    #m_lblVeriSignLogo img {
+        width: 60px;
+    }
+    #m_totalPayment {
+        padding-top: 0px;
+    }
+    #m_btnPayment {
+        padding: 0;
+    }
+    #m_lblCheckout img,
+    #m_panelSiteImage img {
+        width: 300px;
+    }
+    .toparea-grey-stripe {
+        display: none;
+    }
+    #m_panelSiteImage {
+        margin-top: 0;
+    }
+    .m_btnPayment-wrap:after {
+        left: 19%;
+    }
+    .footer-payment-wrap .footer-payment {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .footer-payment-wrap .footer-payment .footer-payment-inner {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    span#m_lblErrorMsg-outer {
+        font-size: 12px;
+    }
+    span#m_lblErrorMsg-outer .exclamation-wrap {
+        width: 60px;
+    }
+    #cardNumberIcon {
+        top: 7px;
+        background-size: auto;
+    }
+    #m_radioListCardType1 img {
+        margin-left: 5px;
+    }
+    #m_radioListCardType1 tr td label:before {
+        margin-right: 5px;
+        position: absolute;
+        left: 10px;
+        top: calc(50% - 7px);
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .field,
+    .order-summary .field {
+        padding: 0 5px;
+    }
+    .order-summary .headline {
+        padding: 15px 5px 8px;
+    }
+    .order-summary-box {
+        padding: 14px 5px 20px;
+    }
+    #m_radioListCardType1 tr td label {
+        padding-left: 30px;
+    }
+}
+
+.product-option {
+    font-weight: bold;
+}
+.modal-item-desc span.product-option {
+    display: inline;
+}
+#m_lblOrderNumber {
+    width: 100%;
+    padding:  0;
+    margin:  0;
+    display: table;
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+}
+
+#m_txtBoxOrderNumber {
+    float:  right;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-size:  16px;
+    width:  auto;
+    text-align:  right;
+    margin-top: -15px;
+    font-weight: bold;
+}

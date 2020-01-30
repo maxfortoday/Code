@@ -1,0 +1,192 @@
+/*feedback page*/
+.feedback-block-rows {
+    background: #f3a59f;
+    display: block;
+    width: 760px;
+    height: 190px;
+}
+
+a .feedback-block-rows {
+    text-decoration: none;
+    text-transform: none;
+}
+
+.feedback-block-rows a {
+    text-transform:  none;
+    text-decoration:  none;
+}
+
+.feedback-block-rows a:hover {
+    color:  white;
+}
+
+.feedback-first-row {
+    text-align:  center;
+    display:  block;
+    color:  white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.feedback-second-row {
+    display:  block;
+    text-align:  center;
+    color:  white;
+    padding-top: 7px;
+}
+
+.feedback-third-row {
+    display:  block;
+    text-align:  center;
+    color:  white;
+    font-size: 18px;
+    padding-top: 7px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.feedback-block-rows img {
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.NewArticleTitleh2 {
+    color:  black;
+    padding-top: 20px;
+    padding-bottom:  0px;
+    margin-bottom: 0px;
+    text-transform: none;
+    text-align: center;
+}
+
+.feedback-block-explanetion {
+    width: 760px;
+}
+
+.share-the-love-ttl {
+  color: black !important;
+}
+ 
+.share-the-love-ttl:hover {
+  color: black !important;
+}  
+
+
+.feedback-ul-block {
+    background-color: #FDF7F4;
+    padding: 10px 45px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+.share-love-border {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #d3d3d370;
+}
+
+.general-title {
+    background: #f3a59f;
+    border: none;
+    color: white;
+    padding: 10px 0px;
+    margin:  0;
+}
+
+.general-title .general1 {
+    text-transform:  capitalize;
+    color:  white;
+}
+
+.general2 {
+    text-transform: lowercase !important;
+    font-size:  22px !important;
+}
+
+.general3 {
+    font-size: 18px !important;
+    text-transform: capitalize !important;
+    margin-top: 0 !important;
+}
+
+font.feedback-coupon {
+    color:  white;
+}
+
+.general3 strong {
+    font-size:  24px !important;
+}
+
+.general4 {
+    padding:  10px 0px;
+    border-bottom: 1px solid #d3d3d370;
+    font-size: 12px;
+}
+
+.general-ptoduct-title.feedback-new-arrivals-wrap {
+    background:  none;
+    padding: 15px 0px;
+}
+
+.feedback-new-arrivals-top {
+    font-size: 22px !important;
+    font-weight: 600;
+    display: block;
+    padding: 35px 0 15px;
+}
+
+.feedback-new-arrivals-bottom {
+    text-decoration: underline !important;
+}
+
+.thanksOfferItemsBox a.thanksOfferBtn {
+    background:  none;
+    padding:  0;
+    margin:  0;
+    text-decoration:  underline;
+}
+
+
+.share-love-border a {
+    text-decoration:  none;
+}
+
+.orangehr {
+    width: 30px;
+    height: 1px;
+    padding: 1px;
+    background: #f3a59f;
+    border:  none;
+}
+
+.whitehr {
+    width: 30px;
+    height: 2px;
+    border:  none;
+    background:  white;
+    margin-top: 10px;
+}
+.thanksOfferItem {
+    width: 25%;
+    padding: 15px 0;
+}
+.feedback-true-title {
+    font-size: 18px;
+    font-weight: 100;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 34px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.feedback-wrap {
+    width: 760px;
+}
+
+.general4 {
+    text-align:  center;
+}
+
+.feedback-text-center {
+    text-align:  center;
+}

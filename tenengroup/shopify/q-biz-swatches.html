@@ -1,0 +1,27 @@
+{%comment%}start swatches section{%endcomment%}
+{% if product.handle contains "-dup-" %}
+
+<div style="direction: rtl;"> 
+<h3>בחר/י חומר:</h3>
+{% assign baseHandle = product.handle | remove: "-dup-silver" | remove: "-dup-18k-gold" | remove: "-dup-18k-red-gold" %}
+
+{% for tag in product.tags %}
+  		{% if tag == 'dup-silver' %}
+  			{% assign finalHandle = baseHandle | append: '-dup-silver' %}
+  			<div class="available-also"><a href="{{product.handle | remove: "-dup-silver" | remove: "-dup-18k-gold" | remove: "-dup-18k-red-gold"}}-dup-silver"><img title="ציפוי כסף" src="https://cdn.shopify.com/s/files/1/0076/6561/4884/files/swatch-silver.jpg?179"></a><span>כסף</span>{{ all_products[finalHandle].price | money_with_currency }}</div>
+  		{% endif %}
+  		{% if tag == 'dup-18k-gold' %}
+   			{% assign finalHandle = baseHandle | append: '-dup-18k-gold' %}
+  			<div class="available-also"><a href="{{product.handle | remove: "-dup-silver" | remove: "-dup-18k-gold" | remove: "-dup-18k-red-gold"}}-dup-18k-gold"><img title="ציפוי זהב" src="https://cdn.shopify.com/s/files/1/0076/6561/4884/files/swatch-gold.jpg?179"></a><span>ציפוי זהב</span>{{ all_products[finalHandle].price | money_with_currency }}</div>
+  		{% endif %}
+  		{% if tag == 'dup-18k-red-gold' %}
+  			{% assign finalHandle = baseHandle | append: '-dup-18k-red-gold' %}
+  			<div class="available-also"><a href="{{product.handle | remove: "-dup-silver" | remove: "-dup-18k-gold" | remove: "-dup-18k-red-gold"}}-dup-18k-red-gold"><img title="ציפוי זהב אדום" src="https://cdn.shopify.com/s/files/1/0076/6561/4884/files/swatch-red-gold.jpg?179"></a><span>ציפוי זהב אדום</span>{{ all_products[finalHandle].price | money_with_currency}}</div>
+  		{% endif %}
+{% endfor %}
+</div> 
+{% endif %}
+
+  
+
+{%comment%}end swatches section{%endcomment%}

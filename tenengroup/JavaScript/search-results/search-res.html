@@ -1,0 +1,23 @@
+<script>
+$( document ).ready(function() {
+var prods = $('.search-results-prod');
+for (var i = 0; i < prods.length; i++) {
+    var crossPrice = $(prods[i]).find('.search-price-before > span').text();
+    var regularPrice = $(prods[i]).find('.search-price-after > span').text();
+    if (crossPrice == regularPrice) {
+        $(prods[i]).find('.search-price-before').hide();
+  }
+}
+});
+
+$('#searchResultsLoadMore').click(function() {
+  var prods = $('.search-results-prod');
+  for (var i = 0; i < prods.length; i++) {
+      var crossPrice = $(prods[i]).find('.search-price-before > span').text();
+      var regularPrice = $(prods[i]).find('.search-price-after > span').text();
+      if (crossPrice == regularPrice) {
+          $(prods[i]).find('.search-price-before').hide();
+    }
+  }
+});
+</script>

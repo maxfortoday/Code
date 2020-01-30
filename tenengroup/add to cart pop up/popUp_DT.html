@@ -1,0 +1,44 @@
+<script>
+    $(document).ready(function () {
+
+        var url = window.location.href;
+        window.closeModal = function () {
+            $('.product-buy-modal-wrap').fadeOut(300, function(){
+                $(this).remove();
+                $('html, body').css('overflow', '');
+            });
+            var url = window.location.href;
+            var newUrl = url.substring(0, url.indexOf("&popup=1"));
+            window.history.pushState({
+                path: newUrl
+            }, '', newUrl);
+        }
+        if (url.indexOf("popup=1") > -1) {
+            $('html, body').css('overflow', 'hidden');
+            $('.product-buy-modal-wrap').fadeIn();
+
+            var prodImg = $('.lineImgSmall').find('img').length > 0  ? $('.lineImgSmall').find('img')[0].src : $('.wrapper').find('img.mediumImg')[0].src;
+            prodImg = prodImg.replace('_jumbo', '_small');
+            var prodName = $('.ProductTitle').find('h1').text();
+            var buttonsString = '';
+            for (var i = 0; i < popupButtons.length ; i++) {
+            	var thisName = popupButtons[i].name;
+            	var thisLink = popupButtons[i].link;
+            	buttonsString+= '<a class="product-modal-buttons" href="'+thisLink+'">'+thisName+'</a>';
+            }
+
+            var htmlString = '<div class="product-buy-modal-outer"><div class="product-buy-modal"><span class="close-modal" onclick="closeModal()">X</span><p>This product was just<br/>added to your bag!</p><div class="product-modal-contect clearfix"><img class="product-modal-image" src="'+prodImg+'"><div class="product-modal-title">' + prodName +'</div></div>' + buttonsString +'<a class="go-to-bag" href="ShoppingCart.aspx">go to bag</a></div></div>';
+
+
+            $('.product-buy-modal-wrap').html(htmlString);
+            $('.product-buy-modal-wrap').on('click', function(){
+                closeModal();
+            })
+
+            $('.product-buy-modal-outer').on('click', function(ev){
+                ev.stopPropagation()
+            })
+        }
+    });
+</script>
+<div class="product-buy-modal-wrap"></div>

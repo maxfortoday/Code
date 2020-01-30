@@ -1,0 +1,303 @@
+/*order tracking*/
+
+.estimated-delivery {
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 3px solid #D3878B;
+}
+
+.estimated-delivery span {
+  margin-right: 5px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.estimated-delivery strong {
+  display: inline-block;
+}
+
+.estimated-delivery p {
+  display: block;
+  margin: 0;
+  margin-left: 5px;
+}
+
+.ot-delivery {border-bottom: 1px solid #ECECEC;padding-bottom: 15px;margin-bottom: 40px;}
+
+.ot-delivery-details {
+  display: block;
+}
+
+.ot-box .progress-bar li.complate:before {
+    background-image: none;
+}
+
+.progress-bar li {
+    position: relative;
+}
+
+.progress-bar li span {
+    color: white;
+    z-index: 9999999999;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+}
+
+.progress-bar .current span {
+    left: -6px;
+    font-size: 22px;
+    top: -6px;
+}
+
+.ot-box .shippingDescriptionLine2 {
+  vertical-align: top;
+}
+
+.totalCostLineWrap {
+  padding-bottom: 15px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ot-box .totalCostLine1 {
+  font-weight: unset;
+}
+
+.progress-box #progress-bg {
+  width: 4px !important;
+  left: 2px !important;
+}
+
+.progress-box {
+  padding: 24px;
+}
+
+.progress-box .progress-text li.text-complate {
+  color: #000;
+  font-weight: 600;
+}
+
+.progress-box li {
+  padding-left: 35px;
+}
+
+.progress-bar li.current.complate:before {
+  width: 48px !important;
+  height: 48px !important;
+  left: -20px !important;
+  top: -19px !important;
+}
+
+#progress-bg {
+    top: 0 !important;
+}
+
+.progress-box .progress-bar li:before {
+    top: -12px;
+}
+
+.ot-box .helpCenterMenuBlock {
+    height: 20px;
+}
+
+.ot-box .help-center-icon-small {
+    height: 28px;
+}
+
+.progress-text li {
+    padding-top: 0;
+}
+
+.progress-bar span {
+    display: none;
+}
+
+.progress-bar .complate span {
+    display: block;
+}
+
+.progress-box .progress-bar li:last-child:before {
+    top: 28px;
+}
+
+.progress-box .progress-text li:last-child {
+    padding-top: 38px;
+}
+
+.progress-bar li.current .ico-tg-order-received {
+    left: -7px;
+}
+
+ul.progress-bar {
+  width: 4px;
+}
+
+ul.progress-bar li.current .ico-tg-diamond {
+   left: -10px;
+   top: -6px;
+}
+
+ul.progress-bar li.current .ico-tg-packing {
+    left: -10px;
+    top: -8px;
+}
+
+.progress-bar li .ico-tg-diamond {
+    left: -5px;
+    top: -2px;
+}
+
+
+.progress-bar li .ico-tg-packing {
+    left: -6px;
+}
+
+.ot-box.ot-shipped .progress-bar li.complate:before {
+    top: -12px;
+}
+
+.ot-tooltip-msg {
+    top: -55px;
+}
+
+span.ot-tooltip-msg:after {
+    border-top: 10px solid #eceaec;
+    border-bottom: 0;
+    top: 41px;
+}
+
+
+.progress-bar .complate .ico-tg-plane {
+    font-size: 18px;
+    left: -14px;
+    top: -3px;
+}
+
+.ot-box .helpCenterMenuBlock {
+    margin: 0;
+}
+
+.orderTrackingBlock {
+    padding: 15px 0 15px 20px;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 10px;
+}
+
+.orderTrackingWrap {
+    display: none;
+}
+
+.ot-box .thanksOrderBox {
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-top: -10px;
+    padding: 0 10px;
+}
+
+.ot-box .prod_desc p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ot-box .thanksOrderText {
+    width: auto !important;
+    padding: 0;
+}
+
+.ot-box .productInfoLineWrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 10px;
+}
+
+.ot-box .thanksOrderCode {
+    width: auto;
+}
+
+.ot-box .prod_img img {
+    width: 100px;
+    height: 100px;
+}
+
+.ot-box .orderTrackingBlock strong {
+    padding-left: 105px;
+}
+
+.ot-box .prod_desc p:first-child {
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 414px) {
+  .ot-box .orderTrackingBlock strong {
+      padding-left: 150px;
+  }
+
+  .ot-box .shippingCostLine2 {
+      padding-left: 150px;
+  }
+
+  .ot-box .itemLine2 {
+      padding-left: 150px;
+  }
+
+  .ot-box .totalCostLine2 {
+      padding-left: 150px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .ot-box .orderTrackingBlock strong {
+      padding-left: 105px;
+  }
+
+  .ot-box .shippingCostLine2 {
+      padding-left: 105px;
+  }
+
+  .ot-box .itemLine2 {
+      padding-left: 105px;
+  }
+
+  .ot-box .totalCostLine2 {
+      padding-left: 105px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .ot-box .orderTrackingBlock strong {
+      padding-left: 60px;
+  }
+
+  .ot-box .shippingCostLine2 {
+      padding-left: 60px;
+  }
+
+  .ot-box .itemLine2 {
+      padding-left: 60px;
+  }
+
+  .ot-box .totalCostLine2 {
+      padding-left: 60px;
+  }
+}
+
+.ot-box .shippingDescriptionLine1 {
+  width: auto;
+}
+
+.ot-box .shippingDescriptionLineWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.progress-box .progress-bar li:before {
+  left: -16px;
+  border: none;
+  bottom: 0;
+}
+
+.ot-box.ot-shipped .ot-tooltip-btn {
+  background-color: #000;
+}

@@ -1,0 +1,356 @@
+<rn:theme path="/euf/assets/themes/standard" css="order-date.css" />
+<rn:meta title="#rn:msg:ASK_QUESTION_HDG#" template="standard.php" clickstream="incident_create"/>
+<style type="text/css">
+  .unsatisfied-box,
+  .order-late-wrap {
+    color: black;
+  }
+
+  .order-late-select:before,
+  .order-late-inner input:checked + label:before {
+    border-color: black;
+  }
+
+  .order-late-inner input:checked + label:before {
+    background: black;
+  }
+
+  .rn_FormSubmit button, 
+  .rn_FormSubmit button:hover, 
+  .rn_FormSubmit button:active, 
+  .rn_FormSubmit button:focus {
+    background: black;
+    border-radius: 0;
+    color: white;
+  }
+
+  .csp-wrap-left, .csp-wrap-right {
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+    margin: 0 1%;
+  }
+
+  .teaser, .field-inline {
+    display: block;
+  }
+
+  .teaser {
+    width: auto;
+  }
+
+  .field-inline {
+    margin: 0;
+  }
+
+.order-late-select .rn_TextInput, .order-late-select input[type="text"] {
+    margin: 0;
+  }
+
+.rn_FormSubmit button, 
+.rn_FormSubmit button:hover, 
+.rn_FormSubmit button:active, 
+.rn_FormSubmit button:focus {
+    margin: 50px auto;
+  }
+
+select.field-inline {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: border-color;
+    -moz-transition: border-color;
+    transition: border-color;
+    background-color: white;
+    border-radius: 0.1875em;
+    border: 1px solid #999;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    margin-bottom: 1.6em;
+    padding: 0.5em 0.5em;
+    width: 100%;
+  }
+
+  .csp-radio-option1 input[type="text"] {
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .csp-wrap-left, .csp-wrap-right {
+        display: block;
+        width: auto;
+        margin:0;
+    }
+    .csp-radio-option1 input[type="text"] {
+        width: 100%;
+    }
+}
+</style>
+
+<div class="rn_Container">
+  <div class="unsatisfied-box">
+    <div class="unsatisfied-teaser">
+      <div>#rn:msg:CUSTOM_MSG_GENERAL_1_US#</div>
+      <div>#rn:msg:CUSTOM_MSG_GENERAL_2_US#</div>
+    </div>
+    <hr class="silver-border" />
+
+    <div class="order-late-wrap">
+      <div class="order-late-inner">
+      
+      <form id="rn_QuestionSubmit1" method="post" action="/ci/ajaxRequest/sendForm">
+          <div id="rn_ErrorLocation"></div>
+          <rn:condition logged_in="false">
+
+          <!-- LANG -->
+          <div class="csp-lang-wrap" style="display: none;">
+            <rn:widget path="input/SelectionInput" name="Incident.c$site" default_value="70" />
+            <rn:widget path="input/SelectionInput" name="Incident.CustomFields.c.general_reason" default_value="145" />
+            <rn:widget path="input/SelectionInput" name="Incident.CustomFields.c.order_status" default_value="391" />
+            <rn:widget path="input/SelectionInput" name="incidents.c$cancel_reasons" default_value="395" />
+          </div>
+          <!-- /LANG -->
+
+        <input 
+          type="radio" 
+          class="order-late-option-select" 
+          id="order-late-select-1" 
+          name="order-late-option-select" 
+          checked="checked" 
+          value="Fifty">
+        <label class="order-late-select order-late-select25" for="order-late-select-1">
+          <div class="order-late-text-wrap order-late-text-wrap100">
+            <div class="order-late-ttl">#rn:msg:CUSTOM_MSG_GENERAL_3_US#</div>
+            <div class="order-late-text">#rn:msg:CUSTOM_MSG_GENERAL_4_US#</div>
+          </div>
+          <div class="order-late-image-wrap order-late-image-wrap100">
+            <img src="#rn:msg:CUSTOM_MSG_GENERAL_5_US#" />
+          </div>
+          
+        </label>
+
+        <input 
+          type="radio" 
+          class="order-late-option-select" 
+          id="order-late-select-2" 
+          name="order-late-option-select" 
+          value="Refund">
+        <label class="order-late-select order-late-select25" for="order-late-select-2">
+          <div class="order-late-text-wrap order-late-text-wrap100">
+            <div class="order-late-ttl">#rn:msg:CUSTOM_MSG_GENERAL_6_US#</div>
+            <div class="order-late-text">#rn:msg:CUSTOM_MSG_GENERAL_7_US#</div>
+          </div>
+          <div class="order-late-image-wrap order-late-image-wrap100">
+            <img src="#rn:msg:CUSTOM_MSG_GENERAL_8_US#" />
+          </div>
+        </label>
+
+        <input 
+          type="radio" 
+          class="order-late-option-select" 
+          id="order-late-select-3" 
+          name="order-late-option-select" 
+          value="Reorder">
+        <label class="order-late-select order-late-select25" for="order-late-select-3">
+          <div class="order-late-text-wrap order-late-text-wrap100">
+            <div class="order-late-ttl">#rn:msg:CUSTOM_MSG_GENERAL_9_US#</div>
+            <div class="order-late-text">#rn:msg:CUSTOM_MSG_GENERAL_10_US#</div>
+          </div>
+          <div class="order-late-image-wrap order-late-image-wrap100">
+            <img src="#rn:msg:CUSTOM_MSG_GENERAL_11_US#" />
+          </div>
+          <div class="csp-radio-option1" style="display:none;">
+          <div class="teaser teaser-inline">#rn:msg:CUSTOM_MSG_GENERAL_18_EN#</div>
+          <div class="field-inline">
+              <rn:widget 
+                path="input/FormInput" 
+                name="Incident.CustomFields.c.reorder_sku_link" 
+                required="false" 
+              />
+            </div>
+            <div class="teaser reorder-sku-bottom-teaser">#rn:msg:CUSTOM_MSG_GENERAL_19_EN#</div>
+          </div>
+        </label>
+        
+        <strong>#rn:msg:CUSTOM_MSG_GENERAL_12_US#</strong>
+        <hr class="silver-border" />
+        <input 
+          type="radio" 
+          class="order-late-option-select" 
+          id="order-late-select-4" 
+          name="order-late-option-select" 
+          value="FullRefund">
+        <label class="order-late-select order-late-select25" for="order-late-select-4">
+          <div class="order-late-text-wrap order-late-text-wrap100">
+            <div class="order-late-ttl">#rn:msg:CUSTOM_MSG_GENERAL_16_EN#</div>
+            <div class="order-late-text">#rn:msg:CUSTOM_MSG_GENERAL_17_EN#</div>
+          </div>
+        </label>
+
+
+          <div class="csp-wrap-left">
+          <!-- General Text 13 -->
+          <div class="csp-email">
+            <div class="teaser">#rn:msg:CUSTOM_MSG_GENERAL_13_US#</div>
+            <div class="field-inline">
+              <rn:widget 
+              path="input/FormInput" 
+              name="Contact.Emails.PRIMARY.Address" 
+              required="true" />
+            </div>
+          </div>
+          <!-- General Text 13 -->
+
+          <!-- General Text 14 -->
+          <div class="csp-order-id">
+            <div class="teaser teaser-inline">#rn:msg:CUSTOM_MSG_GENERAL_14_US#</div>
+            <div class="field-inline">
+              <rn:widget 
+                path="input/FormInput" 
+                name="Incident.CustomFields.c.order_id_text_field" 
+                required="true" 
+              />
+              <div class="teaser teaser-inline" style="color: red; margin-top: -15px;">#rn:msg:CUSTOM_MSG_CHECK_ORDER_ID_EN#</div>
+            </div>
+          </div>
+          <!-- General Text 14 -->
+        </div>
+
+          <div class="csp-wrap-right">
+          <!-- General Text 15 -->
+          <div class="damaged-item-reason-wrap">
+            <div class="teaser">#rn:msg:CUSTOM_MSG_GENERAL_15_EN#</div>
+            <select class="field-inline" onchange="rnDamageReason(this);">
+              <option value="393">#rn:msg:CUSTOM_MSG_GENERAL_15_1_EN#</option>
+              <option value="394">#rn:msg:CUSTOM_MSG_GENERAL_15_2_EN#</option>
+              <option value="395" selected="selected">#rn:msg:CUSTOM_MSG_GENERAL_15_3_EN#</option>
+              <option value="396">#rn:msg:CUSTOM_MSG_GENERAL_15_4_EN#</option>
+              <option value="397">#rn:msg:CUSTOM_MSG_GENERAL_15_5_EN#</option>
+            </select>
+          </div>
+
+          <!-- General Text 16 -->          
+          <div class=csp-cancel-reasons style="display: none;">
+          <div class="teaser teaser-inline">#rn:msg:CUSTOM_MSG_GENERAL_21_EN#</div>
+          <div class="field-inline">
+              <rn:widget 
+                path="input/FormInput" 
+                name="Incident.CustomFields.c.describe_reason_freetext_field" 
+                required="false" 
+              />
+            </div>
+          </div>
+          <!-- General Text 16 -->
+        </div>
+
+          <!-- SUBJECT -->
+          <div class="csp-subject" style="display: none;"> 
+            <rn:widget path="input/FormInput" name="Incident.Subject" required="false" label_input="#rn:msg:SUBJECT_LBL#"/>
+            </rn:condition>
+            <rn:condition logged_in="true">
+            <rn:widget path="input/FormInput" name="Incident.Subject" required="false" initial_focus="false" label_input="#rn:msg:SUBJECT_LBL#"/>
+            </rn:condition>
+          </div>
+          <!-- /SUBJECT -->
+
+          <!-- SUBMIT -->
+          <div class="csp-submit-sates">
+            <rn:widget path="input/FormSubmit" label_button="Submit" on_success_url="/app/thank-late-us" error_location="rn_ErrorLocation" />
+            <rn:condition content_viewed="2" searches_done="1">
+            <rn:condition_else/>
+            <rn:widget path="input/SmartAssistantDialog" label_prompt="#rn:msg:OFFICIAL_SSS_MIGHT_L_IMMEDIATELY_MSG#"/>
+            </rn:condition>
+          </div>
+          <!-- /SUBMIT -->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var height = $('.rn_Body').height();
+  $(function() {
+    document.getElementById('rn_SelectionInput_3_Incident.CustomFields.c.general_reason').value = "145"; // default - first option 50%
+    document.getElementById('rn_SelectionInput_5_Incident.CustomFields.c.cancel_reasons').value = ""; // default - Don't need it anymore
+
+    $('input:radio[name="order-late-option-select"]').change(
+    function(){
+      // document.getElementById('rn_SelectionInput_5_Incident.CustomFields.c.cancel_reasons').value = "395";
+    //   $('.damaged-item-reason-wrap select').val("395");
+      if ($(this).val() == 'Fifty') {
+        document.getElementById('rn_SelectionInput_3_Incident.CustomFields.c.general_reason').value = "145";
+        document.getElementById('rn_SelectionInput_5_Incident.CustomFields.c.cancel_reasons').value = "";
+        $('.damaged-item-reason-wrap select').val("");
+        $('.csp-radio-option1').css('display','none');
+        $('.csp-input-left, .csp-input-right').css('display','block');
+        $('.damaged-item-reason-wrap').css('display','none');
+        $('.csp-cancel-reasons').css('display','none');
+      }
+      else if ($(this).val() == 'Refund') {
+        document.getElementById('rn_SelectionInput_3_Incident.CustomFields.c.general_reason').value = "144";
+        document.getElementById('rn_SelectionInput_5_Incident.CustomFields.c.cancel_reasons').value = "";
+        $('.damaged-item-reason-wrap select').val("");
+        $('.csp-radio-option1').css('display','none');
+        $('.csp-input-left, .csp-input-right').css('display','block');
+        $('.damaged-item-reason-wrap').css('display','none');
+        $('.csp-cancel-reasons').css('display','none');
+      }
+      else if ($(this).val() == 'Reorder') {
+        document.getElementById('rn_SelectionInput_3_Incident.CustomFields.c.general_reason').value = "143";
+        document.getElementById('rn_SelectionInput_5_Incident.CustomFields.c.cancel_reasons').value = "";
+        $('.damaged-item-reason-wrap select').val("");
+        $('.csp-radio-option1').css('display','block');
+        $('.csp-input-left, .csp-input-right').css('display','block');
+        $('.damaged-item-reason-wrap').css('display','none');
+        $('.csp-cancel-reasons').css('display','none');
+      }
+      else if ($(this).val() == 'FullRefund') {
+        document.getElementById('rn_SelectionInput_3_Incident.CustomFields.c.general_reason').value = "399";
+        document.getElementById('rn_SelectionInput_5_Incident.CustomFields.c.cancel_reasons').value = "395";
+        $('.damaged-item-reason-wrap select').val("395");
+        $('.csp-radio-option1').css('display','none');
+        $('.damaged-item-reason-wrap').css('display','block');
+        $('.csp-input-left, .csp-input-right').css('display','block');
+        $('.csp-cancel-reasons').css('display','none');
+      }
+      if (height !== $('.rn_Body').height()) {
+          height = $('.rn_Body').height();
+          window.parent.postMessage(height,"*");
+        }	
+      
+
+    });
+  });
+
+  // Updates the Cancel Reasons
+    function rnDamageReason(reason) {
+      $("#rn_SelectionInput_5 select").val(reason.value);
+      if ( reason.value == "397"){
+        $('.csp-cancel-reasons').css('display','block');
+        if (height !== $('.rn_Body').height()) {
+          height = $('.rn_Body').height();
+          window.parent.postMessage(height,"*");
+        }
+      } else {
+        $('.csp-cancel-reasons').css('display','none');
+      }    
+    }
+
+  //send window message to parent
+  $(".rn_CustomProductCategoryInput > button").click(function(ev){
+    window.parent.postMessage({
+      'func': 'parentFunc',
+      'message': 'setscroll'
+    }, "*");    
+  });
+
+$(document).ready(function(){ 
+                             processLinksPages(); 
+              });          
+              function processLinksPages(){                  
+                             $.post("/ci/ajaxCustom/processLinksPages", "page=9555&IsSent=1&IsOpened=0", function( data ) {  });          
+              }
+
+</script>

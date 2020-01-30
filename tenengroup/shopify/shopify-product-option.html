@@ -1,0 +1,45 @@
+  <script>
+  $(document).ready(function(){
+  if(typeof isDinamic !== 'undefined') {
+    const productSwitch = document.querySelector(".single-option-selector");  
+    const productOption = document.querySelectorAll(".product-customizer-option");  
+    let toShow = ((productSwitch.selectedIndex * productOptionJumps) + minProductToShow);
+
+    for(var i = 0 ; i < toShow ; i++) {
+      productOption[i].style.display = "block";
+    }
+
+    productOption[productRequiredNumber -1].style.display = "block";
+    productOption[SecondproductRequiredNumber -1].style.display = "block";
+
+    document.addEventListener('change', changeEventHandler);
+
+    function changeEventHandler() {
+      productOption.forEach(function(element) {
+        element.style.display = "none";
+      });
+      let toShow = ((productSwitch.selectedIndex * productOptionJumps) + minProductToShow);
+      for(var i = 0 ; i < toShow ; i++) {
+        productOption[i].style.display = "block";
+      }
+      productOption[productRequiredNumber -1].style.display = "block";
+      productOption[SecondproductRequiredNumber -1].style.display = "block";
+    }
+
+	}
+    
+})
+</script>
+
+<script>
+window.isDinamic = true;
+window.productRequiredNumber = 13;
+window.productOptionJumps = 2;
+window.minProductToShow = 4;
+</script>
+
+<style>
+.product-customizer-option {
+  display: none;
+}
+</style>

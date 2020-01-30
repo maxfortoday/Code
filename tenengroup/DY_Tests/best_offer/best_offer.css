@@ -1,0 +1,49 @@
+.dy-switch-box [data-option] {
+  position: relative;
+}
+
+.slick-slide.bestOffer {
+position: relative;
+}
+
+.bestOffer:after {
+content: "${text}";
+position: absolute;
+top: 15px;
+left: 7px;
+color: ${text color};
+background-color: ${background color};
+padding: 2px;
+transform: rotate(-40deg);
+}
+
+.no-slick .switch-items-3  .bestOffer:after, .no-slick .switch-items-2  .bestOffer:after {
+  top: 0px;
+  left: 35px;
+}
+
+.no-slick .switch-items-4  .bestOffer:after {
+  top: 0px;
+  left: 16px;
+}
+
+.no-slick .switch-items-5  .bestOffer:after {
+  top: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+.bestOffer:after {
+  top: 2px;
+  left: 6px;
+  padding: 2px;
+}
+.switch-items-5 .bestOffer:after {
+  font-size: 10px;
+  top: 0;
+  left: -5px;
+}
+.switch-items-4 .bestOffer:after {
+  top: 0;
+  left: 0px;
+}
+}

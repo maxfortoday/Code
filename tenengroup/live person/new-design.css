@@ -1,0 +1,28 @@
+.lp-window-root.lp_main_ltr * {
+  text-align: center;
+}
+
+.lp-window-root .lp_chat_line_wrapper .lp_rich_content_line .lp_title_text .lp-json-pollock .lp-json-pollock-layout {
+  margin: 0 auto;
+}
+
+.lp-window-root .lp_chat_line_wrapper .lp_rich_content_line .lp_title_text .lp-json-pollock .lp-json-pollock-layout, .lp-window-root .lp_chat_line_wrapper .lp_rich_content_line .lp_title_text .lp-json-pollock.lp-json-pollock-single-element {
+  border: none;
+}
+
+.lp-window-root .lp_chat_line_wrapper .lp_rich_content_line .lp_title_text .lp-json-pollock .lp-json-pollock-layout-vertical .lp-json-pollock-element-text+.lp-json-pollock-element-text, .lp-window-root .lp_chat_line_wrapper .lp_rich_content_line .lp_title_text .lp-json-pollock .lp-json-pollock-layout-vertical>:first-child {
+  border: 2px solid #FD8F82;
+  border-radius: 15px 15px 15px 0;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.lp-json-pollock-element-button.lpc_card__button.lpc_desktop {
+  background-color: #FD8F82;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.lp-window-root .lp_chat_line_wrapper .lp_rich_content_line .lp_title_text .lp-json-pollock .lp-json-pollock-element-button button {
+  color: #fff;
+}

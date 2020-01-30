@@ -1,0 +1,65 @@
+/*special font*/
+@font-face {
+  font-family: 'AlwaysInMyHeart_fix';
+  src: url('/webfonts/AlwaysInMyHeart_fix.eot');
+  src: url('/webfonts/AlwaysInMyHeart_fix.svg') format('svg'),
+       url('/webfonts/AlwaysInMyHeart_fix.woff') format('woff'),
+       url('/webfonts/AlwaysInMyHeart_fix.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'AutumnChant_fix';
+  src: url('/webfonts/AutumnChant_fix.eot');
+  src: url('/webfonts/AutumnChant_fix.svg') format('svg'),
+       url('/webfonts/AutumnChant_fix.woff') format('woff'),
+       url('/webfonts/AutumnChant_fix.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'ScriptBoldMT_fix';
+  src: url('/webfonts/ScriptBoldMT_fix.eot');
+  src: url('/webfonts/ScriptBoldMT_fix.svg') format('svg'),
+       url('/webfonts/ScriptBoldMT_fix.woff') format('woff'),
+       url('/webfonts/ScriptBoldMT_fix.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'TGCarrieFix3';
+  src: url('/webfonts/TGCarrieFix3.eot');
+  src: url('/webfonts/TGCarrieFix3.svg') format('svg'),
+       url('/webfonts/TGCarrieFix3.woff') format('woff'),
+       url('/webfonts/TGCarrieFix3.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'OldEnglishTextMT';
+  src: url('/webfonts/OldEnglishTextMT.eot');
+  src: url('/webfonts/OldEnglishTextMT.svg') format('svg'),
+       url('/webfonts/OldEnglishTextMT.woff') format('woff'),
+       url('/webfonts/OldEnglishTextMT.ttf')  format('truetype');
+}
+
+/* sigmiture */
+form[action*="4634"] .ProductDataEntryTextBox, form[action*="5378"] .ProductDataEntryTextBox, form[action*="5379"] .ProductDataEntryTextBox, form[action*="5598"] .ProductDataEntryTextBox, form[action*="5956"] .ProductDataEntryTextBox {
+  font-family: 'AutumnChant_fix';
+}
+
+/* Infinity */
+form[action*="3598"] .ProductDataEntryTextBox, form[action*="3650"] .ProductDataEntryTextBox, form[action*="4298"] .ProductDataEntryTextBox, form[action*="5598"] .ProductDataEntryTextBox, form[action*="5588"] .ProductDataEntryTextBox, form[action*="4494"] .ProductDataEntryTextBox {
+  font-family: 'ScriptBoldMT_fix';
+}
+
+/* Chloe */
+form[action*="3352"] .ProductDataEntryTextBox, form[action*="3562"] .ProductDataEntryTextBox, form[action*="3647"] .ProductDataEntryTextBox, form[action*="5616"] .ProductDataEntryTextBox, form[action*="5594"] .ProductDataEntryTextBox {
+  font-family: 'AlwaysInMyHeart_fix';
+}
+
+/* Carrie */
+form[action*="1318"] .ProductDataEntryTextBox, form[action*="2074"] .ProductDataEntryTextBox, form[action*="3634"] .ProductDataEntryTextBox, form[action*="5600"] .ProductDataEntryTextBox, form[action*="1427"] .ProductDataEntryTextBox, form[action*="2070"] .ProductDataEntryTextBox {
+  font-family: 'TGCarrieFix3';
+}
+
+/* Megan */
+form[action*="1192"] .ProductDataEntryTextBox, form[action*="2008"] .ProductDataEntryTextBox, form[action*="1194"] .ProductDataEntryTextBox, form[action*="1195"] .ProductDataEntryTextBox {
+  font-family: 'OldEnglishTextMT';
+}

@@ -1,0 +1,23 @@
+<script>
+  $( document ).ready(function() {
+    var waitingCounter = 0;
+  if (window.location.href.indexOf("m.mynamenecklace") > -1) {
+    var prodName = $('.ProductTopSecondCell').find('h1').text() || 'this product'; 
+  } else {
+    var prodName = $('.ProductTitle').find('h1').text() || 'this product'; 
+  }
+
+  lpTag.events.bind('lpUnifiedWindow', 'state', (data) => {
+    if (waitingCounter < 1) {
+      if (data && data.state === 'waiting') {
+        setTimeout(() => {
+          waitingCounter++           
+          $('.lpview_form_textarea').val("I'm interested in " + prodName);
+          $('.lp_send_button').prop('disabled', false).trigger('click');
+        }, 500);
+        console.log('Should trigger show init menu here')
+      }
+    }
+  });
+});
+</script>

@@ -1,0 +1,41 @@
+<!-- Start Product Header -->
+<style>
+  .wistia_embed a{
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: rgb(134, 73, 73);
+    width: 95%;
+    display: block;
+    font-weight: 400;
+    color: black;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid #E5E5E5;
+  }
+  .wistia_embed a span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+      
+</style>
+<!-- <script src=https://fast.wistia.com/embed/medias/qsu91fk8q8.jsonp async></script> -->
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+<script>
+    
+    $(document).ready(function(){
+      var wistiaEmbeded = 'qsu91fk8q8';
+      var wistiaBtnTxt = `<span class="ico-tg-arrow-r"></span> VIDEO`;
+      var script   = document.createElement("script");
+      script.type  = "text/javascript";
+      script.async = true;
+      script.src   = `https://fast.wistia.com/embed/medias/${wistiaEmbeded}.jsonp`;
+      document.body.appendChild(script);
+
+      var wistiaBtn = `<span class="wistia_embed wistia_async_${wistiaEmbeded} popover=true popoverAnimateThumbnail=true popoverContent=link" style="display:block;position:relative;text-align:center;"><a href="#">${wistiaBtnTxt}</a></span>`;
+      $('.ProductTopSecondCell').prepend(wistiaBtn);
+    })
+</script>
+
+<!-- End Product Header -->

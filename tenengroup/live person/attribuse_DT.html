@@ -1,0 +1,112 @@
+<script>
+     $(document).ready(function () {
+
+          // live person chat product page
+          lpTag.sdes = lpTag.sdes || [];
+          var prodPageProdName = $('#ProductTitle h1').text();
+          var prodPageProdSkuElement = $('.ProductValue')[0];
+          var prodPageProdSku = $(prodPageProdSkuElement).text();
+          var prodPageProdPriceINT = $('.OurPriceValue').text().trim().replace('€', '');
+          var prodPageProdPrice = parseFloat(prodPageProdPriceINT);
+          var prodPageCategory = productShow.list.indexOf('Category') > -1 ? productShow.list : 'General';
+
+          lpTag.sdes.push({
+               "type": "prodView", //MANDATORY
+               "currency": "EUR", //CURRENCY CODE
+               "products": [{ //ARRAY OF PRODUCTS
+                    "product": {
+                         "name": prodPageProdName, //PRODUCT NAME
+                         "category": prodPageCategory, //PRODUCT CATEGORY NAME
+                         "sku": prodPageProdSku, //PRODUCT SKU OR UNIQUE IDENTIFIER
+                         "price": prodPageProdPrice //SINGLE PRODUCT PRICE
+                    }
+               }]
+          });
+     });
+</script>
+
+
+<script>
+     $(document).ready(function () {
+
+          // live person chat thank you page
+          lpTag.sdes = lpTag.sdes || [];
+          var thankYouTotalPrice = parseFloat($('.totalCostLine2').text().trim().replace('€', ''));
+          var thankYouOrderId = parseFloat($('.orderDetailsLine2').text());
+          var thankYouProductInfo = $('.prod_desc').text();
+          var thankYouQuantity = $('.itemLine2').text();
+
+          lpTag.sdes.push({
+               "type": "purchase", //MANDATORY
+               "total": thankYouTotalPrice, //TOTAL VALUE OF THE TRANSACTION AFTER DISCOUNT
+               "currency": "EUR", //CURRENCY CODE
+               "orderId": thankYouOrderId, //UNIQUE ORDER ID OR RECEIPT ID
+               "cart": {
+                    "products": [{
+                         "product": {
+                              "product": thankYouProductInfo
+                         },
+                         "quantity": thankYouQuantity //QUANTITY OF THIS PRODUCT
+                    }]
+               }
+          });
+     });
+</script>
+
+<script>
+     $(document).ready(function () {
+
+          // live person chat shopping cart
+          lpTag.sdes = lpTag.sdes || [];
+          var cartTotalPrice = parseFloat($('.ShoppingSubTotal').text().trim().replace('€', ''));
+          var cartNumOfItems = $('.NewShoppingHeader > tbody > tr').length - 1;
+          var cartProdName = parseFloat($('.NewShopProductName a').text());
+
+          // array : 
+          var cartProdSkuAndPrice = $(shoppingCartData.Items);
+          var products = [];
+          for (var i = 0; i < cartProdSkuAndPrice.length; i++) {
+               var newItem = {
+                    "product": {
+                         "name": $($('.NewShopProductName a')[i]).text(),
+                         "sku": cartProdSkuAndPrice[i].Sku,
+                         "price": cartProdSkuAndPrice[i].Price,
+                    },
+                    "quantity": 1
+               }
+               products.push(newItem);
+          }
+
+
+          lpTag.sdes.push({
+               "type": "cart",
+               "total": cartTotalPrice,
+               "currency": "EUR",
+               "numItems": cartNumOfItems,
+               "products": products
+
+          });
+     });
+</script>
+
+
+
+<!-- old checkout page -->
+<script>
+     $(document).ready(function () {
+ 
+          // live person chat thank you page
+          lpTag.sdes = lpTag.sdes || [];
+          var thankYouTotalPrice = parseFloat($($('.thanksOrderCode')[1]).text().trim().replace('£', ''));
+          var thankYouOrderId = parseFloat($($('.thanksOrderCode')[0]).text().trim().replace('£', ''));
+          var thankYouQuantity = parseFloat($($('.thanksOrderCode')[2]).text().trim().replace('£', ''));
+ 
+          lpTag.sdes.push({
+               "type": "purchase", //MANDATORY
+               "total": thankYouTotalPrice, //TOTAL VALUE OF THE TRANSACTION AFTER DISCOUNT
+               "currency": "GPB", //CURRENCY CODE
+               "orderId": thankYouOrderId, //UNIQUE ORDER ID OR RECEIPT ID
+               "quantity": thankYouQuantity //QUANTITY OF THIS PRODUCT
+          });
+     });
+ </script> 

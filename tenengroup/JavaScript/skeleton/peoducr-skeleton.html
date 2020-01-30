@@ -1,0 +1,32 @@
+<script>
+  //skeleton screen
+  var links = document.getElementsByTagName("link");
+  for (var i = 0; i < links.length; i++) {
+      if (links[i].getAttribute("rel") === "canonical") {
+          var linkUrl = links[i].getAttribute("href").toLowerCase();
+          break;
+      }
+  }
+  var checkLoader = setInterval(function(){
+      debugger;
+      var loader = document.getElementById('MainContent_ProductImage');
+      var loaderImg = $(loader).find('img')[0];
+
+      if (loaderImg) {
+          clearInterval(checkLoader);
+          if(linkUrl.indexOf("product") > -1) {
+              loaderImg.src = 'https://m.mynamenecklace.com/images/site/skeleton-product-screen.jpg';
+          }
+          loaderImg.style.display = 'block';
+      }
+  },
+  10)
+</script>
+
+
+<style>
+.slider-container {
+    background-color: #E9E9E9;
+    height: 100vw;
+}
+</style>

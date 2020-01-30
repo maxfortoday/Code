@@ -1,0 +1,32 @@
+<script>
+    var elementX = `
+    <div class="tooltip">    
+              At My Name Necklace thousands of hand-crafted products are available in various high-quality material selections. Each of our metals are nickel free.* 
+              <br><br>
+              Our 10k/14k/18k solid gold jewelry are timeless pieces made to last forever.
+              <br><br>
+              Gold vermeil pieces are 18k gold coated over silver with plating 2.5 microns thick throughout pendants, bracelets, and rings. 
+              <br><br>
+              Gold, rose gold, and yellow gold-plated items are 18k gold plated over sterling silver.
+              <br><br>
+              All of our diamonds and gemstones, including Swarovski crystals, are genuine of the highest purity and clarity.
+              <br><br>
+              (*excluding selected 14k white gold products.)
+                        
+          </div>
+    `
+    </script>
+    <style>
+    .tooltip {
+        font-size: 14px;
+        text-align: left;
+    }
+    </style>
+    <div class="prod-steps prod-step-1">
+      <div class="prod-step-1">Step 1. Choose Material
+          <span class="productTooltipButton" onclick="showTooltip(100, elementX); return false;">?</span>
+      </div>
+      <div id="tooltipPopupBox100" class="tooltipPopupBox"><span><img alt="Close" src="images/General/x_icon.png"></span><div id="tooltipPopupContent100"></div></div><div id="tooltipBoxOverlay100" class="tooltipBoxOverlay" style="display: none;"></div>
+      <div class="prod-material-switch"> </div>
+      <div class="prod-step-2">Step 2. Personalise Me</div>
+    </div>

@@ -1,0 +1,281 @@
+<script>
+	//gift box pip MB
+    $(document).ready(function(){
+        $('#productAddLink1, #productAdd1').addClass('prod-add-gift');
+    });
+</script>
+
+<style type="text/css">
+/* pip for gift-box */
+.prod-add-gift .ProductAddCenter a:before,
+.prod-add-gift .ProductAddCenter a:after,
+.prod-add-gift .productAddLinkOpen .ProductAddCenter a:before,
+.prod-add-gift .productAddLinkOpen .ProductAddCenter a:after,
+.prod-add-gift .productAddLinkOpen .ProductAddCenter a b,
+.prod-add-gift .productAddLinkOpen .ProductAddCenter a b:before,
+.prod-add-gift .productAddLinkOpen .ProductAddCenter a b:after {
+    background: none !important;
+}
+
+.prod-add-gift .ProductAddCenter a {
+    background: url('https://cdn.m.mynamenecklace.com/images/general/check-off.jpg') 5px 5px no-repeat !important;
+    width: 30px !important;
+    height: 25px !important;
+    margin-left: 10px !important;
+}
+
+/* Not checked */
+
+.prod-add-gift.productAddLinkOpen .ProductAddCenter a {
+    background: url('https://cdn.m.mynamenecklace.com/images/general/check-on.jpg') 5px 5px no-repeat !important;
+    width: 30px !important;
+    height: 25px !important;
+    margin-left: 0 !important;
+}
+/* checked */
+
+.prod-add-gift td.ProductAddHeader {
+    padding-top: 0 !important;
+}
+
+.prod-add-gift .addProductLink img {
+    display: none !important;
+}
+
+.prod-add-gift .addProductLinkLine1 b {
+    color: #3A4249 !important;
+}
+
+.prod-add-gift .ProductAddCenter b {
+    position: absolute !important;
+    width: 280px !important;
+    text-align: left !important;
+    margin: -8px 0 0 10px !important;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 14px !important;
+    color: #3A4249 !important;
+}
+
+.prod-add-gift span.addProductLinkLine2 {
+    position: absolute !important;
+    top: -31px !important;
+    left: 270px !important;
+}
+
+.prod-add-gift span.addProductLinkLine2 label {
+    font-size: 13px !important;
+}
+
+.prod-add-gift .DataEntryNumbering {
+    display: none !important;
+}
+
+.prod-add-gift #productAddControls1,
+.prod-add-gift #productAddControls2,
+.prod-add-gift td.ProductAddHeader {
+    border-color: transparent !important;
+}
+
+.prod-add-gift #productAddControls1,
+.prod-add-gift #productAddControls2 {
+    padding-top: 0 !important;
+}
+
+.prod-add-gift td.ProductIndex {
+    display: none;
+}
+
+.prod-add-gift td.productAddClose,
+.prod-add-gift td.productAddFooter {
+    display: none;
+}
+
+
+.FbMsg {
+    padding: 0 15px 10px;
+    border: none;
+}
+
+.RelatedProductsHeader {
+    background: none;
+    color: inherit;
+    font-weight: 300;
+    border-top: 1px solid #eaebeb;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.RelatedProductItem {
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+}
+
+.RelatedProductItem a {
+    position: relative;
+}
+
+img.RelatedProductImage {
+    box-shadow: 0 1px 0 #eaebeb;
+}
+
+.RelatedProductsBox:after {
+    content: '';
+    display: block;
+    clear: both;
+    float: none;
+}
+
+.RelatedProductItem .CategoryProductName {
+    min-height: 78px;
+}
+
+span.RelatedProductPrice {
+    color: inherit;
+    font-weight: 500;
+}
+
+/* product in product */
+
+.ProductAddCenter {
+    padding: 20px 0 10px;
+}
+
+.ProductAddCenter a {
+    background-image: url(//cdn.m.mynamenecklace.com/images/General/pipPlus.png), url(//cdn.m.mynamenecklace.com/images/General/special-offer-bg.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: 10px 10px, right top;
+    border: none;
+    height: 34px;
+    font-family: cookie;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.ProductAddCenter a:before {
+    display: none;
+}
+
+.productAddLinkOpen .ProductAddCenter a:before {
+    display: block;
+    width: 35px;
+    height: 10px;
+    background: url(//cdn.m.mynamenecklace.com/images/General/pipShape.png);
+    left: calc(50% - 17.5px);
+    top: auto;
+    bottom: -9px;
+    z-index: 9;
+}
+
+.ProductAddCenter a:first-letter {
+    text-transform: uppercase;
+}
+
+.ProductAddCenter b {
+    padding-right: 12px;
+}
+
+.ProductAddCenter a:after, .productAddLinkOpen .ProductAddCenter a:after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: url(//cdn.m.mynamenecklace.com/images/General/pipTag.png);
+    background-size: 40px;
+    top: -4px;
+    right: 20px;
+}
+
+.productAddLinkOpen .ProductAddCenter a {
+    padding: 4px 0;
+    line-height: 30px;
+    border: none;
+    border-radius: 0;
+    margin-bottom: -13px;
+    background-image: url(//cdn.m.mynamenecklace.com/images/General/pipCheck.png), url(//cdn.m.mynamenecklace.com/images/General/special-offer-bg.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: 10px 10px, right top;
+}
+
+.ProductAddContent {
+    padding: 0;
+}
+
+td.ProductAddHeader {
+    border-color: #eaebeb;
+    padding-top: 20px;
+}
+
+.addProductLink {
+    position: relative;
+}
+
+span.addProductLinkLine1 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.addProductLinkLine1 b {
+    color: #f39aa5;
+}
+
+span.addProductLinkLine2 {
+    color: inherit;
+    font-weight: 400;
+}
+
+#productAddControls1, 
+#productAddControls2 {
+    border-color: #eaebeb;
+}
+
+tr td.productAddClose,
+tr td.productAddFooter {
+    border-color: #eaebeb;
+    border-radius: 0;
+    border-top: none;
+}
+
+.productAddClose > a,
+.productAddFooter > a {
+    color: #3a4249;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.ProductAddContent .DataEntryNumbering {
+    color: #ee7485;
+    font-size: 17px;
+    font-weight: 500;
+    vertical-align: top;
+    padding-right: 6px;
+}
+
+.ProductAddContent td.ProductDataEntryCellText {
+    padding-bottom: 6px;
+}
+
+span.addProductLinkRibbon {
+    background-color: #E8E7E7;
+    color: #F27384;
+    width: 44px;
+    height: 44px;
+    font-size: 13px;
+}
+
+.addProductLinkLine2 del {
+    color: #3A4249 !important;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 4px;
+}
+
+.addProductLinkLine2 label {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.addProductPopup {
+    z-index: 9;
+}
+</style>

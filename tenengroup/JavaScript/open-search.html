@@ -1,0 +1,37 @@
+<script>
+$('.SearchTrigger').removeAttr('onclick');
+  if(window.location.href.indexOf("product") > 0 ) {
+  $('#SearchTrigger').click(function () {
+    $('.main').toggleClass('search-faid');
+    $(this).toggleClass('ico-close ico-tg-search');
+    $('.MasterSearchPanel').toggleClass('MasterSearchShow');
+  });
+}else {
+  $('.main').addClass('search-faid');
+  $('#SearchTrigger').hide();
+  $('.MasterSearchPanel').addClass('MasterSearchShow');
+  $('div.MasterSearchPanel.MasterSearchShow').css('position','unset');
+};
+
+
+$('.SearchTrigger').removeAttr('onclick');
+    $('#SearchTrigger').click(function () {
+        //$(this).toggleClass('search-close');
+        $('.main').toggleClass('search-faid');
+        $(this).toggleClass('ico-close ico-tg-search');
+        $('.MasterSearchPanel').toggleClass('MasterSearchShow');
+    });
+</script>
+
+<style>
+
+div#m_pnlSearch {
+    display: none !important;
+}
+
+span#SearchTrigger {
+    display: block !important;
+}
+
+</style>
+
