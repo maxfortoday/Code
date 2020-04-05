@@ -4,9 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
+/imgages
 
 # testing
 /coverage
+env.development
 
 # production
 /build
